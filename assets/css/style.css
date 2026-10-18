@@ -486,3 +486,4 @@ details.psec li { margin-bottom: 10px; }
 .anim .reveal.in { opacity: 1; transform: none; }
 .anim .mhero-bg { transform: scale(1.08); will-change: transform; }
 .anim .ncard.reveal.in:hover { transform: translateY(-3px); transition: transform 0.15s; }  /* 떠오른 뒤에도 카드 마우스 효과 유지 */
+.mabout.about-intro { padding-top: 92px; }  /* ABOUT: 제목 두 줄 아래 위치를 다른 페이지와 같게 */
