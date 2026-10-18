@@ -146,7 +146,7 @@ window.MWAM_POSTS = [
     category: '학술발표',
     date: '2026-02-26',
     title: '29th EAFONS 2026 포스터 발표',
-    thumb: 'assets/images/posts/2026-02-26-eafons-thumb.jpg',
+    thumb: 'assets/images/posts/2026-02-26-eafons-thumb-v2.jpg',
     images: ['assets/images/posts/2026-02-26-eafons.jpg'],
     body:
       '<p>싱가포르국립대학교에서 열린 제29회 동아시아간호학자포럼(EAFONS)에서 만성 조현병 당사자의 소마틱스 기반 중재 참여 경험을 다룬 질적 연구를 포스터로 발표했습니다.</p>' +
