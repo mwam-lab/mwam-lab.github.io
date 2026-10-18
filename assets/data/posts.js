@@ -232,6 +232,25 @@ window.MWAM_POSTS = [
       '<p><a href="http://ju.ac.kr/b195835" target="_blank" rel="noopener">전북대학교 기사 보기</a></p>'
   },
   {
+    id: '2025-06-23-bethel-pbl',
+    category: '프로그램',
+    date: '2025-06-23',
+    title: 'JBNU 글로벌 PBL 「정신건강 회복 중심 지역사회 모델 탐방」 일본 베델의 집 연수',
+    thumb: 'assets/images/posts/2025-06-23-bethel-pbl-thumb.jpg',
+    images: ['assets/images/posts/2025-06-23-bethel-pbl-1.jpg', 'assets/images/posts/2025-06-23-bethel-pbl-2.jpg', 'assets/images/posts/2025-06-23-bethel-pbl-3.jpg', 'assets/images/posts/2025-06-23-bethel-pbl-4.jpg', 'assets/images/posts/2025-06-23-bethel-pbl-5.jpg', 'assets/images/posts/2025-06-23-bethel-pbl-6.jpg', 'assets/images/posts/2025-06-23-bethel-pbl-7.jpg'],
+    body:
+      '<p>정재원 교수가 책임교수를 맡아 이끈 글로벌 PBL 프로그램으로 간호대학 학생들이 일본 홋카이도의 베델의 집과 홋카이도의료대학을 방문했습니다. 당사자 연구 현장과 그룹홈, 작업장, 클리닉을 직접 체험하고, 홋카이도의료대학 학생들과 히키코모리를 주제로 한 공동 PBL 세션에 참여하며 회복 중심 간호의 의미를 성찰했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 6월 23일(월) - 6월 27일(금)</li>' +
+        '<li>장소: 일본 홋카이도 (베델의 집, 홋카이도의료대학)</li>' +
+        '<li>주관: 전북대학교 간호대학 (글로컬대학30)</li>' +
+        '<li>대상: 간호대학 학생 8명</li>' +
+        '<li>책임교수: 정재원 교수</li>' +
+        '<li>참여: 김준혁 연구원</li>' +
+      '</ul>' +
+      '<p><a href="http://www.mindpost.or.kr/bbs/board.php?bo_table=news&amp;wr_id=8982" target="_blank" rel="noopener">마인드포스트 기사 보기</a></p>'
+  },
+  {
     id: 'sample-recruit',
     category: '공지',
     pinned: true,
