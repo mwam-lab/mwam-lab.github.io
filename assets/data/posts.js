@@ -31,7 +31,7 @@ window.MWAM_POSTS = [
     thumb: 'assets/images/posts/2026-10-16-korea-japan-seminar-thumb.jpg',
     images: ['assets/images/posts/2026-10-16-korea-japan-seminar-talk.jpg', 'assets/images/posts/2026-10-16-korea-japan-seminar-okuda.jpg', 'assets/images/posts/2026-10-16-korea-japan-seminar-visit.jpg'],
     body:
-      '<p>서울대학교 일본연구소의 한일미래구상사업 세미나 「정신건강복지 한일 협력 20년: ‘당사자연구’ 교류를 중심으로」에 참석했습니다. 경험전문가들의 발표와 대화를 들었고, 국제공동연구를 함께 진행 중인 오쿠다 가오리 교수님과도 만났습니다.</p>' +
+      '<p>서울대학교 일본연구소의 한일미래구상사업 세미나 「정신건강복지 한일 협력 20년: ‘당사자연구’ 교류를 중심으로」에 참석했습니다. 경험전문가들의 발표와 대화를 통해 당사자연구의 의미를 되새겼으며, 국제공동연구를 함께하고 있는 오쿠다 가오리 교수님과 교류하는 시간도 가졌습니다.</p>' +
       '<ul>' +
         '<li>일시: 2026년 10월 16일(금)</li>' +
         '<li>장소: 서울대학교 국제대학원 소천국제회의실</li>' +
