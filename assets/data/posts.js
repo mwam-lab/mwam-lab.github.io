@@ -287,7 +287,7 @@ window.MWAM_POSTS = [
     id: '2025-05-29-khu-lecture',
     category: '특강',
     date: '2025-05-29',
-    title: '경희대학교 간호대학 대학원 특강 「연구논문을 잘 작성하는 법」',
+    title: '경희대학교 간호대학 대학원 특강',
     thumb: 'assets/images/posts/2025-05-29-khu-lecture-thumb.jpg',
     images: ['assets/images/posts/2025-05-29-khu-lecture.jpg'],
     body:
@@ -304,8 +304,8 @@ window.MWAM_POSTS = [
     category: '수련',
     date: '2025-05-29',
     title: '2025 동서간호학연구소 춘계학술대회 「Mindfulness·compassion을 통한 돌봄」 참석',
-    thumb: 'assets/images/posts/2025-05-29-khu-conference-thumb.jpg',
-    images: ['assets/images/posts/2025-05-29-khu-conference.jpg', 'assets/images/posts/2025-05-29-khu-conference-2.jpg'],
+    thumb: 'assets/images/posts/2025-05-29-khu-conference-thumb-v2.jpg',
+    images: ['assets/images/posts/2025-05-29-khu-conference-2.jpg', 'assets/images/posts/2025-05-29-khu-conference.jpg'],
     body:
       '<p>경희대학교 동서간호학연구소 춘계학술대회에 참석해 마음챙김과 자비를 바탕으로 한 돌봄에 대해 배웠습니다. MBSR(마음챙김 기반 스트레스 감소)을 중심으로 한 강연을 들으며 연구소의 움직임 명상 프로그램에 적용할 방향을 살펴보았습니다.</p>' +
       '<ul>' +
@@ -368,7 +368,7 @@ window.MWAM_POSTS = [
     date: '2025-03-23',
     title: '소마앤바디 고대운동 워크숍(Ancient Training Workshop) 수료',
     thumb: 'assets/images/posts/2025-03-23-ancient-training-thumb.jpg',
-    images: ['assets/images/posts/2025-03-23-ancient-training-cert.jpg', 'assets/images/posts/2025-03-23-ancient-training-lecture.jpg', 'assets/images/posts/2025-03-23-ancient-training-group.jpg', 'assets/images/posts/2025-03-23-ancient-training-clubs.jpg'],
+    images: ['assets/images/posts/2025-03-23-ancient-training-cert.jpg', 'assets/images/posts/2025-03-23-ancient-training-lecture.jpg', 'assets/images/posts/2025-03-23-ancient-training-group.jpg'],
     body:
       '<p>정재원 교수, 서교일 연구원, 김준혁 연구원이 서울 신촌 힘의집에서 열린 소마앤바디 제166회 고대운동 워크숍을 수료했습니다. 페르시안 밀, 인디언 클럽, 메이스벨, 클럽벨 등 고대 전통 도구를 다루며 리듬과 호흡 속에서 몸을 알아차리는 움직임을 익혔습니다.</p>' +
       '<ul>' +
