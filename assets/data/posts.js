@@ -64,9 +64,9 @@ window.MWAM_POSTS = [
     date: '2026-10-10',
     title: '인제대학교 사회복지대학원 특강 「몸을 통해 이해하는 돌봄: 소매틱스와 사회복지 실천」',
     thumb: 'assets/images/posts/2026-10-10-inje-lecture-thumb.jpg',
-    images: ['assets/images/posts/2026-10-10-inje-lecture.jpg', 'assets/images/posts/2026-10-10-inje-lecture-talk.jpg', 'assets/images/posts/2026-10-10-inje-lecture-poster.jpg'],
+    images: ['assets/images/posts/2026-10-10-inje-lecture.jpg', 'assets/images/posts/2026-10-10-inje-lecture-talk2.jpg', 'assets/images/posts/2026-10-10-inje-lecture-talk.jpg', 'assets/images/posts/2026-10-10-inje-lecture-poster.jpg'],
     body:
-      '<p>인제대학교 사회복지대학원 특강에서 「몸을 통해 이해하는 돌봄: 소매틱스와 사회복지 실천」을 주제로 강의했습니다. 강의에 이어 의자에 앉아서 하는 움직임 명상을 함께 실습하며, 점진적 근육 이완, 짝과 손을 맞대고 이끌고 따라가기, 자비명상을 통해 사회복지 현장에서 클라이언트와 적용할 수 있는 방법을 나누었습니다.</p>' +
+      '<p>인제대학교 사회복지대학원 특강에서 「몸을 통해 이해하는 돌봄: 소매틱스와 사회복지 실천」을 주제로 강의했습니다. 강의에 이어 의자에 앉아서 하는 움직임 명상을 함께 실습하며 사회복지 현장에서 클라이언트와 적용할 수 있는 방법을 나누었습니다.</p>' +
       '<ul>' +
         '<li>일시: 2026년 10월 10일(토) 14:00-16:00</li>' +
         '<li>장소: 인제대학교 신어관 226호</li>' +

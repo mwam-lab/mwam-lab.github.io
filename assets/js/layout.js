@@ -67,7 +67,7 @@
       '<div class="foot-links">' + MENU.map(function (m) { return '<a href="' + m.href + '">' + m.label + '</a>'; }).join('') +
         (S.instagram ? '<a href="' + S.instagram + '" target="_blank" rel="noopener">인스타그램</a>' : '') +
       '</div>' +
-    '</div><div class="copy"><div class="wrap">© ' + new Date().getFullYear() + ' 뫔건강연구소</div></div></footer>';
+    '</div><div class="copy"><div class="wrap">© ' + new Date().getFullYear() + ' 뫔건강연구소<a class="admin-link" href="admin.html">관리자</a></div></div></footer>';
 
   document.getElementById('site-header').outerHTML = header;
   document.getElementById('site-footer').outerHTML = footer;
