@@ -1,6 +1,6 @@
 이 폴더의 글꼴 사용 조건
 
-1) 카카오 글씨 (KakaoSmallSans-*, KakaoBigSans-*)
+1) 카카오 글씨 (KakaoSmallSans-*, KakaoBigSans-*, 큰 번호 장식은 KakaoBigSans-ExtraBold)
    Copyright (c) 2021 Kakao Corp. Font designed by FONTRIX Inc. & Min Bon & Park Min-gyu
    SIL Open Font License, Version 1.1 — https://openfontlicense.org
    출처: https://www.kakaocorp.com/page/detail/11571

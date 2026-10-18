@@ -29,7 +29,13 @@
 @font-face {
   font-family: 'Kakao Big Sans';
   src: url('../fonts/KakaoBigSans-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  font-weight: 100 899;
+  font-display: swap;
+}
+@font-face {  /* 카드의 큰 번호 장식에만 씀 */
+  font-family: 'Kakao Big Sans';
+  src: url('../fonts/KakaoBigSans-ExtraBold.woff2') format('woff2');
+  font-weight: 900;
   font-display: swap;
 }
 
@@ -235,27 +241,26 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
 .rhead .hl { color: var(--teal); }
 .rhead p:last-child { margin-top: 18px; color: var(--text-2); font-size: 1.05rem; }
 .rgrid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(min(440px, 100%), 1fr)); }
-.rcard { --c: var(--blue); --c2: var(--blue-dark); --tint: #E8EEF5;
-  position: relative; overflow: hidden; border-radius: 28px; padding: 40px 36px 36px;
-  background: linear-gradient(165deg, var(--tint) 0%, #FFFFFF 62%);
-  border: 1px solid rgba(36, 53, 72, 0.08); box-shadow: 0 10px 30px rgba(36, 53, 72, 0.08); }
-.rcard::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: linear-gradient(90deg, var(--c), transparent 85%); }
-.rcard.tone1 { --c: var(--teal); --c2: var(--teal-dark); --tint: #E2EFEC; }
-.rcard.tone2 { --c: var(--blue-logo); --c2: var(--blue-dark); --tint: #E6F0F2; }
-.rcard .wm { position: absolute; top: 4px; right: 18px; font-family: var(--font-head); font-size: 8.5rem; line-height: 1; color: var(--c); opacity: 0.09; pointer-events: none; }
-.rcard header { position: relative; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.rcard .num { flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--c); color: var(--white); display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; }
-.rcard h3 { font-size: 1.45rem; }
-.rcard header .state { margin-left: auto; font-size: 0.85rem; }
-.rq { position: relative; margin-top: 18px; padding-bottom: 22px; border-bottom: 1px solid rgba(36, 53, 72, 0.12); color: var(--c2); font-family: var(--font-head); font-size: 1.15rem; }
-.rrows { position: relative; margin: 22px 0 0; display: grid; gap: 14px; }
-.rrows div { display: grid; grid-template-columns: 92px 1fr; gap: 16px; align-items: start; }
-.rrows dt { text-align: center; padding: 5px 0; border-radius: 999px; background: var(--white); border: 1px solid rgba(36, 53, 72, 0.12); color: var(--c2); font-size: 0.85rem; }
-.rrows dd { margin: 0; padding-top: 3px; color: var(--text); line-height: 1.6; }
+.rcard { --c: var(--blue); --c2: var(--blue-dark); --tint: #E4ECF4; --line-c: #C9D6E4;
+  position: relative; overflow: hidden; border-radius: 28px; padding: 44px 40px 40px;
+  background: linear-gradient(170deg, var(--tint) 0%, #F7FAFC 55%, #FFFFFF 100%);
+  border: 1px solid rgba(36, 53, 72, 0.07); box-shadow: 0 12px 32px rgba(36, 53, 72, 0.08); }
+.rcard::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 7px; background: linear-gradient(90deg, var(--c) 0%, var(--line-c) 100%); }
+.rcard.tone1 { --c: var(--teal); --c2: var(--teal-dark); --tint: #DDEDE9; --line-c: #BFDAD3; }
+.rcard.tone2 { --c: var(--blue-logo); --c2: var(--blue-dark); --tint: #E0EDF0; --line-c: #C4DADF; }
+.rcard .wm { position: absolute; top: -26px; right: -14px; font-family: var(--font-head); font-weight: 900; font-size: 11rem; line-height: 1; letter-spacing: -0.04em;
+  color: var(--c); opacity: 0.13; pointer-events: none; }
+.rcard header { position: relative; display: flex; align-items: center; gap: 14px; padding-bottom: 26px; border-bottom: 1px solid var(--line-c); }
+.rcard .num { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--c); color: var(--white); display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; }
+.rcard h3 { font-size: 1.55rem; letter-spacing: -0.02em; }
+.rrows { position: relative; margin: 26px 0 0; display: grid; gap: 14px; }
+.rrows div { display: grid; grid-template-columns: 104px 1fr; gap: 18px; align-items: start; }
+.rrows dt { text-align: center; padding: 6px 0; border-radius: 999px; background: var(--white); border: 1px solid var(--line-c); color: var(--c2); font-size: 0.88rem; }
+.rrows dd { margin: 0; padding-top: 4px; color: var(--text); line-height: 1.6; }
 .rempty { display: flex; align-items: center; justify-content: center; min-height: 180px; color: var(--muted); }
 @media (max-width: 640px) {
   .rcard { padding: 32px 22px 26px; }
-  .rcard .wm { font-size: 6rem; }
+  .rcard .wm { font-size: 7.5rem; top: -16px; }
   .rrows div { grid-template-columns: 76px 1fr; gap: 12px; }
 }
 
@@ -330,9 +335,10 @@ details.psec li { margin-bottom: 10px; }
 /* 소식 카드 */
 .news-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
 .page-hero.news-top { padding-top: 126px; }  /* NEWS 글자를 70px 아래로 */
-.page-hero .ko-title { margin-top: 10px; font-size: clamp(1.9rem, 3.6vw, 2.5rem); }  /* NEWS 아래 한글 제목 */
-.news-list { padding-top: 52px; }  /* 기사 위치는 그대로 (소식 제목만큼 줄임) */
-@media (max-width: 640px) { .page-hero.news-top { padding-top: 90px; } .news-list { padding-top: 24px; } }
+.page-hero .ko-title { margin-top: 4px; font-family: var(--font); font-size: 0.95rem; letter-spacing: 0.12em; color: var(--teal); text-align: center; }  /* NEWS와 같은 크기 */
+.page-hero.news-top .eyebrow { text-align: center; }
+.news-list { padding-top: 92px; }  /* 기사 위치는 그대로 (소식 제목만큼 줄임) */
+@media (max-width: 640px) { .page-hero.news-top { padding-top: 90px; } .news-list { padding-top: 64px; } }
 .ncard { box-shadow: 0 6px 24px rgba(36, 53, 72, 0.12); position: relative; height: 100%; display: flex; flex-direction: column; gap: 12px; background: var(--white); border-radius: 24px; overflow: hidden; padding: 26px 0 0; text-decoration: none; color: var(--text); transition: transform .15s; }
 .ncard:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(36, 53, 72, 0.18); color: var(--text); }
 .ncard:hover .ntitle { color: var(--blue); }

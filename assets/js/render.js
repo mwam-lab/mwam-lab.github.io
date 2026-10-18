@@ -160,8 +160,7 @@ var Mwam = (function () {
       }).join('');
       return '<article class="rcard tone' + (i % 3) + '">' +
         '<span class="wm" aria-hidden="true">' + n + '</span>' +
-        '<header><span class="num">' + n + '</span><h3>' + esc(p.title) + '</h3>' +
-          '<span class="state' + (done ? ' closed' : '') + '">' + (done ? '완료' : '진행 중') + '</span></header>' +
+        '<header><span class="num">' + n + '</span><h3>' + esc(p.title) + '</h3></header>' +
         (p.subtitle ? '<p class="rq">' + esc(p.subtitle) + '</p>' : '') +
         (rows ? '<dl class="rrows">' + rows + '</dl>' : '') +
       '</article>';
