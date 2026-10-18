@@ -144,6 +144,23 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-04-23-kpmhn-spring',
+    category: '특강',
+    date: '2026-04-23',
+    title: '2026 한국정신간호학회 춘계학술대회 강연 「정신간호 중재 연구의 새로운 지평: 제공자 중심에서 당사자 참여로」',
+    thumb: 'assets/images/posts/2026-04-23-kpmhn-spring-thumb.jpg',
+    images: ['assets/images/posts/2026-04-23-kpmhn-spring-talk.jpg', 'assets/images/posts/2026-04-23-kpmhn-spring-group.jpg'],
+    body:
+      '<p>정재원 교수가 2026 한국정신간호학회 춘계학술대회에서 「정신간호 중재 연구의 새로운 지평: 제공자 중심에서 당사자 참여로」를 주제로 강연했습니다. 정신간호 중재 연구가 제공자 중심에서 당사자가 함께 참여하는 방향으로 나아가야 할 필요성과 방법을 나누었습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 4월 23일(목)</li>' +
+        '<li>장소: 온라인 개최 (Zoom 웨비나)</li>' +
+        '<li>주최: 한국정신간호학회</li>' +
+        '<li>주제: 전환의 시대: 정신간호 중재연구의 도약과 실천</li>' +
+        '<li>강연: 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-02-26-eafons',
     category: '학술발표',
     date: '2026-02-26',
