@@ -6,9 +6,9 @@
 
   var MENU = [
     { id: 'about', label: 'ABOUT', href: 'about.html', sub: [
-      ['연구소 소개', 'about.html#intro'],
+      ['Introduction', 'about.html#intro'],
       ['Program of Research', 'about.html#focus'],
-      ['오시는 길', 'about.html#location']
+      ['Location', 'about.html#location']
     ]},
     { id: 'people', label: 'PEOPLE', href: 'people.html', sub: [
       ['Principal Investigator', 'people.html#pi'],
