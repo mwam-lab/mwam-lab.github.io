@@ -5,5 +5,7 @@
    SIL Open Font License, Version 1.1 — https://openfontlicense.org
    출처: https://www.kakaocorp.com/page/detail/11571
 
-2) 학교안심 알림장 (HakgyoansimAllimjang-*)
+2) 학교안심 알림장 (HakgyoansimAllimjang-*, 연구소 이름이 Gothic A1로 바뀌어 지금은 예비용)
    한국교육학술정보원(KERIS) — https://www.keris.or.kr/
+
+3) Gothic A1 (연구소 이름) - Google Fonts에서 불러옴, SIL Open Font License 1.1

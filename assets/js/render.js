@@ -82,7 +82,8 @@ var Mwam = (function () {
         ? '<img src="' + esc(src) + '" alt="" loading="lazy">'
         : '<span class="noimg"><img src="assets/images/logo.png" alt=""></span>';
       return '<li><a class="ncard" href="' + href(p) + '">' +
-        '<span class="ntop"><span class="date">' + fmtDate(p.date) + '</span>' +
+        '<span class="ntop"><span><span class="date">' + fmtDate(p.date) + '</span>' +
+          (p.category ? '<span class="ncat">' + esc(p.category) + '</span>' : '') + '</span>' +
           (p.status ? '<span class="state">' + esc(p.status) + '</span>' : '') + '</span>' +
         '<strong class="ntitle">' + esc(p.title) + '</strong>' +
         '<span class="nthumb">' + thumb + '</span>' +
@@ -117,13 +118,13 @@ var Mwam = (function () {
     };
     el.innerHTML =
       '<article class="post">' +
-        '<header class="post-band"><h2>' + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
+        '<header class="post-band"><h2>' + (p.category ? '<span class="ncat">' + esc(p.category) + '</span>' : '') + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
         '<div class="post-body">' + imgs + (p.body || '') +
           (files ? '<div class="files"><h3>첨부파일</h3><ul>' + files + '</ul></div>' : '') +
         '</div>' +
       '</article>' +
       '<table class="post-nav">' + nav('이전 글', prev) + nav('다음 글', next) + '</table>' +
-      '<p class="to-list"><a class="btn-line" href="news.html">목록</a></p>';
+      '<p class="to-list"><a class="btn-line" href="news.html' + (p.category ? '?cat=' + encodeURIComponent(p.category) : '') + '">목록</a></p>';
   }
 
   // 연구성과 (type: 논문 | 학술발표 | 특허)
@@ -148,8 +149,8 @@ var Mwam = (function () {
       return (a.status === '진행' ? 0 : 1) - (b.status === '진행' ? 0 : 1);
     });
     var el = $(id);
-    if (kind === '연구과제') {  // 논문 목록과 같은 모양, 영문
-      if (!list.length) { el.innerHTML = '<p class="empty">Coming soon.</p>'; return; }
+    if (kind === '연구과제' || kind === '프로그램') {  // 논문 목록과 같은 모양
+      if (!list.length) { el.innerHTML = '<p class="empty">' + (kind === '프로그램' ? '준비 중입니다.' : 'Coming soon.') + '</p>'; return; }
       el.innerHTML = list.slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); }).map(function (p) {
         return '<div class="pub"><span class="year">' + esc(p.year) + '</span><div>' +
           '<div class="title">' + esc(p.title) + '</div>' +

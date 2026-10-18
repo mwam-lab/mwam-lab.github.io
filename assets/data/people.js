@@ -2,7 +2,7 @@
    group: '연구책임자' | '연구원'
    photo: 'assets/images/people/파일명.jpg' (없으면 '')
    info: [항목, 내용] 목록
-   sections: { title, items: [...] } 또는 { title, text } — open: false 이면 접힌 상태로 표시 */
+   sections: { title, items: [...] } 또는 { title, text } - open: false 이면 접힌 상태로 표시 */
 window.MWAM_PEOPLE = [
   {
     group: '연구책임자', name: '정재원', role: '연구책임자', photo: 'assets/images/people/joung-jaewon.jpg',
@@ -20,19 +20,19 @@ window.MWAM_PEOPLE = [
         '2004 경희대학교 간호과학대학 학사'
       ]},
       { title: '경력', items: [
-        '2026–현재 전북대학교 간호대학 교수',
-        '2021–2026 전북대학교 간호대학 부교수',
-        '2019–2021 세명대학교 간호학과 조교수(정신간호학)',
-        '2018–2019 경희대학교 간호과학대학 초빙교수',
-        '2004–2017 경희대학교병원 간호사(정신건강의학과)'
+        '2026-현재 전북대학교 간호대학 교수',
+        '2021-2026 전북대학교 간호대학 부교수',
+        '2019-2021 세명대학교 간호학과 조교수(정신간호학)',
+        '2018-2019 경희대학교 간호과학대학 초빙교수',
+        '2004-2017 경희대학교병원 간호사(정신건강의학과)'
       ]},
       { title: '전문단체 활동', items: [
-        '2026–현재 한국정신간호학회 편집이사',
-        '2026–현재 Journal of Korean Academy of Nursing(대한간호학회지) 편집위원',
-        '2025–현재 전북특별자치도 정신건강심의위원회 위원',
-        '2024–2025 한국정신간호학회 서기이사',
-        '2024–현재 한국정신건강전문요원협회 부회장',
-        '2022–2023 전북특별자치도 정신간호사회 학술이사'
+        '2026-현재 한국정신간호학회 편집이사',
+        '2026-현재 Journal of Korean Academy of Nursing(대한간호학회지) 편집위원',
+        '2025-현재 전북특별자치도 정신건강심의위원회 위원',
+        '2024-2025 한국정신간호학회 서기이사',
+        '2024-현재 한국정신건강전문요원협회 부회장',
+        '2022-2023 전북특별자치도 정신간호사회 학술이사'
       ]},
       { title: '연구업적', open: false, items: [
         "Kim, J., Ahn, S., & Joung, J. (2025). “It felt real”: Nursing students’ experiences of mental health simulation utilizing service users as standardized patients. Clinical Simulation in Nursing. In press",

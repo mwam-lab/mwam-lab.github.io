@@ -20,7 +20,13 @@
       ['Patents & Copyrights', 'research.html#ip']
     ]},
     { id: 'program', label: 'PROGRAM', href: 'program.html' },
-    { id: 'news', label: 'NEWS', href: 'news.html' },
+    { id: 'news', label: 'NEWS', href: 'news.html', sub: [
+      ['전체', 'news.html'],
+      ['공지', 'news.html?cat=공지'],
+      ['프로그램', 'news.html?cat=프로그램'],
+      ['특강', 'news.html?cat=특강'],
+      ['수련', 'news.html?cat=수련']
+    ]},
     { id: 'contact', label: 'CONTACT', href: 'contact.html' }
   ];
 
