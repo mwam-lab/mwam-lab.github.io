@@ -487,3 +487,8 @@ details.psec li { margin-bottom: 10px; }
 .anim .mhero-bg { transform: scale(1.08); will-change: transform; }
 .anim .ncard.reveal.in:hover { transform: translateY(-3px); transition: transform 0.15s; }  /* 떠오른 뒤에도 카드 마우스 효과 유지 */
 .mabout.about-intro { padding-top: 92px; }  /* ABOUT: 제목 두 줄 아래 위치를 다른 페이지와 같게 */
+
+/* 문의: 연구 참여 신청 아래 지도, 두 칸 높이를 같게 */
+.join-stack { display: grid; grid-auto-rows: 1fr; gap: 20px; }
+.contact-map { min-height: 0; height: 100%; }
+.contact-map iframe { min-height: 0; height: 100%; display: block; }
