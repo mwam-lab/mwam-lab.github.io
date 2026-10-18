@@ -593,3 +593,9 @@ a.pub.plink:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(36
 @media (max-width: 720px) { .alb-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
 .copy .admin-link { float: right; color: inherit; opacity: 0.6; text-decoration: none; }
 .copy .admin-link:hover { opacity: 1; }
+/* 관리자: 입력칸과 버튼 높이·글꼴 맞춤 */
+.lock label { font-size: 0.95rem; margin-bottom: 14px; }
+.lock-row { align-items: stretch; }
+.lock-row input { height: 46px; padding: 0 20px; font-size: 1rem; background: var(--white); }
+.lock-row .btn-line { height: 46px; padding: 0 28px; font: inherit; font-size: 0.95rem; background: var(--white); cursor: pointer; flex: none; }
+.lock-row .btn-line:hover { background: var(--navy); color: var(--white); }
