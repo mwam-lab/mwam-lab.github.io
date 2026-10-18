@@ -462,7 +462,7 @@ details.psec li { margin-bottom: 10px; }
 .mprog { padding: 64px 0 40px; text-align: center; }
 .mprog-title { font-size: 1.45rem; font-weight: 900; margin-bottom: 24px; }
 .mvenn { width: min(760px, 100%); height: auto; }
-.mvenn .v-h { font-family: var(--font-head); font-size: 20px; }
+.mvenn .v-h { font-family: var(--font-head); font-weight: 900; font-size: 24px; letter-spacing: 0.12em; }
 .mvenn .v-t { font-family: var(--font); font-size: 16px; fill: var(--text-2); }
 .mvenn .v-c { font-family: var(--font-brand); font-weight: 900; font-size: 30px; fill: var(--navy); }
 .mvenn .v-t2 { font-family: var(--font); font-size: 15px; fill: var(--text-2); }
@@ -480,3 +480,9 @@ details.psec li { margin-bottom: 10px; }
 /* 문의: 위 두 카드와 '연구 참여 신청' 사이 = 두 카드 사이 간격 */
 .section.contact-top { padding-bottom: 0; }
 .contact-top + #join { padding-top: 20px; }
+
+/* 메인 스크롤 효과 (자바스크립트가 켜졌을 때만) */
+.anim .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.anim .reveal.in { opacity: 1; transform: none; }
+.anim .mhero-bg { transform: scale(1.08); will-change: transform; }
+.anim .ncard.reveal.in:hover { transform: translateY(-3px); transition: transform 0.15s; }  /* 떠오른 뒤에도 카드 마우스 효과 유지 */

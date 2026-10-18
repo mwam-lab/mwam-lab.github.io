@@ -49,26 +49,17 @@
 
 <section class="mprog"><div class="wrap">
   <h2 class="mprog-title">Program of Research</h2>
-  <svg class="mvenn" viewBox="0 0 760 330" role="img" aria-labelledby="venn-t venn-d">
-    <title id="venn-t">뫔건강연구소의 연구 프로그램</title>
-    <desc id="venn-d">몸(움직임, 고유감각, 호흡)과 마음(마음챙김, 정서 조절, 회복)이 겹치는 곳이 뫔 건강이며, 질적연구와 중재연구로 정신건강 취약 집단을 연구한다.</desc>
+  <svg class="mvenn" viewBox="0 0 760 300" role="img" aria-labelledby="venn-t venn-d">
+    <title id="venn-t">Program of Research</title>
+    <desc id="venn-d">Two overlapping circles, Body and Mind.</desc>
     <circle cx="280" cy="150" r="140" fill="#728DAA" fill-opacity="0.16" stroke="#728DAA" stroke-opacity="0.5"/>
     <circle cx="480" cy="150" r="140" fill="#729596" fill-opacity="0.16" stroke="#729596" stroke-opacity="0.5"/>
-    <text x="215" y="110" text-anchor="middle" class="v-h" fill="#34506E">몸 Body</text>
-    <text x="215" y="145" text-anchor="middle" class="v-t">움직임</text>
-    <text x="215" y="172" text-anchor="middle" class="v-t">고유감각</text>
-    <text x="215" y="199" text-anchor="middle" class="v-t">호흡</text>
-    <text x="545" y="110" text-anchor="middle" class="v-h" fill="#335859">마음 Mind</text>
-    <text x="545" y="145" text-anchor="middle" class="v-t">마음챙김</text>
-    <text x="545" y="172" text-anchor="middle" class="v-t">정서 조절</text>
-    <text x="545" y="199" text-anchor="middle" class="v-t">회복</text>
-    <text x="380" y="140" text-anchor="middle" class="v-c">뫔</text>
-    <text x="380" y="170" text-anchor="middle" class="v-t2">몸과 마음의</text>
-    <text x="380" y="192" text-anchor="middle" class="v-t2">건강</text>
+    <text x="215" y="158" text-anchor="middle" class="v-h" fill="#34506E">BODY</text>
+    <text x="545" y="158" text-anchor="middle" class="v-h" fill="#335859">MIND</text>
   </svg>
   <div class="mboxes">
-    <div><h3>Methodology</h3><p>질적연구 · 중재 개발 · 효과 검증</p></div>
-    <div><h3>Population</h3><p>조현병 청년 · 고립·은둔 청년 · 정신질환 당사자 · 지역사회 시니어</p></div>
+    <div><h3>Methodology</h3><p>Qualitative Research<span class="vbar" aria-hidden="true"></span>Intervention Development<span class="vbar" aria-hidden="true"></span>Effectiveness Evaluation</p></div>
+    <div><h3>Population</h3><p>Young Adults with Schizophrenia<span class="vbar" aria-hidden="true"></span>Socially Withdrawn and Isolated Young Adults<span class="vbar" aria-hidden="true"></span>People with Mental Illness<span class="vbar" aria-hidden="true"></span>Community-Dwelling Older Adults</p></div>
   </div>
 </div></section>
 
@@ -84,6 +75,31 @@
 <script src="assets/js/render.js"></script>
 <script>
 Mwam.cards('home-news', '', 3);
+
+// 스크롤 효과: 배너 사진은 천천히, 단락은 아래에서 떠오르게 (움직임 줄이기 설정이면 끔)
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var items = [].slice.call(document.querySelectorAll('.mhero-in > *, .mrow, .mprog-title, .mvenn, .mboxes, #home-news .ncard'));
+  document.documentElement.classList.add('anim');
+  items.forEach(function (el) { el.classList.add('reveal'); });
+  document.querySelectorAll('.mhero-in > *').forEach(function (el, i) { el.style.transitionDelay = (0.15 + i * 0.15) + 's'; });
+  document.querySelectorAll('#home-news .ncard').forEach(function (el, i) { el.style.transitionDelay = (i * 0.12) + 's'; });
+  var bg = document.querySelector('.mhero-bg'), hero = document.querySelector('.mhero');
+  function check() {
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    items = items.filter(function (el) {
+      if (el.getBoundingClientRect().top < vh - 40) { el.classList.add('in'); return false; }
+      return true;
+    });
+    var y = window.pageYOffset;
+    if (y < hero.offsetHeight) bg.style.transform = 'translate3d(0,' + (y * 0.4) + 'px,0) scale(1.08)';
+  }
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  setTimeout(check, 60);   // 처음 화면에 보이는 것은 곧바로 나타나게
+  window.addEventListener('load', check);
+  document.addEventListener('visibilitychange', check);
+})();
 </script>
 </body>
 </html>
