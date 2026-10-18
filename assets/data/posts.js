@@ -176,6 +176,24 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2025-12-05-bongsarang',
+    category: '프로그램',
+    date: '2025-12-05',
+    title: '「봉사랑, 청춘을 잇다」 성과발표회',
+    thumb: 'assets/images/posts/2025-12-05-bongsarang-thumb.jpg',
+    images: ['assets/images/posts/2025-12-05-bongsarang-group.jpg', 'assets/images/posts/2025-12-05-bongsarang-talk.jpg'],
+    body:
+      '<p>정재원 교수가 지도한 전북대학교 간호대학 동아리 봉사랑과 정신재활시설 아름다운세상의 청년 당사자들이 5월부터 10월까지 함께한 「봉사랑, 청춘을 잇다」 프로그램의 성과발표회를 열었습니다. 캠퍼스 투어, 플로깅, 취미 활동 등 10회의 만남을 통해 간호대학생과 청년 당사자가 수평적인 관계 속에서 서로의 삶을 지지하며 함께 성장했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 12월 5일(금) 16:00</li>' +
+        '<li>장소: 전북대학교 간호대학 101호</li>' +
+        '<li>주관: 전북특별자치도, 아름다운세상, 전북대학교 간호대학</li>' +
+        '<li>프로그램: 2025년 5월 - 10월, 총 10회 (2025년 전북특별자치도 청년공익활동 지원사업)</li>' +
+        '<li>지도교수: 정재원 교수</li>' +
+      '</ul>' +
+      '<p><a href="http://www.mindpost.or.kr/bbs/board.php?bo_table=news&amp;wr_id=9333" target="_blank" rel="noopener">마인드포스트 기사 보기</a></p>'
+  },
+  {
     id: 'sample-recruit',
     category: '공지',
     pinned: true,
