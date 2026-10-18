@@ -363,6 +363,23 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2025-04-26-simm',
+    category: '수련',
+    date: '2025-04-26',
+    title: '바마움 S.I.M.M. 프랙티셔너 자격과정 5기 수료',
+    thumb: 'assets/images/posts/2025-04-26-simm-thumb.jpg',
+    images: ['assets/images/posts/2025-04-26-simm-group.jpg', 'assets/images/posts/2025-04-26-simm-class.jpg', 'assets/images/posts/2025-04-26-simm-lecture.jpg', 'assets/images/posts/2025-04-26-simm-practice.jpg', 'assets/images/posts/2025-04-26-simm-outdoor.jpg'],
+    body:
+      '<p>서교일 연구원과 김준혁 연구원이 바마움의 S.I.M.M.(Somatic Integrated Movement Meditation) 프랙티셔너 자격과정 5기를 수료했습니다. S.I.M.M.은 정신의학, 신경과학, 소마틱스를 결합한 움직임 명상으로, 임상과 일상에서 움직임 기반 명상을 이끌 수 있는 전문가를 양성하는 과정입니다. 정신건강과 움직임에 관한 이론을 배우고, 서서, 앉아서, 누워서 하는 움직임 명상과 페르시안밀을 활용한 펜듈럼 명상을 실습했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 4월 26일(토) - 27일(일)</li>' +
+        '<li>장소: 서울 신촌 힘의집(이론), 서울성모병원 옴니버스파크(실기)</li>' +
+        '<li>주관: 바마움(바른 마음을 위한 움직임)</li>' +
+        '<li>참여: 서교일 연구원, 김준혁 연구원</li>' +
+      '</ul>' +
+      '<p><a href="http://bamaum.com" target="_blank" rel="noopener">바마움 홈페이지</a></p>'
+  },
+  {
     id: '2025-03-23-ancient-training',
     category: '수련',
     date: '2025-03-23',
