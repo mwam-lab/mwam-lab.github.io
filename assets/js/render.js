@@ -142,20 +142,30 @@ var Mwam = (function () {
     }).join('');
   }
 
-  // 프로그램·연구과제 (진행 중 먼저)
+  // 프로그램·연구과제 카드 (큰 번호, 부제, 알약 이름표)
   function projects(id, kind) {
     var list = (window.MWAM_PROJECTS || []).filter(function (p) { return (p.kind || '연구과제') === kind; }).sort(function (a, b) {
       return (a.status === '진행' ? 0 : 1) - (b.status === '진행' ? 0 : 1);
     });
     var el = $(id);
-    if (!list.length) { el.innerHTML = '<p class="empty">준비 중입니다.</p>'; return; }
-    el.innerHTML = list.map(function (p) {
+    if (!list.length) {
+      el.innerHTML = '<div class="rgrid"><div class="rcard rempty"><p>새로운 ' + esc(kind) + '가 곧 소개됩니다.</p></div></div>';
+      return;
+    }
+    el.innerHTML = '<div class="rgrid">' + list.map(function (p, i) {
+      var n = (i < 9 ? '0' : '') + (i + 1);
       var done = p.status === '완료';
-      return '<div class="project' + (done ? ' done' : '') + '">' +
-        '<span class="period"><span class="state' + (done ? ' closed' : '') + '">' + (done ? '완료' : '진행 중') + '</span> · ' +
-          esc(p.period) + (p.funder ? ' · ' + esc(p.funder) : '') + '</span>' +
-        '<h3>' + esc(p.title) + '</h3>' + (p.summary ? '<p>' + esc(p.summary) + '</p>' : '') + '</div>';
-    }).join('');
+      var rows = (p.rows || []).map(function (r) {
+        return '<div><dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd></div>';
+      }).join('');
+      return '<article class="rcard tone' + (i % 3) + '">' +
+        '<span class="wm" aria-hidden="true">' + n + '</span>' +
+        '<header><span class="num">' + n + '</span><h3>' + esc(p.title) + '</h3>' +
+          '<span class="state' + (done ? ' closed' : '') + '">' + (done ? '완료' : '진행 중') + '</span></header>' +
+        (p.subtitle ? '<p class="rq">' + esc(p.subtitle) + '</p>' : '') +
+        (rows ? '<dl class="rrows">' + rows + '</dl>' : '') +
+      '</article>';
+    }).join('') + '</div>';
   }
 
   // 연구진 (group: 연구책임자 | 연구원)

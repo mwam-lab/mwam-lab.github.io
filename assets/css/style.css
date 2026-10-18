@@ -229,6 +229,36 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
 .project h3 { font-size: 1.12rem; margin: 4px 0; }
 .project p { color: var(--text-3); font-size: 0.97rem; }
 
+/* RESEARCH 카드 (큰 제목 + 연한 큰 번호 + 알약 이름표) */
+.rhead { margin-bottom: 44px; max-width: 860px; }
+.rhead h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); line-height: 1.3; letter-spacing: -0.02em; margin-top: 8px; }
+.rhead .hl { color: var(--teal); }
+.rhead p:last-child { margin-top: 18px; color: var(--text-2); font-size: 1.05rem; }
+.rgrid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(min(440px, 100%), 1fr)); }
+.rcard { --c: var(--blue); --c2: var(--blue-dark); --tint: #E8EEF5;
+  position: relative; overflow: hidden; border-radius: 28px; padding: 40px 36px 36px;
+  background: linear-gradient(165deg, var(--tint) 0%, #FFFFFF 62%);
+  border: 1px solid rgba(36, 53, 72, 0.08); box-shadow: 0 10px 30px rgba(36, 53, 72, 0.08); }
+.rcard::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: linear-gradient(90deg, var(--c), transparent 85%); }
+.rcard.tone1 { --c: var(--teal); --c2: var(--teal-dark); --tint: #E2EFEC; }
+.rcard.tone2 { --c: var(--blue-logo); --c2: var(--blue-dark); --tint: #E6F0F2; }
+.rcard .wm { position: absolute; top: 4px; right: 18px; font-family: var(--font-head); font-size: 8.5rem; line-height: 1; color: var(--c); opacity: 0.09; pointer-events: none; }
+.rcard header { position: relative; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.rcard .num { flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--c); color: var(--white); display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+.rcard h3 { font-size: 1.45rem; }
+.rcard header .state { margin-left: auto; font-size: 0.85rem; }
+.rq { position: relative; margin-top: 18px; padding-bottom: 22px; border-bottom: 1px solid rgba(36, 53, 72, 0.12); color: var(--c2); font-family: var(--font-head); font-size: 1.15rem; }
+.rrows { position: relative; margin: 22px 0 0; display: grid; gap: 14px; }
+.rrows div { display: grid; grid-template-columns: 92px 1fr; gap: 16px; align-items: start; }
+.rrows dt { text-align: center; padding: 5px 0; border-radius: 999px; background: var(--white); border: 1px solid rgba(36, 53, 72, 0.12); color: var(--c2); font-size: 0.85rem; }
+.rrows dd { margin: 0; padding-top: 3px; color: var(--text); line-height: 1.6; }
+.rempty { display: flex; align-items: center; justify-content: center; min-height: 180px; color: var(--muted); }
+@media (max-width: 640px) {
+  .rcard { padding: 32px 22px 26px; }
+  .rcard .wm { font-size: 6rem; }
+  .rrows div { grid-template-columns: 76px 1fr; gap: 12px; }
+}
+
 /* 연구진 */
 .person { background: var(--white); border-radius: var(--radius); padding: 28px; display: grid; grid-template-columns: 160px 1fr; gap: 28px; align-items: start; }
 .person.small { grid-template-columns: 112px 1fr; padding: 22px; gap: 20px; }
@@ -299,8 +329,9 @@ details.psec li { margin-bottom: 10px; }
 
 /* 소식 카드 */
 .news-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
-.news-list { padding-top: 192px; }  /* NEWS 글자와 기사 사이 200px (예전 40px의 5배) */
-@media (max-width: 640px) { .news-list { padding-top: 92px; } }  /* 휴대폰은 100px */
+.page-hero.news-top { padding-top: 126px; }  /* NEWS 글자를 70px 아래로 */
+.news-list { padding-top: 122px; }  /* 기사 위치는 그대로 */
+@media (max-width: 640px) { .page-hero.news-top { padding-top: 90px; } .news-list { padding-top: 58px; } }
 .ncard { box-shadow: 0 6px 24px rgba(36, 53, 72, 0.12); position: relative; height: 100%; display: flex; flex-direction: column; gap: 12px; background: var(--white); border-radius: 24px; overflow: hidden; padding: 26px 0 0; text-decoration: none; color: var(--text); transition: transform .15s; }
 .ncard:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(36, 53, 72, 0.18); color: var(--text); }
 .ncard:hover .ntitle { color: var(--blue); }
