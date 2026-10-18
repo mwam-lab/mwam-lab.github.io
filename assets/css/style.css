@@ -224,6 +224,7 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
 /* 과제 */
 .project { background: var(--white); border-radius: 18px; padding: 22px 26px; margin-bottom: 12px; border-left: 6px solid var(--blue-logo); }
 .project.done { border-left-color: var(--teal-logo); }
+.section.white .project { background: var(--cream); }
 .project .period { color: var(--muted); font-size: 0.92rem; }
 .project h3 { font-size: 1.12rem; margin: 4px 0; }
 .project p { color: var(--text-3); font-size: 0.97rem; }

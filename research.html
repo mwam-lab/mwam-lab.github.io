@@ -21,14 +21,8 @@
 </div></section>
 
 <section class="section white" id="program"><div class="wrap">
-  <div class="section-head"><p class="eyebrow">움직임 명상 프로그램</p><h2>프로그램 구성</h2>
-    <p class="ph">[프로그램 이름과 소개: 예) 의자에 앉아서도 할 수 있는 호흡과 스트레칭, 걷기 명상 등으로 구성됩니다.]</p></div>
-  <div class="grid">
-    <div class="card"><span class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#34506E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12c3 0 3-4 6-4s3 8 6 8 3-4 6-4"/></svg></span><h3>호흡</h3><p class="ph">[구성 요소 설명]</p></div>
-    <div class="card"><span class="icon teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#335859" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v6M7 10l5 3 5-3M9 21l3-8 3 8"/></svg></span><h3>움직임</h3><p class="ph">[구성 요소 설명]</p></div>
-    <div class="card"><span class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#34506E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 4.5-4 8-8 11z"/></svg></span><h3>마음챙김</h3><p class="ph">[구성 요소 설명]</p></div>
-    <div class="card"><span class="icon teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#335859" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></span><h3>효과 평가</h3><p class="ph">[평가 방법 설명]</p></div>
-  </div>
+  <div class="section-head"><p class="eyebrow">프로그램</p><h2>프로그램</h2></div>
+  <div id="program-list"></div>
 </div></section>
 <section class="section" id="projects"><div class="wrap">
   <div class="section-head"><p class="eyebrow">연구과제</p><h2>연구과제</h2></div>
@@ -41,7 +35,8 @@
 <script src="assets/data/projects.js"></script>
 <script src="assets/js/render.js"></script>
 <script>
-Mwam.projects('project-list');
+Mwam.projects('program-list', '프로그램');
+Mwam.projects('project-list', '연구과제');
 </script>
 </body>
 </html>

@@ -142,9 +142,9 @@ var Mwam = (function () {
     }).join('');
   }
 
-  // 연구과제 (진행 중 먼저)
-  function projects(id) {
-    var list = (window.MWAM_PROJECTS || []).slice().sort(function (a, b) {
+  // 프로그램·연구과제 (진행 중 먼저)
+  function projects(id, kind) {
+    var list = (window.MWAM_PROJECTS || []).filter(function (p) { return (p.kind || '연구과제') === kind; }).sort(function (a, b) {
       return (a.status === '진행' ? 0 : 1) - (b.status === '진행' ? 0 : 1);
     });
     var el = $(id);
