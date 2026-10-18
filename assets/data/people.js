@@ -5,7 +5,7 @@
    sections: { title, items: [...] } 또는 { title, text } - open: false 이면 접힌 상태로 표시 */
 window.MWAM_PEOPLE = [
   {
-    group: '연구책임자', name: '정재원', role: '연구책임자', photo: 'assets/images/people/joung-jaewon.jpg',
+    group: '연구책임자', name: '정재원', role: 'Jaewon Joung', photo: 'assets/images/people/joung-jaewon.jpg',
     info: [
       ['전공', '정신간호학'],
       ['직위', '교수'],
