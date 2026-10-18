@@ -30,6 +30,13 @@ window.MWAM_PROJECTS = [
     kind: '연구과제',
     status: '진행',
     year: 2025,
+    title: 'From Isolation to Connection: An International Collaborative Study on the Lives and Social Inclusion of Socially Withdrawn and Isolated Young Adults',
+    lines: ['Jeonbuk National University · National University Development Project, International Collaborative Research Program · Principal Investigator', 'Nov 2025 - Feb 2027']
+  },
+  {
+    kind: '연구과제',
+    status: '진행',
+    year: 2025,
     title: 'Development and Evaluation of a Hybrid Somatics-Based Health Promotion Program (SOMA-VIVE Program) for Young Adults with Early Schizophrenia',
     lines: ['National Research Foundation of Korea (NRF) · Outstanding Early Career Research Program · Principal Investigator', 'Mar 2025 - Feb 2029']
   },
