@@ -15,9 +15,13 @@ window.MWAM_POSTS = [
     thumb: 'assets/images/posts/2026-10-17-feldenkrais-duo-thumb.jpg',
     images: ['assets/images/posts/2026-10-17-feldenkrais-duo.jpg', 'assets/images/posts/2026-10-17-feldenkrais.jpg', 'assets/images/posts/2026-10-17-feldenkrais-space.jpg'],
     body: '<p>뫔건강연구소 연구진이 펠든크라이스·소마틱스·웰니스 통합 워크숍 「처음 만나는 이완」에 참여했습니다.</p>' +
-      '<p>일시: 2026년 10월 17일(토)<br>장소: 전주요가문화공간<br>참여: 정재원 교수, 김준혁 연구원<br>' +
-      '주요 내용: 내 몸의 소리를 듣다 - 나의 리듬 (ATM/FI, Somatics &amp; Rhythm)<br>' +
-      '강사: 박소정 (한국펠든크라이스협회 회장), 김민지 GCFP, 최태은 GCFP</p>'
+      '<ul>' +
+        '<li>일시: 2026년 10월 17일(토)</li>' +
+        '<li>장소: 전주요가문화공간</li>' +
+        '<li>참여: 정재원 교수, 김준혁 연구원</li>' +
+        '<li>주요 내용: 내 몸의 소리를 듣다 - 나의 리듬 (ATM/FI, Somatics &amp; Rhythm)</li>' +
+        '<li>강사: 박소정 (한국펠든크라이스협회 회장), 김민지 GCFP, 최태은 GCFP</li>' +
+      '</ul>'
   },
   {
     id: '2026-10-10-inje-lecture',
