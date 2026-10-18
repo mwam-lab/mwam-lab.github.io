@@ -23,10 +23,7 @@
       ['학술발표', 'outcomes.html#presentations'],
       ['특허·저작권', 'outcomes.html#ip']
     ]},
-    { id: 'news', label: 'NEWS', href: 'news.html', sub: [
-      ['공지사항', 'news.html?cat=공지'],
-      ['연구 소식', 'news.html?cat=소식']
-    ]},
+    { id: 'news', label: 'NEWS', href: 'news.html' },
     { id: 'contact', label: 'CONTACT', href: 'contact.html' }
   ];
 

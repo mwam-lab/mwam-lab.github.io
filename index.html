@@ -40,16 +40,8 @@
 </div></section>
 
 <section class="section white"><div class="wrap">
-  <div class="grid two">
-    <div class="card">
-      <div class="box-head"><h3>공지사항</h3><a class="more" href="news.html?cat=공지">더보기</a></div>
-      <div id="home-notice"></div>
-    </div>
-    <div class="card">
-      <div class="box-head"><h3>연구 소식</h3><a class="more" href="news.html?cat=소식">더보기</a></div>
-      <div id="home-news"></div>
-    </div>
-  </div>
+  <div class="box-head" style="margin-bottom:20px"><h2 style="font-size:1.6rem">NEWS</h2><a class="more" href="news.html">더보기</a></div>
+  <div id="home-news"></div>
 </div></section>
 </main>
 <div id="site-footer"></div>
@@ -58,8 +50,7 @@
 <script src="assets/data/posts.js"></script>
 <script src="assets/js/render.js"></script>
 <script>
-Mwam.postList('home-notice', { category: '공지', limit: 4 });
-Mwam.postList('home-news', { category: '소식', limit: 4 });
+Mwam.cards('home-news', '', 3);
 </script>
 </body>
 </html>

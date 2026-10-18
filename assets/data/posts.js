@@ -1,5 +1,5 @@
 /* 알림마당 게시물
-   category: '공지' 또는 '소식'
+   category: (예전 구분, 지금은 화면에 쓰지 않음)
    date: 'YYYY-MM-DD'  (최신 글이 자동으로 위에 옴)
    thumb: 목록 카드에 보일 대표 이미지 (없으면 images 첫 장, 그것도 없으면 로고)
    images: ['assets/images/posts/파일명.jpg']  — 본문 사진. assets/images/posts 폴더에 넣기
@@ -7,6 +7,15 @@
    pinned: true 이면 '중요' 표시하고 맨 위에 고정
    status: '모집 중' 또는 '마감' (번호 자리에 표시, 없으면 '') */
 window.MWAM_POSTS = [
+  {
+    id: '2026-10-17-feldenkrais',
+    category: '소식',
+    date: '2026-10-17',
+    title: '펠든크라이스 워크샵 참여',
+    thumb: 'assets/images/posts/2026-10-17-feldenkrais-thumb.jpg',
+    images: ['assets/images/posts/2026-10-17-feldenkrais.jpg'],
+    body: '<p>뫔건강연구소 연구진이 펠든크라이스 워크샵에 참여했습니다.</p>'
+  },
   {
     id: 'sample-recruit',
     category: '공지',

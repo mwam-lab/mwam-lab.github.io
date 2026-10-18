@@ -70,8 +70,8 @@ var Mwam = (function () {
   }
 
   // 소식 카드형 목록 (대표 이미지 미리보기, 9개씩 쪽 나눔)
-  function cards(id, cat) {
-    var PER = 9;
+  function cards(id, cat, limit) {
+    var PER = limit || 9;
     var list = boardOrder(posts(cat));
     var pages = Math.max(1, Math.ceil(list.length / PER));
     var page = Math.min(pages, Math.max(1, parseInt(param('page'), 10) || 1));
@@ -81,18 +81,16 @@ var Mwam = (function () {
       var thumb = src
         ? '<img src="' + esc(src) + '" alt="" loading="lazy">'
         : '<span class="noimg"><img src="assets/images/logo.png" alt=""></span>';
-      var label = p.category === '공지' ? '공지사항' : '연구 소식';
       return '<li><a class="ncard" href="' + href(p) + '">' +
-        '<span class="chip-s' + (p.category === '공지' ? '' : ' teal') + '">' + label + '</span>' +
-        (p.status ? '<span class="state">' + esc(p.status) + '</span>' : '') +
+        '<span class="ntop"><span class="date">' + fmtDate(p.date) + '</span>' +
+          (p.status ? '<span class="state">' + esc(p.status) + '</span>' : '') + '</span>' +
         '<strong class="ntitle">' + esc(p.title) + '</strong>' +
-        '<span class="date">' + fmtDate(p.date) + '</span>' +
         '<span class="nthumb">' + thumb + '</span>' +
       '</a></li>';
     }).join('');
     var q = function (n) { return 'news.html?' + (cat ? 'cat=' + encodeURIComponent(cat) + '&' : '') + 'page=' + n; };
     var paging = '';
-    if (pages > 1) {
+    if (pages > 1 && !limit) {
       for (var n = 1; n <= pages; n++) {
         paging += n === page ? '<strong aria-current="page">' + n + '</strong>' : '<a href="' + q(n) + '">' + n + '</a>';
       }
@@ -109,8 +107,6 @@ var Mwam = (function () {
     if (i < 0) { el.innerHTML = '<p class="empty">글을 찾을 수 없습니다. <a href="news.html">알림마당으로 돌아가기</a></p>'; return; }
     var p = all[i];
     document.title = p.title + ' | 뫔건강연구소';
-    var h1 = document.querySelector('.page-hero h1');
-    if (h1) h1.textContent = p.category === '공지' ? '공지사항' : '연구 소식';
     var imgs = (p.images || []).map(function (src) { return '<img src="' + esc(src) + '" alt="">'; }).join('');
     var files = (p.files || []).map(function (f) {
       return '<li><a href="' + esc(f.href) + '" download>' + esc(f.name) + '</a></li>';
@@ -121,13 +117,13 @@ var Mwam = (function () {
     };
     el.innerHTML =
       '<article class="post">' +
-        '<header class="post-band"><h2>' + catLabel(p) + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
+        '<header class="post-band"><h2>' + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
         '<div class="post-body">' + imgs + (p.body || '') +
           (files ? '<div class="files"><h3>첨부파일</h3><ul>' + files + '</ul></div>' : '') +
         '</div>' +
       '</article>' +
       '<table class="post-nav">' + nav('이전 글', prev) + nav('다음 글', next) + '</table>' +
-      '<p class="to-list"><a class="btn-line" href="news.html?cat=' + encodeURIComponent(p.category) + '">목록</a></p>';
+      '<p class="to-list"><a class="btn-line" href="news.html">목록</a></p>';
   }
 
   // 연구성과 (type: 논문 | 학술발표 | 특허)
