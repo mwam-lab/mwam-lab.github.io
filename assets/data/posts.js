@@ -180,8 +180,8 @@ window.MWAM_POSTS = [
     category: '프로그램',
     date: '2025-12-05',
     title: '「봉사랑, 청춘을 잇다」 성과발표회',
-    thumb: 'assets/images/posts/2025-12-05-bongsarang-thumb.jpg',
-    images: ['assets/images/posts/2025-12-05-bongsarang-group.jpg', 'assets/images/posts/2025-12-05-bongsarang-talk.jpg'],
+    thumb: 'assets/images/posts/2025-12-05-bongsarang-thumb-v2.jpg',
+    images: ['assets/images/posts/2025-12-05-bongsarang-group-v2.jpg', 'assets/images/posts/2025-12-05-bongsarang-talk.jpg'],
     body:
       '<p>정재원 교수가 지도한 전북대학교 간호대학 동아리 봉사랑과 정신재활시설 아름다운세상의 청년 당사자들이 5월부터 10월까지 함께한 「봉사랑, 청춘을 잇다」 프로그램의 성과발표회를 열었습니다. 캠퍼스 투어, 플로깅, 취미 활동 등 10회의 만남을 통해 간호대학생과 청년 당사자가 수평적인 관계 속에서 서로의 삶을 지지하며 함께 성장했습니다.</p>' +
       '<ul>' +
