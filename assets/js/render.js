@@ -156,10 +156,12 @@ var Mwam = (function () {
     if (kind === '연구과제' || kind === '프로그램') {  // 논문 목록과 같은 모양
       if (!list.length) { el.innerHTML = '<p class="empty">' + (kind === '프로그램' ? '준비 중입니다.' : 'Coming soon.') + '</p>'; return; }
       el.innerHTML = list.slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); }).map(function (p) {
-        return '<div class="pub"><span class="year">' + esc(p.year) + '</span><div>' +
+        var tag = p.post ? 'a' : 'div';
+        return '<' + tag + ' class="pub' + (p.post ? ' plink' : '') + '"' + (p.post ? ' href="post.html?id=' + encodeURIComponent(p.post) + '"' : '') + '><span class="year">' + esc(p.year) + '</span><div>' +
           '<div class="title">' + esc(p.title) + '</div>' +
           (p.lines || []).map(function (l) { return '<div class="meta">' + sep(l) + '</div>'; }).join('') +
-        '</div></div>';
+          (p.post ? '<div class="pmore">사진 보기 →</div>' : '') +
+        '</div></' + tag + '>';
       }).join('');
       return;
     }
