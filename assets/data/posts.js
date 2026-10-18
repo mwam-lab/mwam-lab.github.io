@@ -338,13 +338,13 @@ window.MWAM_POSTS = [
     date: '2025-05-15',
     title: '「아름다운세상을 위한 몸의 탐험」 정신건강 소마틱스 프로그램',
     thumb: 'assets/images/posts/2025-05-15-beautiful-world-thumb.jpg',
-    images: ['assets/images/posts/2025-05-15-beautiful-world-slide.jpg', 'assets/images/posts/2025-05-15-beautiful-world-1.jpg', 'assets/images/posts/2025-05-15-beautiful-world-2.jpg', 'assets/images/posts/2025-05-15-beautiful-world-3.jpg', 'assets/images/posts/2025-05-15-beautiful-world-4.jpg'],
+    images: ['assets/images/posts/2025-05-15-beautiful-world-slide.jpg', 'assets/images/posts/2025-05-15-beautiful-world-1-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-2-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-3-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-4-m.jpg'],
     body:
-      '<p>정신재활시설 아름다운세상의 정신질환 당사자와 함께 몸의 감각을 깨우고 움직임을 탐험하는 정신건강 소마틱스 프로그램을 운영했습니다.</p>' +
+      '<p>정신재활시설 아름다운세상 이용자와 함께 몸의 감각을 깨우고 움직임을 탐험하는 정신건강 소마틱스 프로그램을 운영했습니다.</p>' +
       '<ul>' +
         '<li>기간: 2025년 5월 15일 - 8월 31일</li>' +
         '<li>장소: 인산의료재단 정신재활시설 아름다운세상</li>' +
-        '<li>대상: 정신질환 당사자</li>' +
+        '<li>대상: 정신재활시설 이용자</li>' +
         '<li>진행: 정재원 교수, 김준혁 연구원</li>' +
       '</ul>'
   },
