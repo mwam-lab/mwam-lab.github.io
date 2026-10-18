@@ -404,3 +404,5 @@ details.psec li { margin-bottom: 10px; }
 
 /* PUBLICATIONS 소제목: 작고 굵게 (영문) */
 .out-head h2 { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.01em; margin-top: 4px; }
+/* 연구진 소제목: PROGRAM의 작은 '프로그램' 글자와 같은 크기·모양 */
+.people-head h2 { font-family: var(--font); font-size: 0.95rem; font-weight: 400; color: var(--blue); letter-spacing: 0; }
