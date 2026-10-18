@@ -35,6 +35,11 @@ window.MWAM_PEOPLE = [
         '2022-2023 전북특별자치도 정신간호사회 학술이사'
       ]},
       { title: '연구업적', open: false, items: [
+        "Joung, J. (2026). Repositioning Lived Experience in Knowledge Production in Psychiatric Mental Health Nursing. Journal of Korean Academy of psychiatric and Mental Health Nursing, 35(1), 6-8.",
+        "Seo, J.-H., Ji Young, Kim, H. K., & Joung, J. (2026). Effects of a Nurse-Led Behavioral Activation Program on Negative Symptoms, Depression, and Resilience in Patients with Schizophrenia in South Korea: A Quasi-Experimental Study. Issues in Mental Health Nursing, 47(1), 93-102.",
+        "Joung, J., & Kim, S. (2025). Narrative Inquiry into Young Adults with Schizophrenia: A Journey of Variations in Hope. Journal of Korean Association for Qualitative Research, 10(3), 179-188.",
+        "Lee, S., Park, J., Jo, Y., Hwang, E. S., & Joung, J. (2025). Experiences of Young Unmarried Women with Uterine and Ovarian Diseases: A Qualitative Content Analysis. Journal of East-West Nursing Research, 31(2), 158-168.",
+        "Kim, D., & Joung, J. (2025). Factors Influencing Embitterment in Hospital Nurses. Journal of East-West Nursing Research, 31(2), 169-177.",
         "Kim, J., Ahn, S., & Joung, J. (2025). “It felt real”: Nursing students’ experiences of mental health simulation utilizing service users as standardized patients. Clinical Simulation in Nursing. In press",
         "Shin, S., Ahn, S., Oh, H., & Joung, J. (2025). Between Hope and Trauma at the Last Resort: A Qualitative Meta-Synthesis of Patient Experiences with Electroconvulsive Therapy. Journal of Psychosocial Nursing and Mental Health Services, 1-8.",
         "Joung, J., Jeong, S., & Kang, K. I. (2025). Care Farming Experiences of Individuals with Schizophrenia: A Focused Ethnography in Korea. Issues in Mental Health Nursing, 46(3), 261-266.",
@@ -59,6 +64,8 @@ window.MWAM_PEOPLE = [
         "Kang, K. I., Lee, N & Joung, J. (2021). Nursing students' experience of online peer tutoring based on the grow model: A qualitative study. Nurse Education Today, 107(105131)",
         "Joung, J. W., Kim, B. H., Choi, D., Kim E., Kim J., Shin, Y. & Kim, S. (2021). Transformation from Marginalization to Society’s Agent: A Narrative Inquiry on Experiences of Art Activity among People with Mental Illness. Issues in Mental Health Nursing, 1-8",
         "Joung, J., Kim, B., Kim J., Lee, K., & Kim, S. (2021). “Moving forward despite adversity”: The lives of Korean older adults with schizophrenia. Archives of Psychiatric Nursing, 35, 243-249",
+        "Han, J.-W., Kang, K. I., & Joung, J. (2020). Enhancing happiness for nursing students through positive psychology activities: A mixed methods study. International Journal of Environmental Research and Public Health, 17(24), 9274.",
+        "Kang, K. I., & Joung, J. (2020). Outcomes of consumer involvement in mental health nursing education: An integrative review. International Journal of Environmental Research and Public Health, 17(18), 6756.",
         "Joung, J., Kang, K. I., Yoon, H., Lee, J., Lim, H., Cho, D., Cha, M., & Choi, B. (2020). Peer mentoring of nursing students based on the caring perspective: A qualitative study. Nurse Education Today, 94, 6",
         "Choi. D., Joung, J., Kim, E. & Kim, S. (2020). \"Entry to the Society from the Schizophrenic Cave\"-A Qualitative Meta-Synthesis of Job Experiences for People with Schizophrenia. Issues In Mental Health Nursing, 41(10), 14",
         "Lee, S., Joung, J. & Shin, S. (2020). Effects of Fumanet exercise on Korean older adults with dementia. Japan Journal of Nursing Science, 17(1), 8",
