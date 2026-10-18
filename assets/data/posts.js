@@ -163,6 +163,23 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-07-10-416-grant',
+    category: '공지',
+    date: '2026-07-10',
+    title: '4·16재단 2026 생명안전 학술연구 지원사업 선정',
+    thumb: 'assets/images/posts/2026-07-10-416-thumb.jpg',
+    images: ['assets/images/posts/2026-07-10-416-result.jpg'],
+    body:
+      '<p>김준혁 연구원이 대표연구자로 신청한 연구가 4·16재단의 <strong>2026 생명안전 학술연구 지원사업</strong>에 최종 선정되었습니다.</p>' +
+      '<ul>' +
+        '<li>연구명: 세월호참사 유가족 부모의 장기적 삶의 경험: PEARL(Photo Experiencing and Reflective Listening)을 활용한 질적 연구</li>' +
+        '<li>대표연구자: 김준혁 연구원</li>' +
+        '<li>지원: 4·16재단 2026 생명안전 학술연구 지원사업 (자유공모)</li>' +
+        '<li>발표: 2026년 7월 10일 (면접심사 선정)</li>' +
+      '</ul>' +
+      '<p><a href="https://416foundation.org/notice/contest/?uid=3527&amp;mod=document" target="_blank" rel="noopener">4·16재단 선정 결과 공지 보기</a></p>'
+  },
+  {
     id: '2026-06-18-rise-consult',
     category: '프로그램',
     date: '2026-06-01',
