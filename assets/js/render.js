@@ -7,6 +7,9 @@ var Mwam = (function () {
   }
   // 목록 정보 줄의 ' · ' 를 연한 세로선으로
   function sep(t) { return esc(t).split(' · ').join('<span class="vbar" aria-hidden="true"></span><span class="skip"> · </span>'); }
+  // NEWS 분류 → 사진 위 영문 라벨
+  var CAT_EN = { '공지': 'NOTICE', '프로그램': 'PROGRAM', '특강': 'LECTURE', '수련': 'TRAINING' };
+  function catEn(c) { return CAT_EN[c] || c || ''; }
   function fmtDate(d) { return d ? d.replace(/-/g, '.') : ''; }
   function byDateDesc(a, b) { return (b.date || '').localeCompare(a.date || ''); }
   function $(id) { return document.getElementById(id); }
@@ -84,11 +87,10 @@ var Mwam = (function () {
         ? '<img src="' + esc(src) + '" alt="" loading="lazy">'
         : '<span class="noimg"><img src="assets/images/logo.png" alt=""></span>';
       return '<li><a class="ncard" href="' + href(p) + '">' +
-        '<span class="ntop"><span><span class="date">' + fmtDate(p.date) + '</span>' +
-          (p.category ? '<span class="ncat">' + esc(p.category) + '</span>' : '') + '</span>' +
+        '<span class="ntop"><span class="date">' + fmtDate(p.date) + '</span>' +
           (p.status ? '<span class="state">' + esc(p.status) + '</span>' : '') + '</span>' +
         '<strong class="ntitle">' + esc(p.title) + '</strong>' +
-        '<span class="nthumb">' + thumb + '</span>' +
+        '<span class="nthumb">' + thumb + (p.category ? '<span class="nlabel">' + esc(catEn(p.category)) + '</span>' : '') + '</span>' +
       '</a></li>';
     }).join('');
     var q = function (n) { return 'news.html?' + (cat ? 'cat=' + encodeURIComponent(cat) + '&' : '') + 'page=' + n; };
@@ -120,7 +122,7 @@ var Mwam = (function () {
     };
     el.innerHTML =
       '<article class="post">' +
-        '<header class="post-band"><h2>' + (p.category ? '<span class="ncat">' + esc(p.category) + '</span>' : '') + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
+        '<header class="post-band"><h2>' + (p.category ? '<span class="ncat">' + esc(catEn(p.category)) + '</span>' : '') + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
         '<div class="post-body">' + imgs + (p.body || '') +
           (files ? '<div class="files"><h3>첨부파일</h3><ul>' + files + '</ul></div>' : '') +
         '</div>' +
