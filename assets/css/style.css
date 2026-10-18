@@ -215,10 +215,22 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
 .person h3 { font-size: 1.35rem; }
 .person.small h3 { font-size: 1.15rem; }
 .person .role { color: var(--blue); font-weight: 400; }
-.person dl { margin: 12px 0 0; display: grid; grid-template-columns: 88px 1fr; gap: 6px 12px; font-size: 0.97rem; }
+.person dl { margin: 12px 0 0; display: grid; grid-template-columns: 72px 1fr; gap: 6px 12px; font-size: 0.97rem; }
 .person dt { color: var(--muted); }
 .person dd { margin: 0; color: var(--text-2); }
 .person ul { margin: 8px 0 0; padding-left: 20px; color: var(--text-2); font-size: 0.97rem; }
+.psec { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+.psec h4, .psec summary { font-size: 1rem; font-weight: 400; color: var(--blue); margin-bottom: 6px; }
+.psec p { color: var(--text-2); }
+.psec ul { margin: 0; padding-left: 20px; color: var(--text-2); font-size: 0.97rem; }
+.psec li { margin-bottom: 4px; }
+details.psec summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; }
+details.psec summary::-webkit-details-marker { display: none; }
+details.psec summary::after { content: '펼치기 ▾'; font-size: 0.85rem; color: var(--muted); margin-left: auto; }
+details.psec[open] summary::after { content: '접기 ▴'; }
+details.psec .cnt { font-size: 0.85rem; color: var(--muted); }
+details.psec ul { margin-top: 10px; font-size: 0.92rem; line-height: 1.65; }
+details.psec li { margin-bottom: 10px; }
 @media (max-width: 640px) {
   .person, .person.small { grid-template-columns: 1fr; }
   .person .photo { max-width: 180px; }

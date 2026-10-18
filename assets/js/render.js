@@ -135,9 +135,17 @@ var Mwam = (function () {
       var photo = p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(p.name) + ' 사진">' : '사진';
       var info = (p.info || []).map(function (kv) { return '<dt>' + esc(kv[0]) + '</dt><dd>' + esc(kv[1]) + '</dd>'; }).join('');
       var hist = (p.history || []).map(function (h) { return '<li>' + esc(h) + '</li>'; }).join('');
+      var secs = (p.sections || []).map(function (sec) {
+        var inner = sec.text ? '<p>' + esc(sec.text) + '</p>'
+          : '<ul>' + (sec.items || []).map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>';
+        if (sec.open === false) {
+          return '<details class="psec"><summary>' + esc(sec.title) + ' <span class="cnt">' + (sec.items || []).length + '편</span></summary>' + inner + '</details>';
+        }
+        return '<div class="psec"><h4>' + esc(sec.title) + '</h4>' + inner + '</div>';
+      }).join('');
       return '<div class="person' + (small ? ' small' : '') + '"><div class="photo">' + photo + '</div><div>' +
         '<span class="role">' + esc(p.role) + '</span><h3>' + esc(p.name) + '</h3>' +
-        (info ? '<dl>' + info + '</dl>' : '') + (hist ? '<ul>' + hist + '</ul>' : '') +
+        (info ? '<dl>' + info + '</dl>' : '') + (hist ? '<ul>' + hist + '</ul>' : '') + secs +
       '</div></div>';
     }).join('');
   }
