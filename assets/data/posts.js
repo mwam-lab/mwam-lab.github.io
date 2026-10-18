@@ -126,6 +126,39 @@ window.MWAM_POSTS = [
       '<p><a href="https://clc.camh.ca" target="_blank" rel="noopener">Collaborative Learning College 홈페이지</a></p>'
   },
   {
+    id: '2026-07-17-ccqhr',
+    category: '수련',
+    date: '2026-07-17',
+    title: '토론토대학교 「Centre for Critical Qualitative Health Research」 방문',
+    thumb: 'assets/images/posts/2026-07-17-ccqhr-thumb.jpg',
+    images: ['assets/images/posts/2026-07-17-ccqhr.jpg'],
+    body:
+      '<p>토론토대학교 Dalla Lana School of Public Health의 Centre for Critical Qualitative Health Research(CCQHR)를 방문했습니다. Sarah Elton 교수, Shan Mohammed 교수와 함께 센터를 둘러보고, 비판적 질적 건강연구와 정신건강간호 질적연구에 대해 의견을 나누었습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 7월 17일(금)</li>' +
+        '<li>장소: 토론토대학교 Dalla Lana School of Public Health, 캐나다 토론토</li>' +
+        '<li>주요 내용: 센터 소개와 투어, 비판적 질적 건강연구 논의</li>' +
+        '<li>참여: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
+    id: '2026-02-26-eafons',
+    category: '학술발표',
+    date: '2026-02-26',
+    title: '29th EAFONS 2026 포스터 발표',
+    thumb: 'assets/images/posts/2026-02-26-eafons-thumb.jpg',
+    images: ['assets/images/posts/2026-02-26-eafons.jpg'],
+    body:
+      '<p>싱가포르국립대학교에서 열린 제29회 동아시아간호학자포럼(EAFONS)에서 만성 조현병 당사자의 소마틱스 기반 중재 참여 경험을 다룬 질적 연구를 포스터로 발표했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 2월 26일(목) - 28일(토)</li>' +
+        '<li>장소: National University of Singapore, 싱가포르</li>' +
+        '<li>주제: Innovate, Integrate, Inspire: Advancing Nursing Excellence in the Digital Era</li>' +
+        '<li>발표: Experiences of Participating in Somatics-Based Intervention among People with Chronic Schizophrenia: A Qualitative Content Analysis</li>' +
+        '<li>발표자: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-09-17-muju-somatics',
     category: '프로그램',
     date: '2026-09-17',
