@@ -59,9 +59,9 @@
   var footer =
     '<footer class="site-footer"><div class="wrap">' +
       '<div><strong>뫔건강연구소</strong>' +
-        '<p>주소' + VBAR + (S.address || '[주소]') + '</p>' +
-        '<p>전화' + VBAR + (S.tel || '[전화번호]') + '</p>' +
-        '<p>이메일' + VBAR + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</p>' +
+        '<p><span class="fl">주소</span>' + VBAR + (S.address || '[주소]') + '</p>' +
+        '<p><span class="fl">전화</span>' + VBAR + (S.tel || '[전화번호]') + '</p>' +
+        '<p><span class="fl">이메일</span>' + VBAR + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</p>' +
       '</div>' +
       '<div class="foot-links">' + MENU.map(function (m) { return '<a href="' + m.href + '">' + m.label + '</a>'; }).join('') +
         (S.instagram ? '<a href="' + S.instagram + '" target="_blank" rel="noopener">인스타그램</a>' : '') +
