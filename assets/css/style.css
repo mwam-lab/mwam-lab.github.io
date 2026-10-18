@@ -69,11 +69,11 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
   background: var(--white);
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 76px; }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); }
+.brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--navy); }
 .brand img { width: 46px; height: 46px; border-radius: 6px; }
-.brand-name { display: flex; flex-direction: column; line-height: 1.25; }
+.brand-name { display: flex; flex-direction: column; line-height: 1.12; }
 .brand-name strong { font-family: var(--font-brand); font-size: 1.3rem; font-weight: 700; }  /* 볼드는 연구소 이름에만 */
-.brand-name small { font-family: var(--font-brand); font-weight: 400; font-size: 0.85rem; color: var(--muted); }
+.brand-name small { font-family: var(--font); font-weight: 400; font-size: 0.85rem; color: var(--muted); }  /* Noto Sans KR 400 */
 
 .gnb { display: flex; align-items: center; gap: 4px; }
 .gnb > ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; }
