@@ -48,6 +48,13 @@ window.MWAM_PROJECTS = [
   {
     kind: '연구과제',
     status: '진행',
+    year: 2026,
+    title: 'Exploring the Long-Term Life Experiences of Parents Bereaved by the Sewol Ferry Disaster Using PEARL (Photo Experiencing and Reflective Listening): A Qualitative Study',
+    lines: ['4·16 Foundation · Life Safety Academic Research Grant · Principal Investigator (Junhyeok Kim)', 'Jul 2026 - Jul 2027']
+  },
+  {
+    kind: '연구과제',
+    status: '진행',
     year: 2025,
     title: 'From Isolation to Connection: An International Collaborative Study on the Lives and Social Inclusion of Socially Withdrawn and Isolated Young Adults',
     lines: ['Jeonbuk National University · National University Development Project, International Collaborative Research Program · Principal Investigator', 'Nov 2025 - Feb 2027']
