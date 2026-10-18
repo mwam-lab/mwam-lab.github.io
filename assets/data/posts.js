@@ -263,6 +263,22 @@ window.MWAM_POSTS = [
       '<p><a href="http://www.mindpost.or.kr/bbs/board.php?bo_table=news&amp;wr_id=9333" target="_blank" rel="noopener">마인드포스트 기사 보기</a></p>'
   },
   {
+    id: '2025-11-28-youngmind',
+    category: '공지',
+    date: '2025-11-28',
+    title: '김준혁 연구원, 영마인드 링크 2기 활동 및 해단식 사회',
+    thumb: 'assets/images/posts/2025-11-28-youngmind-thumb.jpg',
+    images: ['assets/images/posts/2025-11-28-youngmind-mc.jpg', 'assets/images/posts/2025-11-28-youngmind-stage.jpg', 'assets/images/posts/2025-11-28-youngmind-team.jpg'],
+    body:
+      '<p>김준혁 연구원이 국립정신건강센터의 청년 주도 정신건강 프로젝트 「마주해요」 영마인드 링크 2기에서 전북대학교 팀 팀장으로 활동했습니다. 활동을 마무리하는 해단식에서는 사회를 맡아 행사를 진행하고, 우수팀 발표 심사에도 참여했습니다.</p>' +
+      '<ul>' +
+        '<li>활동: 2025년 영마인드 링크 2기 (40팀 전북대학교 팀장)</li>' +
+        '<li>해단식: 2025년 11월 28일(금)</li>' +
+        '<li>주관: 국립정신건강센터, 멘탈헬스코리아</li>' +
+        '<li>역할: 해단식 사회, 우수팀 발표 심사</li>' +
+      '</ul>'
+  },
+  {
     id: '2025-11-21-kpmhn-poster',
     category: '학술발표',
     date: '2025-11-21',
