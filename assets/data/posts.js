@@ -1,5 +1,5 @@
 /* 알림마당 게시물
-   category: '공지' | '프로그램' | '특강' | '학술발표' | '수련'  (NEWS 탭과 카드의 작은 표시)
+   category: '연구' | '발표·수상' | '강연' | '프로그램' | '교류·연수' | '소식'  (NEWS 탭과 카드의 작은 표시)
    title: **글자**로 감싸면 그 부분만 굵게 보임 (예: '... **우수포스터상** 수상')
    date: 'YYYY-MM-DD'  (최신 글이 자동으로 위에 옴)
    thumb: 목록 카드에 보일 대표 이미지 (없으면 images 첫 장, 그것도 없으면 로고)
@@ -10,7 +10,7 @@
 window.MWAM_POSTS = [
   {
     id: '2026-10-17-feldenkrais',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-10-17',
     title: '펠든크라이스X소마틱스X웰니스 통합워크샵',
     thumb: 'assets/images/posts/2026-10-17-feldenkrais-duo-thumb.jpg',
@@ -26,7 +26,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-10-16-korea-japan-seminar',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-10-16',
     title: '정신건강복지 한일 협력 20년 「‘당사자연구’ 교류를 중심으로」 세미나 참석',
     thumb: 'assets/images/posts/2026-10-16-korea-japan-seminar-thumb.jpg',
@@ -43,7 +43,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-10-15-jeonju-forum',
-    category: '특강',
+    category: '강연',
     date: '2026-10-15',
     title: '제2회 전주시복지재단 복지정책포럼 「청년이 특별해지는, 일상마중」 지정토론',
     thumb: 'assets/images/posts/2026-10-15-jeonju-forum-thumb.jpg',
@@ -60,7 +60,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-10-10-inje-lecture',
-    category: '특강',
+    category: '강연',
     date: '2026-10-10',
     title: '인제대학교 사회복지대학원 특강 「몸을 통해 이해하는 돌봄: 소매틱스와 사회복지 실천」',
     thumb: 'assets/images/posts/2026-10-10-inje-lecture-thumb.jpg',
@@ -95,7 +95,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-07-18-sigma-poster',
-    category: '학술발표',
+    category: '발표·수상',
     date: '2026-07-18',
     title: 'Sigma 37th International Nursing Research Congress 포스터 발표',
     thumb: 'assets/images/posts/2026-07-18-sigma-poster-thumb.jpg',
@@ -112,7 +112,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-07-17-camh',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-07-17',
     title: '캐나다 CAMH 방문 「Collaborative Learning College」 연구팀과의 만남',
     thumb: 'assets/images/posts/2026-07-17-camh-thumb.jpg',
@@ -129,7 +129,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-07-17-ccqhr',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-07-17',
     title: '토론토대학교 「Centre for Critical Qualitative Health Research」 방문',
     thumb: 'assets/images/posts/2026-07-17-ccqhr-thumb.jpg',
@@ -145,7 +145,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-06-12-kapr',
-    category: '특강',
+    category: '강연',
     date: '2026-06-12',
     title: '한국정신사회재활협회 30주년 기념 학술대회 강연 「당사자가 이끄는 회복: 정신간호, 참여를 설계하다」',
     thumb: 'assets/images/posts/2026-06-12-kapr-thumb.jpg',
@@ -164,7 +164,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-07-10-416-grant',
-    category: '공지',
+    category: '연구',
     date: '2026-07-10',
     title: '4·16재단 2026 생명안전 학술연구 지원사업 선정',
     thumb: 'assets/images/posts/2026-07-10-416-thumb.jpg',
@@ -184,7 +184,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-06-18-rise-consult',
-    category: '프로그램',
+    category: '연구',
     date: '2026-06-01',
     title: '고립·은둔 청년 대상 치유농업 프로그램 기술자문',
     thumb: 'assets/images/posts/2026-06-18-rise-consult-thumb.jpg',
@@ -199,7 +199,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-06-10-lab-dinner',
-    category: '공지',
+    category: '소식',
     date: '2026-06-10',
     title: '정재원 교수 연구실 1학기 종강 모임',
     thumb: 'assets/images/posts/2026-06-10-lab-thumb-v2.jpg',
@@ -212,7 +212,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-05-29-ksds',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-05-29',
     title: '2026 한국시스템다이내믹스학회·경희대 동서간호학연구소 연합학술대회 참석',
     thumb: 'assets/images/posts/2026-05-29-ksds-thumb.jpg',
@@ -228,7 +228,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-05-22-ksles',
-    category: '특강',
+    category: '강연',
     date: '2026-05-22',
     title: '2026 한국생활환경학회 춘계학술대회 초청강연 「몸이 머무는 공간, 마음이 회복되는 환경」',
     thumb: 'assets/images/posts/2026-05-22-ksles-thumb.jpg',
@@ -244,7 +244,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-04-23-kpmhn-spring',
-    category: '특강',
+    category: '강연',
     date: '2026-04-23',
     title: '2026 한국정신간호학회 춘계학술대회 강연 「정신간호 중재 연구의 새로운 지평: 제공자 중심에서 당사자 참여로」',
     thumb: 'assets/images/posts/2026-04-23-kpmhn-spring-thumb.jpg',
@@ -261,7 +261,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-03-11-snu-scholar',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-03-11',
     title: '서울대학교 간호대학 외국인 저명학자 초청 워크숍 참석',
     thumb: 'assets/images/posts/2026-03-11-snu-scholar-thumb.jpg',
@@ -278,7 +278,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-02-26-eafons',
-    category: '학술발표',
+    category: '발표·수상',
     date: '2026-02-26',
     title: '29th EAFONS 2026 포스터 발표',
     thumb: 'assets/images/posts/2026-02-26-eafons-thumb-v2.jpg',
@@ -295,7 +295,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-09-01-nrf-master',
-    category: '공지',
+    category: '연구',
     date: '2026-09-01',
     title: '김준혁 연구원, 한국연구재단 2026년도 석사과정생 연구장려금 지원사업 선정',
     body:
@@ -327,7 +327,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-01-23-kcse',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-01-23',
     title: '한국과학학술지편집인협의회 2026년도 제16차 정기총회 및 오픈 포럼 참석',
     thumb: 'assets/images/posts/2026-01-23-kcse-thumb.jpg',
@@ -342,7 +342,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-01-09-okuda-mou',
-    category: '공지',
+    category: '연구',
     date: '2026-01-09',
     title: '홋카이도의료대학 오쿠다 가오리 교수와 국제공동연구 MOU 체결',
     thumb: 'assets/images/posts/2026-01-09-okuda-mou-thumb-v2.jpg',
@@ -359,7 +359,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2026-01-28-rda-forum',
-    category: '수련',
+    category: '교류·연수',
     date: '2026-01-28',
     title: '제1차 농촌진흥청 치유농업 포럼 참석',
     thumb: 'assets/images/posts/2026-01-28-rda-forum-thumb.jpg',
@@ -375,7 +375,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-12-22-youth-future',
-    category: '수련',
+    category: '교류·연수',
     date: '2025-12-22',
     title: '2025 전북특별자치도 청년미래센터 성과보고 & 청년 응원 콘서트 참석',
     thumb: 'assets/images/posts/2025-12-22-youth-future-thumb.jpg',
@@ -390,7 +390,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-12-16-scholarship',
-    category: '공지',
+    category: '소식',
     date: '2025-12-16',
     title: '김준혁 연구원, 국가우수장학생(이공계) 선발',
     thumb: 'assets/images/posts/2025-12-16-scholarship-thumb.jpg',
@@ -424,7 +424,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-11-28-youngmind',
-    category: '공지',
+    category: '소식',
     date: '2025-11-28',
     title: '김준혁 연구원, 영마인드 링크 2기 활동 및 해단식 사회',
     thumb: 'assets/images/posts/2025-11-28-youngmind-thumb.jpg',
@@ -440,7 +440,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-11-21-kpmhn-poster',
-    category: '학술발표',
+    category: '발표·수상',
     date: '2025-11-21',
     title: '2025 한국정신간호학회 동계학술대회 **우수포스터상** 수상',
     thumb: 'assets/images/posts/2025-11-21-kpmhn-poster-thumb-v2.jpg',
@@ -459,7 +459,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-06-19-maeumsarang',
-    category: '수련',
+    category: '교류·연수',
     date: '2025-06-19',
     title: '제27회 마음사랑 정신건강세미나 「조현병의 단계별 접근 방안에 대한 최신 지견」 참석',
     thumb: 'assets/images/posts/2025-06-19-maeumsarang-thumb.jpg',
@@ -475,7 +475,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-08-28-alumni-scholarship',
-    category: '공지',
+    category: '소식',
     date: '2025-08-28',
     title: '김준혁 연구원, 전북대학교 총동창회 대학원 장학생 선발',
     thumb: 'assets/images/posts/2025-08-28-alumni-scholarship-thumb.jpg',
@@ -510,7 +510,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-05-29-khu-lecture',
-    category: '특강',
+    category: '강연',
     date: '2025-05-29',
     title: '경희대학교 간호대학 대학원 특강',
     thumb: 'assets/images/posts/2025-05-29-khu-lecture-thumb.jpg',
@@ -526,7 +526,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-05-29-khu-conference',
-    category: '수련',
+    category: '교류·연수',
     date: '2025-05-29',
     title: '2025 동서간호학연구소 춘계학술대회 「Mindfulness·compassion을 통한 돌봄」 참석',
     thumb: 'assets/images/posts/2025-05-29-khu-conference-thumb-v2.jpg',
@@ -575,7 +575,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-05-28-youngmind-pitch',
-    category: '공지',
+    category: '발표·수상',
     date: '2025-05-28',
     title: '영마인드 링크 2기 발대식 모의투자대회 TOP 10 어워드 수상',
     thumb: 'assets/images/posts/2025-05-28-youngmind-pitch-thumb-v2.jpg',
@@ -591,7 +591,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-05-17-somatics-feldenkrais',
-    category: '수련',
+    category: '교류·연수',
     date: '2025-05-17',
     title: '소마앤바디 소마틱스 펠든크라이스 워크숍 참여',
     body:
@@ -605,7 +605,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-04-26-simm',
-    category: '수련',
+    category: '교류·연수',
     date: '2025-04-26',
     title: '바마움 S.I.M.M. 프랙티셔너 자격과정 5기 수료',
     thumb: 'assets/images/posts/2025-04-26-simm-thumb.jpg',
@@ -622,7 +622,7 @@ window.MWAM_POSTS = [
   },
   {
     id: '2025-03-23-ancient-training',
-    category: '수련',
+    category: '교류·연수',
     date: '2025-03-23',
     title: '소마앤바디 고대운동 워크숍(Ancient Training Workshop) 수료',
     thumb: 'assets/images/posts/2025-03-23-ancient-training-thumb.jpg',
@@ -639,7 +639,7 @@ window.MWAM_POSTS = [
   },
   {
     id: 'sample-recruit',
-    category: '공지',
+    category: '소식',
     pinned: true,
     status: '모집 중',
     date: '2026-10-18',

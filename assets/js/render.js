@@ -8,7 +8,7 @@ var Mwam = (function () {
   // 목록 정보 줄의 ' · ' 를 연한 세로선으로
   function sep(t) { return esc(t).split(' · ').join('<span class="vbar" aria-hidden="true"></span><span class="skip"> · </span>'); }
   // NEWS 분류 → 사진 위 영문 라벨
-  var CAT_EN = { '공지': 'NOTICE', '프로그램': 'PROGRAM', '특강': 'LECTURE', '학술발표': 'CONFERENCE', '수련': 'TRAINING' };
+  var CAT_EN = { '연구': 'RESEARCH', '발표·수상': 'PRESENTATION', '강연': 'LECTURE', '프로그램': 'PROGRAM', '교류·연수': 'LEARNING', '소식': 'NEWS' };
   function catEn(c) { return CAT_EN[c] || c || ''; }
   function fmtDate(d) { return d ? d.replace(/-/g, '.') : ''; }
   function byDateDesc(a, b) { return (b.date || '').localeCompare(a.date || ''); }
@@ -40,7 +40,7 @@ var Mwam = (function () {
   function boardOrder(list) {
     return list.slice().sort(function (a, b) { return (b.pinned ? 1 : 0) - (a.pinned ? 1 : 0) || byDateDesc(a, b); });
   }
-  function catLabel(p) { return '<span class="cat">[' + esc(p.category === '공지' ? '공지' : '소식') + ']</span> '; }
+  function catLabel(p) { return '<span class="cat">[' + esc(p.category || '소식') + ']</span> '; }
   function href(p) { return 'post.html?id=' + encodeURIComponent(p.id); }
 
   // 알림마당 게시판 (표 형식, 10개씩 쪽 나눔)

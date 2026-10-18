@@ -23,11 +23,12 @@
     { id: 'program', label: 'PROGRAM', href: 'program.html' },
     { id: 'news', label: 'NEWS', href: 'news.html', sub: [
       ['전체', 'news.html'],
-      ['공지', 'news.html?cat=공지'],
+      ['연구', 'news.html?cat=연구'],
+      ['발표·수상', 'news.html?cat=발표·수상'],
+      ['강연', 'news.html?cat=강연'],
       ['프로그램', 'news.html?cat=프로그램'],
-      ['특강', 'news.html?cat=특강'],
-      ['학술발표', 'news.html?cat=학술발표'],
-      ['수련', 'news.html?cat=수련']
+      ['교류·연수', 'news.html?cat=교류·연수'],
+      ['소식', 'news.html?cat=소식']
     ]},
     { id: 'contact', label: 'CONTACT', href: 'contact.html' }
   ];
@@ -53,7 +54,7 @@
         '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>' +
       '</button>' +
       '<nav class="gnb" id="gnb" aria-label="주 메뉴"><ul>' + nav + '</ul>' +
-        '<a class="btn-join" href="news.html?cat=공지">연구 참여하기</a>' +
+        '<a class="btn-join" href="news.html?cat=소식">연구 참여하기</a>' +
       '</nav>' +
     '</div></header>';
 

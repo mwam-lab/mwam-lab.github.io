@@ -599,3 +599,5 @@ a.pub.plink:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(36
 .lock-row input { height: 46px; padding: 0 20px; font-size: 1rem; background: var(--white); }
 .lock-row .btn-line { height: 46px; padding: 0 28px; font: inherit; font-size: 0.95rem; background: var(--white); cursor: pointer; flex: none; }
 .lock-row .btn-line:hover { background: var(--navy); color: var(--white); }
+/* 소식 탭 7개: 휴대폰에서는 간격을 줄여 두 줄로 */
+@media (max-width: 720px) { .tabs.line { gap: 6px 18px; } .tabs.line a { font-size: 0.95rem; } }
