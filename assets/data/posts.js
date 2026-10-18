@@ -266,7 +266,7 @@ window.MWAM_POSTS = [
     date: '2026-09-17',
     title: '무주 인문도시지원사업 「액티브 시니어를 위한 움직임 명상」 운영',
     thumb: 'assets/images/posts/2026-09-17-muju-somatics-photo-thumb.jpg',
-    images: ['assets/images/posts/2026-09-17-muju-somatics-photo.jpg', 'assets/images/posts/2026-09-17-muju-somatics-poster.jpg'],
+    images: ['assets/images/posts/2026-09-17-muju-somatics-photo.jpg', 'assets/images/posts/2026-09-17-muju-somatics-poster.jpg', 'assets/images/posts/2026-09-17-muju-somatics-class1.jpg', 'assets/images/posts/2026-09-17-muju-somatics-class2.jpg'],
     body:
       '<p>전북대학교 인문학연구소와 무주군이 함께 주관하는 무주 인문도시지원사업으로, 소매틱스(Somatics) 기반 움직임 명상 프로그램 「액티브 시니어를 위한 움직임 명상」을 운영합니다. ' +
       '신체 움직임을 통해 몸과 마음의 건강을 증진하고 삶의 통합적 성찰을 돕는 것을 목적으로 합니다.</p>' +
