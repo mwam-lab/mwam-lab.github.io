@@ -13,7 +13,7 @@ window.MWAM_PEOPLE = [
       ['이메일', 'woni@jbnu.ac.kr']
     ],
     sections: [
-      { title: '관심 연구 분야', text: '조현병, 정신간호, 간호교육, 질적연구방법, 당사자 활동' },
+      { title: '관심 연구 분야', text: '조현병, 정신간호, 간호교육, 질적연구방법, 당사자 활동', text_en: 'Schizophrenia, Psychiatric Mental Health Nursing, Nursing Education, Qualitative Research Methods, Service User Involvement' },
       { title: '학력', items: [
         '2019 서울대학교 간호대학 박사',
         '2013 서울대학교 간호대학 석사',

@@ -192,7 +192,7 @@ var Mwam = (function () {
       var info = (p.info || []).map(function (kv) { return '<dt>' + esc(kv[0]) + '</dt><dd>' + esc(kv[1]) + '</dd>'; }).join('');
       var hist = (p.history || []).map(function (h) { return '<li>' + esc(h) + '</li>'; }).join('');
       var secs = (p.sections || []).map(function (sec) {
-        var inner = sec.text ? '<p>' + esc(sec.text) + '</p>'
+        var inner = sec.text ? '<p>' + esc(sec.text) + '</p>' + (sec.text_en ? '<p class="en">' + esc(sec.text_en) + '</p>' : '')
           : '<ul>' + (sec.items || []).map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>';
         if (sec.open === false) {
           return '<details class="psec"><summary>' + esc(sec.title) + '</summary>' + inner + '</details>';

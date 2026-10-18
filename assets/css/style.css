@@ -442,8 +442,8 @@ details.psec li { margin-bottom: 10px; }
 
 /* ---------- 메인 (KIMPACT Lab 구성 참고) ---------- */
 .mhero { position: relative; overflow: hidden; color: var(--white); text-align: center; }
-.mhero-bg { position: absolute; inset: 0; background: url('../images/posts/2026-09-17-muju-somatics-photo.jpg') center 55% / cover no-repeat; }
-.mhero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36, 53, 72, 0.62), rgba(36, 53, 72, 0.78)); }
+.mhero-bg { position: absolute; inset: 0; background: url('../images/hero-tea.jpg') center 50% / cover no-repeat; }
+.mhero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36, 53, 72, 0.48), rgba(36, 53, 72, 0.66)); }
 .mhero-in { position: relative; padding-top: 120px; padding-bottom: 120px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .mhero-tag { font-size: 1rem; letter-spacing: 0.14em; color: #DCE5E7; }
 .mhero-name { font-family: var(--font-brand); font-weight: 900; font-size: clamp(2.6rem, 6vw, 4.2rem); letter-spacing: -0.01em; color: var(--white); }
@@ -504,4 +504,29 @@ details.psec li { margin-bottom: 10px; }
 @media (max-width: 720px) {
   .mprog-body { flex-direction: column; }
   .mboxes > div { grid-template-columns: 1fr; gap: 4px; }
+}
+.psec p.en { margin-top: 4px; color: var(--muted); font-size: 0.95rem; }
+
+/* Program of Research: 고급스럽게 (2026-10-18) */
+.mprog { padding: 96px 0 72px; }
+.mprog-eyebrow { font-family: var(--font); font-size: 0.85rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--teal); margin-bottom: 40px; }
+.mprog-eyebrow::after { content: ''; display: block; width: 36px; height: 1px; background: var(--teal-logo); margin: 14px auto 0; }
+.mprog-body { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: clamp(14px, 4vw, 48px); max-width: 920px; margin: 0 auto; }
+.mprog-logo { width: clamp(84px, 22vw, 230px); border-radius: 10px; box-shadow: 0 14px 36px rgba(36, 53, 72, 0.14); }
+.mprog-eq { font-family: var(--font); font-weight: 300; font-size: clamp(1.4rem, 4vw, 2.4rem); color: var(--muted); opacity: 0.6; }
+.mprog-body .mvenn { width: auto; flex: 0 1 500px; min-width: 0; }
+.mvenn .v-h { font-family: var(--font); font-weight: 400; font-size: 17px; letter-spacing: 0.34em; }
+.mboxes { max-width: 920px; margin: 48px auto 0; display: block; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
+.mboxes > div { display: grid; grid-template-columns: 180px 1fr; gap: 24px; align-items: baseline; padding: 20px 4px; border-top: 1px solid var(--line); background: none; }
+.mboxes > div:last-child { border-bottom: 1px solid var(--line); }
+.mboxes > div + div { border-left: 0; }
+.mboxes dt { font-size: 0.78rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--teal); }
+.mboxes dd { margin: 0; color: var(--text-2); font-size: 0.98rem; line-height: 1.8; }
+@media (max-width: 720px) {
+  .mprog { padding: 64px 0 48px; }
+  .mprog-eyebrow { margin-bottom: 28px; }
+  .mprog-body { flex-direction: row; }            /* 휴대폰도 로고·원을 한 줄에 */
+  .mvenn .v-h { font-size: 22px; letter-spacing: 0.22em; }
+  .mboxes > div { grid-template-columns: 1fr; gap: 6px; padding: 16px 2px; }
+  .mboxes dd { font-size: 0.9rem; }
 }

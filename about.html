@@ -36,22 +36,29 @@
   </div>
 </div></section>
 <section class="mprog" id="focus"><div class="wrap">
-  <h2 class="mprog-title">Program of Research</h2>
+  <p class="mprog-eyebrow">Program of Research</p>
   <div class="mprog-body">
     <img class="mprog-logo" src="assets/images/logo-full.jpg" alt="뫔건강연구소 로고" width="640" height="640">
+    <span class="mprog-eq" aria-hidden="true">=</span>
     <svg class="mvenn" viewBox="0 0 500 300" role="img" aria-labelledby="venn-t venn-d">
       <title id="venn-t">Program of Research</title>
       <desc id="venn-d">Two overlapping circles, Body and Mind.</desc>
-      <circle cx="170" cy="150" r="140" fill="#728DAA" fill-opacity="0.16" stroke="#728DAA" stroke-opacity="0.5"/>
-      <circle cx="330" cy="150" r="140" fill="#729596" fill-opacity="0.16" stroke="#729596" stroke-opacity="0.5"/>
-      <text x="128" y="158" text-anchor="middle" class="v-h" fill="#34506E">BODY</text>
-      <text x="372" y="158" text-anchor="middle" class="v-h" fill="#335859">MIND</text>
+      <defs>
+        <radialGradient id="gBody" cx="38%" cy="38%" r="75%"><stop offset="0" stop-color="#9FB4CA" stop-opacity="0.55"/><stop offset="1" stop-color="#728DAA" stop-opacity="0.22"/></radialGradient>
+        <radialGradient id="gMind" cx="62%" cy="38%" r="75%"><stop offset="0" stop-color="#A6C1C0" stop-opacity="0.55"/><stop offset="1" stop-color="#729596" stop-opacity="0.22"/></radialGradient>
+      </defs>
+      <circle cx="170" cy="150" r="138" fill="url(#gBody)" stroke="#FFFFFF" stroke-width="2"/>
+      <circle cx="330" cy="150" r="138" fill="url(#gMind)" stroke="#FFFFFF" stroke-width="2" style="mix-blend-mode:multiply"/>
+      <circle cx="170" cy="150" r="138" fill="none" stroke="#728DAA" stroke-opacity="0.45" stroke-width="0.8"/>
+      <circle cx="330" cy="150" r="138" fill="none" stroke="#729596" stroke-opacity="0.45" stroke-width="0.8"/>
+      <text x="128" y="156" text-anchor="middle" class="v-h" fill="#243548">BODY</text>
+      <text x="372" y="156" text-anchor="middle" class="v-h" fill="#243548">MIND</text>
     </svg>
   </div>
-  <div class="mboxes">
-    <div><h3>Methodology</h3><p>Qualitative Research<span class="vbar" aria-hidden="true"></span>Intervention Development<span class="vbar" aria-hidden="true"></span>Effectiveness Evaluation</p></div>
-    <div><h3>Population</h3><p>Young Adults with Schizophrenia<span class="vbar" aria-hidden="true"></span>Socially Withdrawn and Isolated Young Adults<span class="vbar" aria-hidden="true"></span>People with Mental Illness<span class="vbar" aria-hidden="true"></span>Community-Dwelling Older Adults</p></div>
-  </div>
+  <dl class="mboxes">
+    <div><dt>Methodology</dt><dd>Qualitative Research<span class="vbar" aria-hidden="true"></span>Intervention Development<span class="vbar" aria-hidden="true"></span>Effectiveness Evaluation</dd></div>
+    <div><dt>Population</dt><dd>Young Adults with Schizophrenia<span class="vbar" aria-hidden="true"></span>Socially Withdrawn and Isolated Young Adults<span class="vbar" aria-hidden="true"></span>People with Mental Illness<span class="vbar" aria-hidden="true"></span>Community-Dwelling Older Adults</dd></div>
+  </dl>
 </div></section>
 <section class="section" id="location"><div class="wrap">
   <div class="section-head"><p class="eyebrow">오시는 길</p><h2>찾아오시는 길</h2></div>
