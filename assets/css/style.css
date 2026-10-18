@@ -492,3 +492,16 @@ details.psec li { margin-bottom: 10px; }
 .join-stack { display: grid; grid-auto-rows: 1fr; gap: 20px; }
 .contact-map { min-height: 0; height: 100%; }
 .contact-map iframe { min-height: 0; height: 100%; display: block; }
+
+/* Program of Research: 왼쪽 로고 + 오른쪽 원 두 개, 아래 두 줄 */
+.mprog-body { display: flex; align-items: center; justify-content: center; gap: clamp(24px, 5vw, 64px); max-width: 900px; margin: 0 auto; }
+.mprog-logo { width: clamp(150px, 22vw, 260px); height: auto; border-radius: 12px; flex: none; }
+.mprog-body .mvenn { width: min(500px, 100%); flex: 1 1 auto; }
+.mboxes { max-width: 900px; grid-template-columns: 1fr; text-align: left; margin-top: 28px; }
+.mboxes > div { display: grid; grid-template-columns: 160px 1fr; gap: 16px; align-items: baseline; }
+.mboxes > div + div { border-left: 0; border-top: 1px solid var(--line); }
+.mboxes h3 { margin-bottom: 0; }
+@media (max-width: 720px) {
+  .mprog-body { flex-direction: column; }
+  .mboxes > div { grid-template-columns: 1fr; gap: 4px; }
+}
