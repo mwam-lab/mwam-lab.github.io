@@ -24,6 +24,23 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-10-16-korea-japan-seminar',
+    category: '수련',
+    date: '2026-10-16',
+    title: '정신건강복지 한일 협력 20년 「‘당사자연구’ 교류를 중심으로」 세미나 참석',
+    thumb: 'assets/images/posts/2026-10-16-korea-japan-seminar-thumb.jpg',
+    images: ['assets/images/posts/2026-10-16-korea-japan-seminar-talk.jpg', 'assets/images/posts/2026-10-16-korea-japan-seminar-okuda.jpg', 'assets/images/posts/2026-10-16-korea-japan-seminar-visit.jpg'],
+    body:
+      '<p>서울대학교 일본연구소의 한일미래구상사업 세미나 「정신건강복지 한일 협력 20년: ‘당사자연구’ 교류를 중심으로」에 참석했습니다. 경험전문가들의 발표와 대화를 들었고, 국제공동연구를 함께 진행 중인 오쿠다 가오리 교수님과도 만났습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 10월 16일(금)</li>' +
+        '<li>장소: 서울대학교 국제대학원 소천국제회의실</li>' +
+        '<li>주최: 서울대학교 일본연구소, 청주정신건강센터</li>' +
+        '<li>주요 내용: 당사자연구의 한일교류 20년, 경험전문가 발표와 대화</li>' +
+        '<li>참석: 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-10-15-jeonju-forum',
     category: '특강',
     date: '2026-10-15',
