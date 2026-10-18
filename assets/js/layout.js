@@ -13,13 +13,13 @@
       ['연구책임자', 'people.html#pi'],
       ['연구원', 'people.html#members']
     ]},
-    { id: 'research', label: 'RESEARCH', href: 'research.html' },
-    { id: 'program', label: 'PROGRAM', href: 'program.html' },
-    { id: 'outcomes', label: 'PUBLICATIONS', href: 'outcomes.html', sub: [
-      ['Journal Articles', 'outcomes.html#papers'],
-      ['Conference Presentations', 'outcomes.html#presentations'],
-      ['Patents & Copyrights', 'outcomes.html#ip']
+    { id: 'research', label: 'RESEARCH', href: 'research.html', sub: [
+      ['Projects', 'research.html#projects'],
+      ['Journal Articles', 'research.html#papers'],
+      ['Conference Presentations', 'research.html#presentations'],
+      ['Patents & Copyrights', 'research.html#ip']
     ]},
+    { id: 'program', label: 'PROGRAM', href: 'program.html' },
     { id: 'news', label: 'NEWS', href: 'news.html' },
     { id: 'contact', label: 'CONTACT', href: 'contact.html' }
   ];
