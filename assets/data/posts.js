@@ -166,16 +166,15 @@ window.MWAM_POSTS = [
     id: '2026-06-18-rise-consult',
     category: '프로그램',
     date: '2026-06-01',
-    title: '전북대 RISE 기술자문 「고립·은둔 청년을 위한 치유농업-소매틱스 통합 프로그램 개발」',
+    title: '고립·은둔 청년 대상 치유농업 프로그램 기술자문',
     thumb: 'assets/images/posts/2026-06-18-rise-consult-thumb.jpg',
     images: ['assets/images/posts/2026-06-18-rise-consult-meeting.jpg', 'assets/images/posts/2026-06-18-rise-consult-team.jpg'],
     body:
-      '<p>전북대 RISE사업단의 기술자문 및 컨설팅 지원 사업으로, 지역 치유농업 현장과 함께 고립·은둔 청년을 위한 치유농업-소매틱스 통합 프로그램을 개발하고 있습니다. 3개월간 프로그램 설계와 매뉴얼화, 효과 측정 도구 선정과 검증 설계, 지역사회 연계를 통한 사회복귀 모델 구축을 자문합니다.</p>' +
+      '<p>전북대 RISE사업단의 기술자문 지원 사업을 통해 지역 치유농업 현장에 고립·은둔 청년을 위한 프로그램 운영을 자문했습니다.</p>' +
       '<ul>' +
-        '<li>기간: 2026년 6월 1일 - 8월 31일</li>' +
-        '<li>지원: 전북대 RISE사업단 기술자문 및 컨설팅 지원 사업 (생명서비스 웰니스)</li>' +
-        '<li>책임교원: 정재원 교수</li>' +
-        '<li>참여: 김준혁 연구원</li>' +
+        '<li>기간: 2026년 6월 - 8월</li>' +
+        '<li>지원: 전북대 RISE사업단 기술자문 및 컨설팅 지원 사업</li>' +
+        '<li>자문: 정재원 교수, 김준혁 연구원</li>' +
       '</ul>'
   },
   {
@@ -486,7 +485,7 @@ window.MWAM_POSTS = [
     date: '2025-05-15',
     title: '「아름다운세상을 위한 몸의 탐험」 정신건강 소마틱스 프로그램',
     thumb: 'assets/images/posts/2025-05-15-beautiful-world-thumb.jpg',
-    images: ['assets/images/posts/2025-05-15-beautiful-world-slide.jpg', 'assets/images/posts/2025-05-15-beautiful-world-1-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-2-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-3-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-4-m.jpg'],
+    images: ['assets/images/posts/2025-05-15-beautiful-world-slide.jpg', 'assets/images/posts/2025-05-15-beautiful-world-1-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-2-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-3-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-4-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-5-m.jpg', 'assets/images/posts/2025-05-15-beautiful-world-board.jpg'],
     body:
       '<p>정신재활시설 아름다운세상 이용자와 함께 몸의 감각을 깨우고 움직임을 탐험하는 정신건강 소마틱스 프로그램을 운영했습니다.</p>' +
       '<ul>' +
