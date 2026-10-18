@@ -171,7 +171,7 @@ var Mwam = (function () {
         var inner = sec.text ? '<p>' + esc(sec.text) + '</p>'
           : '<ul>' + (sec.items || []).map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>';
         if (sec.open === false) {
-          return '<details class="psec"><summary>' + esc(sec.title) + ' <span class="cnt">' + (sec.items || []).length + '편</span></summary>' + inner + '</details>';
+          return '<details class="psec"><summary>' + esc(sec.title) + '</summary>' + inner + '</details>';
         }
         return '<div class="psec"><h4>' + esc(sec.title) + '</h4>' + inner + '</div>';
       }).join('');
