@@ -1,6 +1,7 @@
 /* 연구성과
    type: '논문' | '학술발표' | '특허'
    link: 원문 주소(없으면 '')
+   학술발표: 모두 영어로 작성 (학술대회명·주관기관·국가·날짜·발표 형태)
    논문: 연구책임자 정재원 교수 (ORCID 0000-0001-9466-3240 + CV, 2026-10-18 기준) */
 window.MWAM_OUTCOMES = [
   { type: "논문", year: 2026, title: "Repositioning Lived Experience in Knowledge Production in Psychiatric Mental Health Nursing", authors: "Joung, J.", venue: "Journal of Korean Academy of psychiatric and Mental Health Nursing, 35(1), 6-8", link: "https://doi.org/10.12934/jkpmhn.2026.35.1.6" },
@@ -44,7 +45,7 @@ window.MWAM_OUTCOMES = [
   { type: "논문", year: 2017, title: "Difficulties in Caring for Psychiatric Patient as Experienced by Non-Psychiatric Nurses", authors: "Joung, J., Jang, M. Y., Shim, J., Ko, Y. & Shin, S. H.", venue: "Journal of Korean Academy of Nursing, 47(1), 49", link: "https://doi.org/10.4040/jkan.2017.47.1.49" },
   { type: "논문", year: 2017, title: "Effects of a Relapse Prevention Program on Insight, Empowerment and Treatment Adherence in Patients with Schizophrenia", authors: "Joung, J. & Kim, S.", venue: "Journal of Korean Academy of Nursing, 47(2), 188", link: "https://doi.org/10.4040/jkan.2017.47.2.188" },
   { type: "논문", year: 2017, title: "Validity and Reliability of a Korean Version of Nurse Clinical Reasoning Competence Scale", authors: "Joung, J. & Han, J.", venue: "Journal of the Korea Academia-Industrial cooperation Society, 18(4), 304-310", link: "" },
-  { type: '학술발표', year: 2026, title: 'Group Home Experiences among Socially Withdrawn and Isolated Young Adults: A Narrative Inquiry', authors: 'Shin, S., Kim, J., & Joung, J.', venue: '2026 한국간호과학회 국제간호학술대회(INC), 한국간호과학회 · 대한민국 · 2026.10.19–10.20 · 포스터 발표', link: '' },
-  { type: '학술발표', year: 2026, title: 'Qualitative Study of Horizontal Encounter Experiences of Schizophrenia Youth and Nursing Students', authors: 'Kim, J., & Joung, J.', venue: '37th International Nursing Research Congress, Sigma Nursing · 캐나다 · 2026.07.18 · 포스터 발표', link: '' },
+  { type: '학술발표', year: 2026, title: 'Group Home Experiences among Socially Withdrawn and Isolated Young Adults: A Narrative Inquiry', authors: 'Shin, S., Kim, J., & Joung, J.', venue: '2026 International Nursing Conference (INC), Korean Society of Nursing Science · Republic of Korea · Oct 19–20, 2026 · Poster presentation', link: '' },
+  { type: '학술발표', year: 2026, title: 'Qualitative Study of Horizontal Encounter Experiences of Schizophrenia Youth and Nursing Students', authors: 'Kim, J., & Joung, J.', venue: '37th International Nursing Research Congress, Sigma Nursing · Canada · Jul 18, 2026 · Poster presentation', link: '' },
   { type: '특허', year: 2026, title: '[특허·저작권 명칭]', authors: '', venue: '[등록번호]', link: '' }
 ];
