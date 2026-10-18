@@ -406,3 +406,12 @@ details.psec li { margin-bottom: 10px; }
 .out-head h2 { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.01em; margin-top: 4px; }
 /* 연구진 소제목: PROGRAM의 작은 '프로그램' 글자와 같은 크기·모양 */
 .people-head h2 { font-family: var(--font); font-size: 0.95rem; font-weight: 400; color: var(--blue); letter-spacing: 0; }
+
+/* 글자 정중앙 보정 (실제 글자 모양 기준으로 잰 차이만큼 여백을 미세 조정, 2026-10-18 측정) */
+.gnb > ul > li > a { padding: 12px 12.2px 12px 15.8px; }       /* 영문 자간 때문에 왼쪽으로 1.8px 치우침 */
+.btn-join { padding: 9.05px 19.28px 10.95px 20.72px; }          /* 아래로 0.95px, 왼쪽으로 0.72px */
+.chip { padding: 6.38px 16.23px 5.62px 15.77px; }               /* 위로 0.38px */
+.rcard .num { padding-left: 0.9px; }                             /* 숫자가 왼쪽으로 0.45px */
+.rrows dt { padding: 5.92px 0 6.08px; }                          /* 평균 0.08px */
+.callout .btn { padding: 11.13px 23.22px 12.87px 24.78px; }      /* 아래로 0.87px */
+.btn-line { padding: 9.13px 40.22px 10.87px 39.78px; }           /* 아래로 0.87px */

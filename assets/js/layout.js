@@ -10,8 +10,8 @@
       ['오시는 길', 'about.html#location']
     ]},
     { id: 'people', label: 'PEOPLE', href: 'people.html', sub: [
-      ['연구책임자', 'people.html#pi'],
-      ['연구원', 'people.html#members']
+      ['Principal Investigator', 'people.html#pi'],
+      ['Researchers', 'people.html#members']
     ]},
     { id: 'research', label: 'RESEARCH', href: 'research.html', sub: [
       ['Projects', 'research.html#projects'],
