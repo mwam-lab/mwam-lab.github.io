@@ -73,6 +73,25 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-08-10-japan-ipe',
+    category: '프로그램',
+    date: '2026-08-10',
+    title: 'JBNU 글로벌 PBL 「간호·사회복지, 함께 배우는 IPE 일본 현장학습」',
+    thumb: 'assets/images/posts/2026-08-10-japan-ipe-thumb.jpg',
+    images: ['assets/images/posts/2026-08-10-japan-ipe.jpg'],
+    body:
+      '<p>간호학과와 사회복지학과 학생들이 고립·은둔 청년의 회복을 주제로 한 IPE 기반 Co-production PBL 프로그램에 참여하고, 일본 홋카이도에서 현장학습을 진행했습니다. 국내 사전학습에는 고립·은둔 경험 당사자가 함께했으며, 현지에서는 한일 학생 공동 토론 수업과 당사자 중심 회복 현장을 경험했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 8월 10일(월) - 8월 14일(금)</li>' +
+        '<li>장소: 일본 홋카이도 (베델의 집, 홋카이도의료대학, 삿포로 청년지원센터)</li>' +
+        '<li>주관: 전북대학교 간호대학, 사회복지학과 (글로컬대학30)</li>' +
+        '<li>대상: 간호학과·사회복지학과 학생 20명</li>' +
+        '<li>책임교수: 정재원 교수</li>' +
+        '<li>참여: 김준혁 연구원</li>' +
+      '</ul>' +
+      '<p><a href="https://top.jbnu.ac.kr/bbs/glocal/5294/399323/artclView.do" target="_blank" rel="noopener">전북대학교 기사 보기</a></p>'
+  },
+  {
     id: '2026-09-17-muju-somatics',
     category: '프로그램',
     date: '2026-09-17',
