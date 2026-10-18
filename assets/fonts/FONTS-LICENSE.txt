@@ -1,0 +1,9 @@
+이 폴더의 글꼴 사용 조건
+
+1) 카카오 글씨 (KakaoSmallSans-*, KakaoBigSans-*)
+   Copyright (c) 2021 Kakao Corp. Font designed by FONTRIX Inc. & Min Bon & Park Min-gyu
+   SIL Open Font License, Version 1.1 — https://openfontlicense.org
+   출처: https://www.kakaocorp.com/page/detail/11571
+
+2) 학교안심 알림장 (HakgyoansimAllimjang-*)
+   한국교육학술정보원(KERIS) — https://www.keris.or.kr/

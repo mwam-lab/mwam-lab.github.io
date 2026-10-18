@@ -23,7 +23,7 @@
 메뉴 구성은 `assets/js/layout.js`, 색과 글꼴은 `assets/css/style.css`에서 바꿔요.
 
 ## 글꼴 · 색
-- 글꼴: 학교안심 알림장 R/B (KERIS). 원본 파일은 `../fonts/원본/`에 있어요
+- 글꼴: 본문 카카오 작은글씨, 제목 카카오 큰글씨, 연구소 이름 학교안심 알림장 B. 원본은 `../fonts/원본/`, 사용 조건은 `assets/fonts/FONTS-LICENSE.txt`
 - 색: 로고 색을 따랐어요. 남색 #243548 · 회청 #728DAA · 청록 #729596 · 하늘 #BED3D5 · 크림 #F9F5EC
 
 ## 미리보기

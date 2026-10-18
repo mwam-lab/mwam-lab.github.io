@@ -1,7 +1,8 @@
 /* 알림마당 게시물
    category: '공지' 또는 '소식'
    date: 'YYYY-MM-DD'  (최신 글이 자동으로 위에 옴)
-   images: ['assets/images/posts/파일명.jpg']  — 사진은 assets/images/posts 폴더에 넣기
+   thumb: 목록 카드에 보일 대표 이미지 (없으면 images 첫 장, 그것도 없으면 로고)
+   images: ['assets/images/posts/파일명.jpg']  — 본문 사진. assets/images/posts 폴더에 넣기
    body: 본문(HTML). 문단은 <p>...</p>
    pinned: true 이면 '중요' 표시하고 맨 위에 고정
    status: '모집 중' 또는 '마감' (번호 자리에 표시, 없으면 '') */
@@ -24,7 +25,8 @@ window.MWAM_POSTS = [
     category: '소식',
     date: '2026-10-17',
     title: '[예시] 움직임 명상 엑스배너 제작',
-    images: [],
+    thumb: 'assets/images/posts/2026-10-17-xbanner.jpg',
+    images: ['assets/images/posts/2026-10-17-xbanner-full.jpg'],
     body: '<p>[소식 내용을 여기에 적습니다.]</p>'
   }
 ];

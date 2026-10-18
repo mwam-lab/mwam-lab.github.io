@@ -4,30 +4,30 @@
   var S = window.MWAM_SITE || {};
 
   var MENU = [
-    { id: 'about', label: '연구소 소개', href: 'about.html', sub: [
+    { id: 'about', label: 'ABOUT', href: 'about.html', sub: [
       ['연구소 소개', 'about.html#intro'],
       ['연구 방향', 'about.html#focus'],
       ['오시는 길', 'about.html#location']
     ]},
-    { id: 'people', label: '연구진', href: 'people.html', sub: [
+    { id: 'people', label: 'PEOPLE', href: 'people.html', sub: [
       ['연구책임자', 'people.html#pi'],
       ['연구원', 'people.html#members']
     ]},
-    { id: 'research', label: '연구', href: 'research.html', sub: [
+    { id: 'research', label: 'RESEARCH', href: 'research.html', sub: [
       ['움직임 명상 프로그램', 'research.html#program'],
       ['진행 중인 연구', 'research.html#ongoing'],
       ['완료된 연구', 'research.html#completed']
     ]},
-    { id: 'outcomes', label: '연구성과', href: 'outcomes.html', sub: [
+    { id: 'outcomes', label: 'PUBLICATIONS', href: 'outcomes.html', sub: [
       ['논문', 'outcomes.html#papers'],
       ['학술발표', 'outcomes.html#presentations'],
       ['특허·저작권', 'outcomes.html#ip']
     ]},
-    { id: 'news', label: '알림마당', href: 'news.html', sub: [
+    { id: 'news', label: 'NEWS', href: 'news.html', sub: [
       ['공지사항', 'news.html?cat=공지'],
       ['연구 소식', 'news.html?cat=소식']
     ]},
-    { id: 'contact', label: '문의', href: 'contact.html' }
+    { id: 'contact', label: 'CONTACT', href: 'contact.html' }
   ];
 
   var page = document.body.getAttribute('data-page');

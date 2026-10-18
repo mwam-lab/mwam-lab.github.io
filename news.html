@@ -6,10 +6,8 @@
 <title>알림마당 | 뫔건강연구소</title>
 <meta name="description" content="공지사항과 연구 소식">
 <link rel="icon" href="assets/images/favicon.png">
+<link rel="preload" href="assets/fonts/KakaoSmallSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/HakgyoansimAllimjang-B.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-page="news">
@@ -17,13 +15,13 @@
 <main id="main">
 <section class="page-hero"><div class="wrap">
 <p class="breadcrumb"><a href="index.html">홈</a> › 알림마당</p>
-<p class="eyebrow">알림마당</p>
+<p class="eyebrow">NEWS</p>
 <h1>알림마당</h1>
 <p>연구 참여자 모집, 공지사항, 연구소 소식을 알려 드립니다.</p>
 </div></section>
 
 <section class="section"><div class="wrap">
-  <nav class="tabs" aria-label="게시판 분류">
+  <nav class="tabs line" aria-label="게시판 분류">
     <a href="news.html" data-cat="">전체</a>
     <a href="news.html?cat=공지" data-cat="공지">공지사항</a>
     <a href="news.html?cat=소식" data-cat="소식">연구 소식</a>
@@ -39,7 +37,7 @@
 <script>
 var cat = Mwam.param('cat') || '';
 document.querySelectorAll('.tabs a').forEach(function (a) { if (a.getAttribute('data-cat') === cat) a.setAttribute('aria-current', 'true'); });
-Mwam.board('board', cat);
+if (cat === '공지') Mwam.board('board', cat); else Mwam.cards('board', cat);
 document.querySelector('.page-hero h1').textContent = cat === '공지' ? '공지사항' : cat === '소식' ? '연구 소식' : '전체 글';
 </script>
 </body>
