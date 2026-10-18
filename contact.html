@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문의 | 뫔 건강연구소</title>
+<meta name="description" content="연구 참여 및 문의 안내">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="preload" href="assets/fonts/HakgyoansimAllimjang-B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/HakgyoansimAllimjang-R.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+<p class="breadcrumb"><a href="index.html">홈</a> › 문의</p>
+<p class="eyebrow">문의</p>
+<h1>무엇이든 물어보세요</h1>
+<p>연구 참여, 프로그램 운영, 협력 제안 등 궁금한 점을 알려 주세요.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="grid two">
+    <div class="card info"><h3>연락처</h3><dl id="contact-info"></dl></div>
+    <div class="card"><h3>이런 문의를 받습니다</h3>
+      <ul style="margin:0;padding-left:20px;color:var(--text-3)">
+        <li>연구 참여 신청 및 자격 문의</li><li>움직임 명상 프로그램 운영 문의</li><li>기관 협력·공동연구 제안</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+<section class="section white" id="join"><div class="wrap">
+  <div class="callout">
+    <div><h2>연구 참여 신청</h2><p style="margin-top:8px">[모집 중인 연구 이름] · [참여 대상] · [모집 기간]</p></div>
+    <a class="btn" href="news.html?cat=공지">모집 공고 보기</a>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data/site.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+var S = window.MWAM_SITE || {};
+document.getElementById('contact-info').innerHTML =
+  '<dt>기관</dt><dd>' + (S.org || '[소속 기관명]') + '</dd>' +
+  '<dt>주소</dt><dd>' + (S.address || '[주소]') + '</dd>' +
+  '<dt>전화</dt><dd>' + (S.tel || '[전화번호]') + '</dd>' +
+  '<dt>이메일</dt><dd>' + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</dd>';
+</script>
+</body>
+</html>

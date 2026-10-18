@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>연구소 소개 | 뫔 건강연구소</title>
+<meta name="description" content="뫔 건강연구소 소개, 연구 방향, 오시는 길">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="preload" href="assets/fonts/HakgyoansimAllimjang-B.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/HakgyoansimAllimjang-R.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="about">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+<p class="breadcrumb"><a href="index.html">홈</a> › 연구소 소개</p>
+<p class="eyebrow">연구소 소개</p>
+<h1>‘뫔’은 몸과 마음을<br>하나로 부르는 말이에요</h1>
+
+</div></section>
+
+<section class="section" id="intro"><div class="wrap">
+  <div class="grid two">
+    <div>
+      <div class="section-head"><p class="eyebrow">연구소 소개</p><h2>몸과 마음을 따로 보지 않습니다</h2></div>
+      <p style="color:var(--text-2)">몸이 편해야 마음이 쉬고, 마음이 편해야 몸이 움직입니다. 뫔 건강연구소는 둘을 함께 돌보는 방법을 찾고, 건강 돌봄이 더 필요한 분들이 일상에서 쉽게 따라 할 수 있는 움직임 명상 프로그램을 만듭니다.</p>
+      <p class="ph" style="margin-top:1em">[연구소 설립 배경과 목적을 2~3문장으로 적어 주세요.]</p>
+    </div>
+    <div class="card" style="align-items:center;justify-content:center"><img src="assets/images/logo.png" alt="뫔 건강연구소 로고" width="260" height="260"></div>
+  </div>
+</div></section>
+
+<section class="section white" id="focus"><div class="wrap">
+  <div class="section-head"><p class="eyebrow">연구 방향</p><h2>무엇을, 누구와, 어떻게</h2></div>
+  <div class="grid">
+    <div class="card"><span class="num">01</span><h3>누구를 위해</h3><p>건강 돌봄에서 소외되기 쉬운 취약군 [예: 고령자, 만성질환자 등]</p></div>
+    <div class="card"><span class="num teal">02</span><h3>무엇을</h3><p>몸의 움직임과 명상을 결합한 움직임 명상 중재 개발</p></div>
+    <div class="card"><span class="num">03</span><h3>어떻게</h3><p>대상자의 필요에 맞춘 프로그램을 만들고 효과를 확인합니다</p></div>
+    <div class="card"><span class="num teal">04</span><h3>나누기</h3><p>연구 결과와 건강 정보를 지역사회와 함께 나눕니다</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="location"><div class="wrap">
+  <div class="section-head"><p class="eyebrow">오시는 길</p><h2>찾아오시는 길</h2></div>
+  <div class="grid two">
+    <div class="card info"><dl id="loc-info"></dl></div>
+    <div class="map" id="map">지도 준비 중</div>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data/site.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+var S = window.MWAM_SITE || {};
+document.getElementById('loc-info').innerHTML =
+  '<dt>기관</dt><dd>' + (S.org || '[소속 기관명]') + '</dd>' +
+  '<dt>주소</dt><dd>' + (S.address || '[주소]') + '</dd>' +
+  '<dt>전화</dt><dd>' + (S.tel || '[전화번호]') + '</dd>' +
+  '<dt>이메일</dt><dd>' + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</dd>';
+
+if (S.mapEmbed) document.getElementById('map').innerHTML = '<iframe src="' + S.mapEmbed + '" title="연구소 위치 지도" loading="lazy"></iframe>';
+</script>
+</body>
+</html>
