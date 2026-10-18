@@ -49,6 +49,13 @@ window.MWAM_PROJECTS = [
     kind: '연구과제',
     status: '진행',
     year: 2026,
+    title: 'Co-Producing a Somatics-Based Program to Support Daily Life Recovery Among Socially Isolated and Withdrawn Youth: A Feasibility and Acceptability Study',
+    lines: ['National Research Foundation of Korea (NRF) · Master’s Student Research Grant · Principal Investigator (Junhyeok Kim)', 'Sep 2026 - Aug 2027']
+  },
+  {
+    kind: '연구과제',
+    status: '진행',
+    year: 2026,
     title: 'Exploring the Long-Term Life Experiences of Parents Bereaved by the Sewol Ferry Disaster Using PEARL (Photo Experiencing and Reflective Listening): A Qualitative Study',
     lines: ['4·16 Foundation · Life Safety Academic Research Grant · Principal Investigator (Junhyeok Kim)', 'Jul 2026 - Jul 2027']
   },

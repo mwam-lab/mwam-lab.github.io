@@ -321,6 +321,7 @@ window.MWAM_POSTS = [
       '<p>김준혁 연구원이 연구책임자로 신청한 과제가 교육부·한국연구재단의 <strong>2026년도 석사과정생 연구장려금 지원사업</strong>에 선정되어, 1년간 1,200만 원의 연구비를 지원받습니다.</p>' +
       '<ul>' +
         '<li>과제명: 당사자 공동생산 기반 고립·은둔 청년의 일상회복을 위한 소매틱스 프로그램 개발 및 시범 적용: 실현가능성과 수용성 평가</li>' +
+        '<li>영문 과제명: Co-Producing a Somatics-Based Program to Support Daily Life Recovery Among Socially Isolated and Withdrawn Youth: A Feasibility and Acceptability Study</li>' +
         '<li>연구책임자: 김준혁 연구원 (지도교수 정재원)</li>' +
         '<li>연구기간: 2026년 9월 1일 - 2027년 8월 31일 (12개월)</li>' +
         '<li>연구비: 1,200만 원</li>' +
