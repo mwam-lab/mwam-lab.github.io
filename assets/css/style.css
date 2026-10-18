@@ -439,3 +439,44 @@ details.psec li { margin-bottom: 10px; }
 .map-link:hover span { background: var(--navy); color: var(--white); }
 .site-footer .vbar { background: rgba(232, 238, 242, 0.35); }
 .site-footer .fl { display: inline-block; width: 2.9em; }  /* 주소·전화·이메일 뒤 세로선이 한 줄로 서도록 */
+
+/* ---------- 메인 (KIMPACT Lab 구성 참고) ---------- */
+.mhero { position: relative; overflow: hidden; color: var(--white); text-align: center; }
+.mhero-bg { position: absolute; inset: 0; background: url('../images/posts/2026-09-17-muju-somatics-photo.jpg') center 55% / cover no-repeat; }
+.mhero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36, 53, 72, 0.62), rgba(36, 53, 72, 0.78)); }
+.mhero-in { position: relative; padding-top: 120px; padding-bottom: 120px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.mhero-tag { font-size: 1rem; letter-spacing: 0.14em; color: #DCE5E7; }
+.mhero-name { font-family: var(--font-brand); font-weight: 900; font-size: clamp(2.6rem, 6vw, 4.2rem); letter-spacing: -0.01em; color: var(--white); }
+.mhero-sub { font-size: 1.1rem; color: #E8EEF2; }
+.mabout { padding: 96px 0 40px; }
+.mrow { display: grid; grid-template-columns: 240px 1fr; gap: 40px; padding: 36px 0; border-top: 1px solid var(--line); }
+.mrow:last-child { border-bottom: 1px solid var(--line); }
+.mrow h2 { font-size: 1.45rem; font-weight: 900; color: var(--navy); }
+.mrow p { color: var(--text-2); }
+.mrow p + p { margin-top: 12px; }
+.mlead { font-family: var(--font-head); font-size: 1.6rem; color: var(--navy) !important; }
+.mlead b { font-family: var(--font-brand); font-weight: 900; }
+.mlead span { color: var(--teal); }
+.mlink { display: flex; gap: 18px; flex-wrap: wrap; }
+.mlink a { font-size: 0.95rem; }
+.mprog { padding: 64px 0 40px; text-align: center; }
+.mprog-title { font-size: 1.45rem; font-weight: 900; margin-bottom: 24px; }
+.mvenn { width: min(760px, 100%); height: auto; }
+.mvenn .v-h { font-family: var(--font-head); font-size: 20px; }
+.mvenn .v-t { font-family: var(--font); font-size: 16px; fill: var(--text-2); }
+.mvenn .v-c { font-family: var(--font-brand); font-weight: 900; font-size: 30px; fill: var(--navy); }
+.mvenn .v-t2 { font-family: var(--font); font-size: 15px; fill: var(--text-2); }
+.mboxes { max-width: 760px; margin: 8px auto 0; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: 0 6px 20px rgba(36, 53, 72, 0.06); }
+.mboxes > div { padding: 22px 24px; background: var(--white); }
+.mboxes > div + div { border-left: 1px solid var(--line); }
+.mboxes h3 { font-size: 1.05rem; font-weight: 900; margin-bottom: 6px; }
+.mboxes p { color: var(--text-3); font-size: 0.95rem; }
+@media (max-width: 720px) {
+  .mrow { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
+  .mhero-in { padding-top: 88px; padding-bottom: 88px; }
+  .mboxes { grid-template-columns: 1fr; }
+  .mboxes > div + div { border-left: 0; border-top: 1px solid var(--line); }
+}
+/* 문의: 위 두 카드와 '연구 참여 신청' 사이 = 두 카드 사이 간격 */
+.section.contact-top { padding-bottom: 0; }
+.contact-top + #join { padding-top: 20px; }
