@@ -291,6 +291,21 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-01-23-kcse',
+    category: '수련',
+    date: '2026-01-23',
+    title: '한국과학학술지편집인협의회 2026년도 제16차 정기총회 및 오픈 포럼 참석',
+    thumb: 'assets/images/posts/2026-01-23-kcse-thumb.jpg',
+    images: ['assets/images/posts/2026-01-23-kcse-hall.jpg'],
+    body:
+      '<p>한국과학기술단체총연합회(과총) 산하 한국과학학술지편집인협의회의 2026년도 정기총회 및 오픈 포럼에 참석했습니다. 오픈 포럼에서는 AI 시대 학술 출판의 변화와 인공지능을 활용한 동료심사 효율화, 학술지 발전 전략을 함께 논의했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 1월 23일(금) 13:30</li>' +
+        '<li>주최: 한국과학학술지편집인협의회</li>' +
+        '<li>참석: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-01-09-okuda-mou',
     category: '공지',
     date: '2026-01-09',
@@ -321,6 +336,21 @@ window.MWAM_POSTS = [
         '<li>장소: 서울 aT센터 창조룸1</li>' +
         '<li>주최: 농촌진흥청</li>' +
         '<li>참석: 정재원 교수, 서교일 연구원, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
+    id: '2025-12-22-youth-future',
+    category: '수련',
+    date: '2025-12-22',
+    title: '2025 전북특별자치도 청년미래센터 성과보고 & 청년 응원 콘서트 참석',
+    thumb: 'assets/images/posts/2025-12-22-youth-future-thumb.jpg',
+    images: ['assets/images/posts/2025-12-22-youth-future-stage.jpg', 'assets/images/posts/2025-12-22-youth-future-main.jpg'],
+    body:
+      '<p>전북특별자치도 청년미래센터의 2025년 성과보고 & 청년 응원 콘서트에 참석했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 12월 22일(월) 14:00</li>' +
+        '<li>장소: 전북예술회관 공연장</li>' +
+        '<li>주최: 전북특별자치도, 전북특별자치도 청년미래센터</li>' +
       '</ul>'
   },
   {
