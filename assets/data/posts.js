@@ -178,6 +178,19 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-06-10-lab-dinner',
+    category: '공지',
+    date: '2026-06-10',
+    title: '정재원 교수 연구실 1학기 종강 모임',
+    thumb: 'assets/images/posts/2026-06-10-lab-thumb.jpg',
+    images: ['assets/images/posts/2026-06-10-lab-dinner.jpg'],
+    body:
+      '<p>정재원 교수 연구실 구성원들이 한 학기를 마무리하며 종강 모임을 가졌습니다. 함께한 연구와 활동을 돌아보고 서로를 격려하는 시간이었습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 6월 10일(수)</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-05-29-ksds',
     category: '수련',
     date: '2026-05-29',
