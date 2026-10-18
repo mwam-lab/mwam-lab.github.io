@@ -45,7 +45,7 @@
     '<header class="site-header"><div class="wrap">' +
       '<a class="brand" href="index.html">' +
         '<img src="assets/images/logo.png" alt="" width="46" height="46">' +
-        '<span class="brand-name"><strong>뫔 건강연구소</strong><small>몸과 마음을 함께 돌보는 움직임 명상</small></span>' +
+        '<span class="brand-name"><strong>뫔건강연구소</strong><small>몸과 마음을 함께 돌보는 움직임 명상</small></span>' +
       '</a>' +
       '<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="gnb" aria-label="메뉴 열기">' +
         '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>' +
@@ -57,7 +57,7 @@
 
   var footer =
     '<footer class="site-footer"><div class="wrap">' +
-      '<div><strong>뫔 건강연구소</strong>' +
+      '<div><strong>뫔건강연구소</strong>' +
         '<p>연구 수행 기관 · ' + (S.org || '<span>[소속 기관명]</span>') + '</p>' +
         '<p>주소 · ' + (S.address || '[주소]') + '</p>' +
         '<p>전화 · ' + (S.tel || '[전화번호]') + '</p>' +
@@ -66,7 +66,7 @@
       '<div class="foot-links">' + MENU.map(function (m) { return '<a href="' + m.href + '">' + m.label + '</a>'; }).join('') +
         (S.instagram ? '<a href="' + S.instagram + '" target="_blank" rel="noopener">인스타그램</a>' : '') +
       '</div>' +
-    '</div><div class="copy"><div class="wrap">© ' + new Date().getFullYear() + ' 뫔 건강연구소</div></div></footer>';
+    '</div><div class="copy"><div class="wrap">© ' + new Date().getFullYear() + ' 뫔건강연구소</div></div></footer>';
 
   document.getElementById('site-header').outerHTML = header;
   document.getElementById('site-footer').outerHTML = footer;

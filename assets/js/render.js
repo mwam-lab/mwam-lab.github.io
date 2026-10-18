@@ -38,7 +38,7 @@ var Mwam = (function () {
     var i = all.findIndex(function (p) { return p.id === param('id'); });
     if (i < 0) { el.innerHTML = '<div class="post"><p class="empty">글을 찾을 수 없습니다. <a href="news.html">알림마당으로 돌아가기</a></p></div>'; return; }
     var p = all[i];
-    document.title = p.title + ' | 뫔 건강연구소';
+    document.title = p.title + ' | 뫔건강연구소';
     var imgs = (p.images || []).map(function (src) { return '<img src="' + esc(src) + '" alt="">'; }).join('');
     var files = (p.files || []).map(function (f) {
       return '<li><a href="' + esc(f.href) + '" download>' + esc(f.name) + '</a></li>';
