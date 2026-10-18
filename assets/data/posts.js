@@ -212,6 +212,22 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2025-12-16-scholarship',
+    category: '공지',
+    date: '2025-12-16',
+    title: '김준혁 연구원, **국가우수장학생(이공계)** 선발',
+    thumb: 'assets/images/posts/2025-12-16-scholarship-thumb.jpg',
+    images: ['assets/images/posts/2025-12-16-scholarship-main.jpg', 'assets/images/posts/2025-12-16-scholarship-cert.jpg'],
+    body:
+      '<p>김준혁 연구원(지도교수 정재원)이 이공계 분야의 뛰어난 학업능력과 연구 역량을 인정받아 2025년 <strong>국가우수장학생(이공계)</strong>으로 선발되었습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 12월 16일</li>' +
+        '<li>장학: 국가우수장학금(이공계) 대학원</li>' +
+        '<li>수여: 과학기술정보통신부</li>' +
+        '<li>지도교수: 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: '2025-12-05-bongsarang',
     category: '프로그램',
     date: '2025-12-05',
