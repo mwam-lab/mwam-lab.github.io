@@ -16,9 +16,9 @@
     { id: 'research', label: 'RESEARCH', href: 'research.html' },
     { id: 'program', label: 'PROGRAM', href: 'program.html' },
     { id: 'outcomes', label: 'PUBLICATIONS', href: 'outcomes.html', sub: [
-      ['논문', 'outcomes.html#papers'],
-      ['학술발표', 'outcomes.html#presentations'],
-      ['특허·저작권', 'outcomes.html#ip']
+      ['Journal Articles', 'outcomes.html#papers'],
+      ['Conference Presentations', 'outcomes.html#presentations'],
+      ['Patents & Copyrights', 'outcomes.html#ip']
     ]},
     { id: 'news', label: 'NEWS', href: 'news.html' },
     { id: 'contact', label: 'CONTACT', href: 'contact.html' }

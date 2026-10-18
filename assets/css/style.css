@@ -401,3 +401,6 @@ details.psec li { margin-bottom: 10px; }
 /* 흰 바탕 위에서 카드가 구분되도록 */
 .card, .person, .pub, .project, .post, .board-table { border: 1px solid var(--line); box-shadow: 0 6px 20px rgba(36, 53, 72, 0.06); }
 .board-table { border-top: 2px solid var(--navy); }
+
+/* PUBLICATIONS 소제목: 작고 굵게 (영문) */
+.out-head h2 { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.01em; margin-top: 4px; }
