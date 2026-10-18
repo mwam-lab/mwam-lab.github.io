@@ -284,6 +284,86 @@ window.MWAM_POSTS = [
       '<p><a href="http://www.mindpost.or.kr/bbs/board.php?bo_table=news&amp;wr_id=8982" target="_blank" rel="noopener">마인드포스트 기사 보기</a></p>'
   },
   {
+    id: '2025-05-29-khu-lecture',
+    category: '특강',
+    date: '2025-05-29',
+    title: '경희대학교 간호대학 대학원 특강 「연구논문을 잘 작성하는 법」',
+    thumb: 'assets/images/posts/2025-05-29-khu-lecture-thumb.jpg',
+    images: ['assets/images/posts/2025-05-29-khu-lecture.jpg'],
+    body:
+      '<p>정재원 교수가 경희대학교 간호대학 대학원 중급간호연구 수업에서 「연구논문을 잘 작성하는 법」을 주제로 특강했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 5월 29일(목)</li>' +
+        '<li>장소: 경희대학교 간호대학</li>' +
+        '<li>대상: 대학원 중급간호연구 수강생</li>' +
+        '<li>강사: 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
+    id: '2025-05-29-khu-conference',
+    category: '수련',
+    date: '2025-05-29',
+    title: '2025 동서간호학연구소 춘계학술대회 「Mindfulness·compassion을 통한 돌봄」 참석',
+    thumb: 'assets/images/posts/2025-05-29-khu-conference-thumb.jpg',
+    images: ['assets/images/posts/2025-05-29-khu-conference.jpg', 'assets/images/posts/2025-05-29-khu-conference-2.jpg'],
+    body:
+      '<p>경희대학교 동서간호학연구소 춘계학술대회에 참석해 마음챙김과 자비를 바탕으로 한 돌봄에 대해 배웠습니다. MBSR(마음챙김 기반 스트레스 감소)을 중심으로 한 강연을 들으며 연구소의 움직임 명상 프로그램에 적용할 방향을 살펴보았습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 5월 29일(목) 13:00-17:00</li>' +
+        '<li>장소: 경희대학교</li>' +
+        '<li>주최: 경희대학교 동서간호학연구소</li>' +
+        '<li>주제: Mindfulness·compassion을 통한 돌봄</li>' +
+        '<li>참석: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
+    id: '2025-05-16-nurse-managers',
+    category: '프로그램',
+    date: '2025-05-16',
+    title: '「몸의 신호를 듣다: 간호관리자의 감성리더십 증진을 위한 소마틱스」 워크숍',
+    thumb: 'assets/images/posts/2025-05-16-nurse-managers-thumb.jpg',
+    images: ['assets/images/posts/2025-05-16-nurse-managers.jpg'],
+    body:
+      '<p>간호관리자를 대상으로 몸의 감각을 알아차리며 감성리더십을 키우는 소마틱스 워크숍을 운영했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 5월 16일(금)</li>' +
+        '<li>장소: 전주 이공간</li>' +
+        '<li>대상: 간호관리자</li>' +
+        '<li>진행: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
+    id: '2025-05-15-beautiful-world',
+    category: '프로그램',
+    date: '2025-05-15',
+    title: '「아름다운세상을 위한 몸의 탐험」 정신건강 소마틱스 프로그램',
+    thumb: 'assets/images/posts/2025-05-15-beautiful-world-thumb.jpg',
+    images: ['assets/images/posts/2025-05-15-beautiful-world-slide.jpg', 'assets/images/posts/2025-05-15-beautiful-world-1.jpg', 'assets/images/posts/2025-05-15-beautiful-world-2.jpg', 'assets/images/posts/2025-05-15-beautiful-world-3.jpg', 'assets/images/posts/2025-05-15-beautiful-world-4.jpg'],
+    body:
+      '<p>정신재활시설 아름다운세상의 정신질환 당사자와 함께 몸의 감각을 깨우고 움직임을 탐험하는 정신건강 소마틱스 프로그램을 운영했습니다.</p>' +
+      '<ul>' +
+        '<li>기간: 2025년 5월 15일 - 8월 31일</li>' +
+        '<li>장소: 인산의료재단 정신재활시설 아름다운세상</li>' +
+        '<li>대상: 정신질환 당사자</li>' +
+        '<li>진행: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
+    id: '2025-03-23-ancient-training',
+    category: '수련',
+    date: '2025-03-23',
+    title: 'Ancient Training Workshop 수료',
+    thumb: 'assets/images/posts/2025-03-23-ancient-training-thumb.jpg',
+    images: ['assets/images/posts/2025-03-23-ancient-training-cert.jpg', 'assets/images/posts/2025-03-23-ancient-training-lecture.jpg', 'assets/images/posts/2025-03-23-ancient-training-group.jpg', 'assets/images/posts/2025-03-23-ancient-training-clubs.jpg'],
+    body:
+      '<p>정재원 교수, 서교일 연구원, 김준혁 연구원이 페르시안 밀, 인디언 클럽, 메이스벨, 클럽벨 등 고대 전통 도구로 몸을 단련하는 Ancient Training Workshop을 수료했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 3월 (4일 과정, 3월 23일 수료)</li>' +
+        '<li>내용: Persian Meels, Indian Clubs, Macebell, Clubbell</li>' +
+        '<li>참여: 정재원 교수, 서교일 연구원, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: 'sample-recruit',
     category: '공지',
     pinned: true,
