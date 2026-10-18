@@ -59,7 +59,9 @@ document.getElementById('loc-info').innerHTML =
   '<dt>전화</dt><dd>' + (S.tel || '[전화번호]') + '</dd>' +
   '<dt>이메일</dt><dd>' + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</dd>';
 
-if (S.mapEmbed) document.getElementById('map').innerHTML = '<iframe src="' + S.mapEmbed + '" title="연구소 위치 지도" loading="lazy"></iframe>';
+if (S.mapEmbed) document.getElementById('map').innerHTML =
+  '<iframe src="' + S.mapEmbed + '" title="연구소 위치 지도" tabindex="-1"></iframe>' +
+  (S.mapLink ? '<a class="map-link" href="' + S.mapLink + '" target="_blank" rel="noopener" aria-label="구글 지도에서 전북대학교 간호대학 위치 열기"><span>구글 지도에서 보기 ↗</span></a>' : '');
 </script>
 </body>
 </html>
