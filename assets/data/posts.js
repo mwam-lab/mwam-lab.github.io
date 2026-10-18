@@ -439,6 +439,21 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2025-11-07-jeju-workshop',
+    category: '소식',
+    date: '2025-11-07',
+    title: '2025 한국정신사회재활협회 추계학술대회 참석 및 뫔건강연구소 워크숍',
+    thumb: 'assets/images/posts/2025-11-07-jeju-thumb.jpg',
+    images: ['assets/images/posts/2025-11-07-jeju-group.jpg', 'assets/images/posts/2025-11-07-jeju-poster.jpg'],
+    body:
+      '<p>연구소 구성원들이 제주대학교에서 열린 2025 한국정신사회재활협회 추계학술대회 「범죄 연루 정신질환자의 정신 재활」에 참석하고, 제주에서 뫔건강연구소 워크숍을 함께 진행했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 11월 7일(금)</li>' +
+        '<li>장소: 제주대학교</li>' +
+        '<li>학술대회: 한국정신사회재활협회 추계학술대회 「범죄 연루 정신질환자의 정신 재활」</li>' +
+      '</ul>'
+  },
+  {
     id: '2025-11-21-kpmhn-poster',
     category: '발표·수상',
     date: '2025-11-21',
