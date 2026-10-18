@@ -31,26 +31,71 @@ var Mwam = (function () {
     }).join('') + '</ul>';
   }
 
+  // 정렬: 중요 글 먼저, 그다음 최신순
+  function boardOrder(list) {
+    return list.slice().sort(function (a, b) { return (b.pinned ? 1 : 0) - (a.pinned ? 1 : 0) || byDateDesc(a, b); });
+  }
+  function catLabel(p) { return '<span class="cat">[' + esc(p.category === '공지' ? '공지' : '소식') + ']</span> '; }
+  function href(p) { return 'post.html?id=' + encodeURIComponent(p.id); }
+
+  // 알림마당 게시판 (표 형식, 10개씩 쪽 나눔)
+  function board(id, cat) {
+    var PER = 10;
+    var list = boardOrder(posts(cat));
+    var pages = Math.max(1, Math.ceil(list.length / PER));
+    var page = Math.min(pages, Math.max(1, parseInt(param('page'), 10) || 1));
+    var el = $(id);
+    var total = list.length;
+    var rows = list.slice((page - 1) * PER, page * PER).map(function (p, i) {
+      var no = total - ((page - 1) * PER + i);
+      var badge = p.status
+        ? '<span class="state' + (p.status === '마감' ? ' closed' : '') + '">' + esc(p.status) + '</span>'
+        : (p.pinned ? '<span class="state">중요</span>' : no);
+      return '<tr><td class="no' + (p.status || p.pinned ? '' : ' plain') + '">' + badge + '</td>' +
+        '<td class="subject"><a href="' + href(p) + '">' + catLabel(p) + esc(p.title) + '</a></td>' +
+        '<td class="date">' + fmtDate(p.date) + '</td></tr>';
+    }).join('');
+    var q = function (n) { return 'news.html?' + (cat ? 'cat=' + encodeURIComponent(cat) + '&' : '') + 'page=' + n; };
+    var paging = '';
+    if (pages > 1) {
+      for (var n = 1; n <= pages; n++) {
+        paging += n === page ? '<strong aria-current="page">' + n + '</strong>' : '<a href="' + q(n) + '">' + n + '</a>';
+      }
+      paging = '<nav class="paging" aria-label="쪽 이동">' + paging + '</nav>';
+    }
+    el.innerHTML = '<p class="count">전체 <b>' + total + '</b>건</p>' +
+      '<table class="board-table"><caption class="skip">' + esc(cat || '전체') + ' 게시판</caption>' +
+      '<thead><tr><th scope="col" class="no">번호</th><th scope="col">제목</th><th scope="col" class="date">등록일</th></tr></thead>' +
+      '<tbody>' + (rows || '<tr><td colspan="3" class="empty">등록된 글이 없습니다.</td></tr>') + '</tbody></table>' + paging;
+  }
+
   // 게시물 상세
   function postDetail(id) {
     var el = $(id);
-    var all = posts();
+    var all = boardOrder(posts());
     var i = all.findIndex(function (p) { return p.id === param('id'); });
-    if (i < 0) { el.innerHTML = '<div class="post"><p class="empty">글을 찾을 수 없습니다. <a href="news.html">알림마당으로 돌아가기</a></p></div>'; return; }
+    if (i < 0) { el.innerHTML = '<p class="empty">글을 찾을 수 없습니다. <a href="news.html">알림마당으로 돌아가기</a></p>'; return; }
     var p = all[i];
     document.title = p.title + ' | 뫔건강연구소';
+    var h1 = document.querySelector('.page-hero h1');
+    if (h1) h1.textContent = p.category === '공지' ? '공지사항' : '연구 소식';
     var imgs = (p.images || []).map(function (src) { return '<img src="' + esc(src) + '" alt="">'; }).join('');
     var files = (p.files || []).map(function (f) {
       return '<li><a href="' + esc(f.href) + '" download>' + esc(f.name) + '</a></li>';
     }).join('');
+    var prev = all[i + 1], next = all[i - 1];
+    var nav = function (label, q) {
+      return '<tr><th scope="row">' + label + '</th><td>' + (q ? '<a href="' + href(q) + '">' + esc(q.title) + '</a>' : '<span class="ph">없음</span>') + '</td></tr>';
+    };
     el.innerHTML =
-      '<article class="post"><div class="post-head">' +
-        '<span class="tag' + (p.category === '소식' ? ' teal' : '') + '">' + esc(p.category) + '</span>' +
-        '<h1>' + esc(p.title) + '</h1><span class="date">' + fmtDate(p.date) + '</span>' +
-      '</div><div class="post-body">' + imgs + (p.body || '') +
-        (files ? '<h3>첨부파일</h3><ul>' + files + '</ul>' : '') +
-      '</div></article>' +
-      '<div class="post-nav"><a href="news.html?cat=' + encodeURIComponent(p.category) + '">← 목록으로</a></div>';
+      '<article class="post">' +
+        '<header class="post-band"><h2>' + catLabel(p) + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
+        '<div class="post-body">' + imgs + (p.body || '') +
+          (files ? '<div class="files"><h3>첨부파일</h3><ul>' + files + '</ul></div>' : '') +
+        '</div>' +
+      '</article>' +
+      '<table class="post-nav">' + nav('이전 글', prev) + nav('다음 글', next) + '</table>' +
+      '<p class="to-list"><a class="btn-line" href="news.html?cat=' + encodeURIComponent(p.category) + '">목록</a></p>';
   }
 
   // 연구성과 (type: 논문 | 학술발표 | 특허)
@@ -97,5 +142,5 @@ var Mwam = (function () {
     }).join('');
   }
 
-  return { postList: postList, postDetail: postDetail, outcomes: outcomes, projects: projects, people: people, param: param };
+  return { postList: postList, board: board, postDetail: postDetail, outcomes: outcomes, projects: projects, people: people, param: param };
 })();

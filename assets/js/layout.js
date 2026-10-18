@@ -45,7 +45,7 @@
     '<header class="site-header"><div class="wrap">' +
       '<a class="brand" href="index.html">' +
         '<img src="assets/images/logo.png" alt="" width="46" height="46">' +
-        '<span class="brand-name"><strong>뫔건강연구소</strong><small>몸과 마음을 함께 돌보는 움직임 명상</small></span>' +
+        '<span class="brand-name"><strong>뫔건강연구소</strong><small>몸과 마음을 함께 돌봄</small></span>' +
       '</a>' +
       '<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="gnb" aria-label="메뉴 열기">' +
         '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>' +

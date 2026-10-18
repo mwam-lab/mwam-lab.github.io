@@ -7,7 +7,9 @@
 <meta name="description" content="공지사항과 연구 소식">
 <link rel="icon" href="assets/images/favicon.png">
 <link rel="preload" href="assets/fonts/HakgyoansimAllimjang-B.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/HakgyoansimAllimjang-R.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-page="news">
@@ -26,7 +28,7 @@
     <a href="news.html?cat=공지" data-cat="공지">공지사항</a>
     <a href="news.html?cat=소식" data-cat="소식">연구 소식</a>
   </nav>
-  <div class="board"><div id="board"></div></div>
+  <div id="board"></div>
 </div></section>
 </main>
 <div id="site-footer"></div>
@@ -37,7 +39,8 @@
 <script>
 var cat = Mwam.param('cat') || '';
 document.querySelectorAll('.tabs a').forEach(function (a) { if (a.getAttribute('data-cat') === cat) a.setAttribute('aria-current', 'true'); });
-Mwam.postList('board', { category: cat, showTag: !cat });
+Mwam.board('board', cat);
+document.querySelector('.page-hero h1').textContent = cat === '공지' ? '공지사항' : cat === '소식' ? '연구 소식' : '전체 글';
 </script>
 </body>
 </html>
