@@ -92,6 +92,23 @@ window.MWAM_POSTS = [
       '<p><a href="https://top.jbnu.ac.kr/bbs/glocal/5294/399323/artclView.do" target="_blank" rel="noopener">전북대학교 기사 보기</a></p>'
   },
   {
+    id: '2026-07-17-camh',
+    category: '수련',
+    date: '2026-07-17',
+    title: '캐나다 CAMH 방문 「Collaborative Learning College」 연구팀과의 만남',
+    thumb: 'assets/images/posts/2026-07-17-camh-thumb.jpg',
+    images: ['assets/images/posts/2026-07-17-camh-group.jpg', 'assets/images/posts/2026-07-17-camh-talk.jpg', 'assets/images/posts/2026-07-17-camh-meeting.jpg', 'assets/images/posts/2026-07-17-camh-online.jpg'],
+    body:
+      '<p>캐나다 토론토의 CAMH(Centre for Addiction and Mental Health)를 방문해 리커버리 칼리지인 Collaborative Learning College(CLC) 연구팀과 만났습니다. CLC 연구를 함께 이끄는 Sophie Soklaridis 박사, Holly Harris 연구코디네이터와 당사자와 함께 만드는 정신건강 교육(co-production)의 운영 경험을 나누고, 연구소의 연구 관심사를 소개했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 7월 17일(금)</li>' +
+        '<li>장소: CAMH, 캐나다 토론토</li>' +
+        '<li>주요 내용: CLC의 개발·운영 경험 공유, co-production 기반 간호교육 논의</li>' +
+        '<li>참여: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>' +
+      '<p><a href="https://clc.camh.ca" target="_blank" rel="noopener">Collaborative Learning College 홈페이지</a></p>'
+  },
+  {
     id: '2026-09-17-muju-somatics',
     category: '프로그램',
     date: '2026-09-17',
