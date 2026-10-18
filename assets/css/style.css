@@ -442,7 +442,7 @@ details.psec li { margin-bottom: 10px; }
 
 /* ---------- 메인 (KIMPACT Lab 구성 참고) ---------- */
 .mhero { position: relative; overflow: hidden; color: var(--white); text-align: center; }
-.mhero-bg { position: absolute; inset: 0; background: url('../images/hero-forest.jpg') center 45% / cover no-repeat; }
+.mhero-bg { position: absolute; inset: 0; background: url('../images/hero-forest.jpg') center 85% / cover no-repeat; }
 .mhero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(36, 53, 72, 0.30), rgba(36, 53, 72, 0.55)); }  /* 안개 숲 사진에 맞게 옅게 */
 .mhero-in { position: relative; padding-top: 120px; padding-bottom: 120px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .mhero-tag { font-size: 1rem; letter-spacing: 0.14em; color: #DCE5E7; }
