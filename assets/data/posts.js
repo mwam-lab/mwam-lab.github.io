@@ -1,5 +1,6 @@
 /* 알림마당 게시물
    category: '공지' | '프로그램' | '특강' | '학술발표' | '수련'  (NEWS 탭과 카드의 작은 표시)
+   title: **글자**로 감싸면 그 부분만 굵게 보임 (예: '... **우수포스터상** 수상')
    date: 'YYYY-MM-DD'  (최신 글이 자동으로 위에 옴)
    thumb: 목록 카드에 보일 대표 이미지 (없으면 images 첫 장, 그것도 없으면 로고)
    images: ['assets/images/posts/파일명.jpg']  - 본문 사진. assets/images/posts 폴더에 넣기
@@ -197,7 +198,7 @@ window.MWAM_POSTS = [
     id: '2025-11-21-kpmhn-poster',
     category: '학술발표',
     date: '2025-11-21',
-    title: '2025 한국정신간호학회 동계학술대회 우수포스터상 수상',
+    title: '2025 한국정신간호학회 동계학술대회 **우수포스터상** 수상',
     thumb: 'assets/images/posts/2025-11-21-kpmhn-poster-thumb-v2.jpg',
     images: ['assets/images/posts/2025-11-21-kpmhn-poster.jpg', 'assets/images/posts/2025-11-21-kpmhn-award.jpg'],
     body:

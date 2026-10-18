@@ -31,7 +31,7 @@ var Mwam = (function () {
     el.innerHTML = '<ul class="list">' + list.map(function (p) {
       var tag = opts.showTag ? '<span class="tag' + (p.category === '소식' ? ' teal' : '') + '">' + esc(p.category) + '</span>' : '';
       var pin = p.pinned ? '<span class="tag">중요</span>' : '';
-      return '<li><span>' + pin + tag + '<a href="post.html?id=' + encodeURIComponent(p.id) + '">' + esc(p.title) + '</a></span>' +
+      return '<li><span>' + pin + tag + '<a href="post.html?id=' + encodeURIComponent(p.id) + '">' + ttl(p.title) + '</a></span>' +
         '<span class="date">' + fmtDate(p.date) + '</span></li>';
     }).join('') + '</ul>';
   }
@@ -57,7 +57,7 @@ var Mwam = (function () {
         ? '<span class="state' + (p.status === '마감' ? ' closed' : '') + '">' + esc(p.status) + '</span>'
         : (p.pinned ? '<span class="state">중요</span>' : no);
       return '<tr><td class="no' + (p.status || p.pinned ? '' : ' plain') + '">' + badge + '</td>' +
-        '<td class="subject"><a href="' + href(p) + '">' + catLabel(p) + esc(p.title) + '</a></td>' +
+        '<td class="subject"><a href="' + href(p) + '">' + catLabel(p) + ttl(p.title) + '</a></td>' +
         '<td class="date">' + fmtDate(p.date) + '</td></tr>';
     }).join('');
     var q = function (n) { return 'news.html?' + (cat ? 'cat=' + encodeURIComponent(cat) + '&' : '') + 'page=' + n; };
@@ -89,7 +89,7 @@ var Mwam = (function () {
       return '<li><a class="ncard" href="' + href(p) + '">' +
         '<span class="ntop"><span class="date">' + fmtDate(p.date) + '</span>' +
           (p.status ? '<span class="state">' + esc(p.status) + '</span>' : '') + '</span>' +
-        '<strong class="ntitle">' + esc(p.title) + '</strong>' +
+        '<strong class="ntitle">' + ttl(p.title) + '</strong>' +
         '<span class="nthumb">' + thumb + (p.category ? '<span class="nlabel">' + esc(catEn(p.category)) + '</span>' : '') + '</span>' +
       '</a></li>';
     }).join('');
@@ -104,6 +104,10 @@ var Mwam = (function () {
     el.innerHTML = items ? '<ul class="news-grid">' + items + '</ul>' + paging : '<p class="empty">등록된 글이 없습니다.</p>';
   }
 
+  // 제목: **글자** 부분만 굵게
+  function ttl(t) { return esc(t).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
+  function plain(t) { return String(t || '').replace(/\*\*/g, ''); }
+
   // 게시물 상세
   function postDetail(id) {
     var el = $(id);
@@ -111,18 +115,18 @@ var Mwam = (function () {
     var i = all.findIndex(function (p) { return p.id === param('id'); });
     if (i < 0) { el.innerHTML = '<p class="empty">글을 찾을 수 없습니다. <a href="news.html">알림마당으로 돌아가기</a></p>'; return; }
     var p = all[i];
-    document.title = p.title + ' | 뫔건강연구소';
+    document.title = plain(p.title) + ' | 뫔건강연구소';
     var imgs = (p.images || []).map(function (src) { return '<img src="' + esc(src) + '" alt="">'; }).join('');
     var files = (p.files || []).map(function (f) {
       return '<li><a href="' + esc(f.href) + '" download>' + esc(f.name) + '</a></li>';
     }).join('');
     var prev = all[i + 1], next = all[i - 1];
     var nav = function (label, q) {
-      return '<tr><th scope="row">' + label + '</th><td>' + (q ? '<a href="' + href(q) + '">' + esc(q.title) + '</a>' : '<span class="ph">없음</span>') + '</td></tr>';
+      return '<tr><th scope="row">' + label + '</th><td>' + (q ? '<a href="' + href(q) + '">' + ttl(q.title) + '</a>' : '<span class="ph">없음</span>') + '</td></tr>';
     };
     el.innerHTML =
       '<article class="post">' +
-        '<header class="post-band"><h2>' + (p.category ? '<span class="ncat">' + esc(catEn(p.category)) + '</span>' : '') + esc(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
+        '<header class="post-band"><h2>' + (p.category ? '<span class="ncat">' + esc(catEn(p.category)) + '</span>' : '') + ttl(p.title) + '</h2><span class="date">' + fmtDate(p.date) + '</span></header>' +
         '<div class="post-body">' + imgs + (p.body || '') +
           (files ? '<div class="files"><h3>첨부파일</h3><ul>' + files + '</ul></div>' : '') +
         '</div>' +

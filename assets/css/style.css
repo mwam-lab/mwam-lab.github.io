@@ -569,3 +569,6 @@ dl.ca-list dd { color: var(--navy); }
 a.pub.plink { text-decoration: none; color: inherit; transition: transform 0.15s, box-shadow 0.15s; }
 a.pub.plink:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(36, 53, 72, 0.10); }
 .pub .pmore { margin-top: 6px; font-size: 0.9rem; color: var(--blue); }
+
+/* 제목 안 강조(**글자**) */
+.ntitle strong, .post-band h2 strong, .post-nav strong { font-weight: 900; }
