@@ -182,8 +182,8 @@ window.MWAM_POSTS = [
     category: '공지',
     date: '2026-01-09',
     title: '홋카이도의료대학 오쿠다 가오리 교수와 국제공동연구 MOU 체결',
-    thumb: 'assets/images/posts/2026-01-09-okuda-mou-thumb.jpg',
-    images: ['assets/images/posts/2026-01-09-okuda-mou-hold.jpg', 'assets/images/posts/2026-01-09-okuda-mou-sign.jpg', 'assets/images/posts/2026-01-09-okuda-mou-selfie.jpg', 'assets/images/posts/2026-01-09-okuda-mou-wide.jpg'],
+    thumb: 'assets/images/posts/2026-01-09-okuda-mou-thumb-v2.jpg',
+    images: ['assets/images/posts/2026-01-09-okuda-mou-sign-v2.jpg', 'assets/images/posts/2026-01-09-okuda-mou-hold.jpg', 'assets/images/posts/2026-01-09-okuda-mou-selfie.jpg', 'assets/images/posts/2026-01-09-okuda-mou-wide.jpg'],
     body:
       '<p>정재원 교수 연구실이 일본 홋카이도의료대학 오쿠다 가오리 교수 연구실과 국제공동연구를 위한 연구실 간 MOU를 체결했습니다. 두 연구실은 고립·은둔 청년의 삶과 사회적 포용을 주제로 한 국제공동연구를 함께 수행하며, 한일 양국의 경험과 실천을 나누어 갈 예정입니다.</p>' +
       '<ul>' +
