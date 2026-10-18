@@ -17,6 +17,21 @@ window.MWAM_POSTS = [
     body: '<p>뫔건강연구소 연구진이 펠든크라이스 워크샵에 참여했습니다.</p>'
   },
   {
+    id: '2026-10-10-inje-lecture',
+    category: '소식',
+    date: '2026-10-10',
+    title: '인제대학교 사회복지대학원 특강 「몸을 통해 이해하는 돌봄: 소매틱스와 사회복지 실천」',
+    thumb: 'assets/images/posts/2026-10-10-inje-lecture-thumb.jpg',
+    images: ['assets/images/posts/2026-10-10-inje-lecture.jpg', 'assets/images/posts/2026-10-10-inje-lecture-poster.jpg'],
+    body:
+      '<p>인제대학교 사회복지대학원 특강에서 「몸을 통해 이해하는 돌봄: 소매틱스와 사회복지 실천」을 주제로 강의했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 10월 10일(토) 14:00–16:00</li>' +
+        '<li>장소: 인제대학교 신어관 226호</li>' +
+        '<li>강사: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-09-17-muju-somatics',
     category: '소식',
     date: '2026-09-17',
