@@ -144,6 +144,22 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-06-12-kapr',
+    category: '특강',
+    date: '2026-06-12',
+    title: '한국정신사회재활협회 30주년 기념 학술대회 강연 「당사자가 이끄는 회복: 정신간호, 참여를 설계하다」',
+    thumb: 'assets/images/posts/2026-06-12-kapr-thumb.jpg',
+    images: ['assets/images/posts/2026-06-12-kapr-group.jpg', 'assets/images/posts/2026-06-12-kapr-talk.jpg', 'assets/images/posts/2026-06-12-kapr-podium.jpg'],
+    body:
+      '<p>정재원 교수가 한국정신사회재활협회 30주년 기념 학술대회 「정신사회재활 30년 - 과거와 현재 그리고 미래를 향한 성찰」에서 「당사자가 이끄는 회복: 정신간호, 참여를 설계하다」를 주제로 강연했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 6월 12일(금)</li>' +
+        '<li>장소: 국립정신건강센터 11층 열린강당</li>' +
+        '<li>주최: 한국정신사회재활협회</li>' +
+        '<li>강연: 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-04-23-kpmhn-spring',
     category: '특강',
     date: '2026-04-23',
