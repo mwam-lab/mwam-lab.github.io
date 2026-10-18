@@ -43,7 +43,6 @@
 <script>
 var S = window.MWAM_SITE || {};
 document.getElementById('contact-info').innerHTML =
-  '<dt>기관</dt><dd>' + (S.org || '[소속 기관명]') + '</dd>' +
   '<dt>주소</dt><dd>' + (S.address || '[주소]') + '</dd>' +
   '<dt>전화</dt><dd>' + (S.tel || '[전화번호]') + '</dd>' +
   '<dt>이메일</dt><dd>' + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</dd>';

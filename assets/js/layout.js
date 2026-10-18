@@ -55,7 +55,6 @@
   var footer =
     '<footer class="site-footer"><div class="wrap">' +
       '<div><strong>뫔건강연구소</strong>' +
-        '<p>연구 수행 기관 · ' + (S.org || '<span>[소속 기관명]</span>') + '</p>' +
         '<p>주소 · ' + (S.address || '[주소]') + '</p>' +
         '<p>전화 · ' + (S.tel || '[전화번호]') + '</p>' +
         '<p>이메일 · ' + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</p>' +
