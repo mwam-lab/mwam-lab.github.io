@@ -378,7 +378,7 @@ details.psec li { margin-bottom: 10px; }
 }
 
 /* 문의 */
-.info dl { display: grid; grid-template-columns: 96px 1fr; gap: 10px 16px; margin: 0; }
+.info dl { display: grid; grid-template-columns: 96px 1fr; gap: 2px 16px; margin: 0; }  /* 줄 사이(6.5px)가 제목 아래(12px)보다 좁게 */
 .info dt { color: var(--muted); }
 .info dd { margin: 0; }
 .map { border-radius: var(--radius); overflow: hidden; background: var(--sky); min-height: 320px; display: flex; align-items: center; justify-content: center; color: var(--muted); }
