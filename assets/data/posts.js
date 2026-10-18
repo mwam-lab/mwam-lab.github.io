@@ -160,6 +160,22 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-05-22-ksles',
+    category: '특강',
+    date: '2026-05-22',
+    title: '2026 한국생활환경학회 춘계학술대회 초청강연 「몸이 머무는 공간, 마음이 회복되는 환경」',
+    thumb: 'assets/images/posts/2026-05-22-ksles-thumb.jpg',
+    images: ['assets/images/posts/2026-05-22-ksles-talk.jpg'],
+    body:
+      '<p>정재원 교수가 2026 한국생활환경학회 춘계학술대회에서 「몸이 머무는 공간, 마음이 회복되는 환경: 정신건강 회복의 생활환경학적 접근」을 주제로 초청강연을 했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 5월 22일(금) 16:15-17:00</li>' +
+        '<li>장소: 세종대학교 광개토관 지하1층 컨퍼런스룸</li>' +
+        '<li>주최: 한국생활환경학회</li>' +
+        '<li>강연: 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-04-23-kpmhn-spring',
     category: '특강',
     date: '2026-04-23',
@@ -242,6 +258,22 @@ window.MWAM_POSTS = [
         '<li>협약: 전북대학교 간호대학 정재원 교수 연구실, 홋카이도의료대학 간호복지학부 오쿠다 가오리 교수 연구실</li>' +
         '<li>연구: From Isolation to Connection (전북대학교 국립대학육성사업 국제공동협력연구)</li>' +
         '<li>참여: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
+    id: '2026-01-28-rda-forum',
+    category: '수련',
+    date: '2026-01-28',
+    title: '제1차 농촌진흥청 치유농업 포럼 참석',
+    thumb: 'assets/images/posts/2026-01-28-rda-forum-thumb.jpg',
+    images: ['assets/images/posts/2026-01-28-rda-forum-talk.jpg', 'assets/images/posts/2026-01-28-rda-forum-banner.jpg', 'assets/images/posts/2026-01-28-rda-forum-hall.jpg'],
+    body:
+      '<p>농촌진흥청이 치유농업의 산업화와 사회적 역할 확대를 논의하기 위해 연 제1차 치유농업 포럼에 참석했습니다. 정책 전문가, 현장 실무자, 산업계와 학계가 함께하며 치유농업의 발전 방향을 살펴보았습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 1월 28일(수) 14:00-17:00</li>' +
+        '<li>장소: 서울 aT센터 창조룸1</li>' +
+        '<li>주최: 농촌진흥청</li>' +
+        '<li>참석: 정재원 교수, 서교일 연구원, 김준혁 연구원</li>' +
       '</ul>'
   },
   {
@@ -330,6 +362,22 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2025-08-28-alumni-scholarship',
+    category: '공지',
+    date: '2025-08-28',
+    title: '김준혁 연구원, 전북대학교 총동창회 대학원 장학생 선발',
+    thumb: 'assets/images/posts/2025-08-28-alumni-scholarship-thumb.jpg',
+    images: ['assets/images/posts/2025-08-28-alumni-scholarship-cert.jpg'],
+    body:
+      '<p>김준혁 연구원(지도교수 정재원)이 재단법인 전북대학교총동창회장학재단의 <strong>대학원 장학생</strong>으로 선발되었습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 8월 28일</li>' +
+        '<li>장학: 전북대학교 총동창회 대학원생 장학금</li>' +
+        '<li>수여: 재단법인 전북대학교총동창회장학재단</li>' +
+        '<li>지도교수: 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: '2025-06-23-bethel-pbl',
     category: '프로그램',
     date: '2025-06-23',
@@ -411,6 +459,22 @@ window.MWAM_POSTS = [
         '<li>장소: 인산의료재단 정신재활시설 아름다운세상</li>' +
         '<li>대상: 정신재활시설 이용자</li>' +
         '<li>진행: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
+    id: '2025-05-28-youngmind-pitch',
+    category: '공지',
+    date: '2025-05-28',
+    title: '영마인드 링크 2기 발대식 모의투자대회 TOP 10 어워드 수상',
+    thumb: 'assets/images/posts/2025-05-28-youngmind-pitch-thumb.jpg',
+    images: ['assets/images/posts/2025-05-28-youngmind-pitch-award.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-talk.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-all.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-cert.jpg'],
+    body:
+      '<p>김준혁 연구원이 팀장을 맡은 영마인드 링크 2기 전북대학교 팀(JB MIND FC)이 발대식 아이디어 피칭 대회에서 전국 51개 팀 가운데 <strong>모의투자대회 5위</strong>로 TOP 10 어워드를 받았습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 5월 28일</li>' +
+        '<li>행사: 국립정신건강센터 「마주해요」 청년 주도 정신건강 프로젝트 영마인드 링크 2기 발대식</li>' +
+        '<li>주관: 국립정신건강센터, 멘탈헬스코리아</li>' +
+        '<li>수상: 모의투자대회 TOP 10 어워드 (5위)</li>' +
       '</ul>'
   },
   {
