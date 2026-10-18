@@ -45,7 +45,7 @@
     '<a class="skip" href="#main">본문 바로가기</a>' +
     '<header class="site-header"><div class="wrap">' +
       '<a class="brand" href="index.html">' +
-        '<img src="assets/images/logo.png?v=3" alt="" width="46" height="46">' +
+        '<img src="assets/images/logo-v4.png" alt="" width="46" height="46">' +
         '<span class="brand-name"><strong>뫔건강연구소</strong><small>몸과 마음을 함께 돌봄</small></span>' +
       '</a>' +
       '<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="gnb" aria-label="메뉴 열기">' +

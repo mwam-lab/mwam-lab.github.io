@@ -85,7 +85,7 @@ var Mwam = (function () {
       var src = p.thumb || (p.images && p.images[0]);
       var thumb = src
         ? '<img src="' + esc(src) + '" alt="" loading="lazy">'
-        : '<span class="noimg"><img src="assets/images/logo.png" alt=""></span>';
+        : '<span class="noimg"><img src="assets/images/logo-v4.png" alt=""></span>';
       return '<li><a class="ncard" href="' + href(p) + '">' +
         '<span class="ntop"><span class="date">' + fmtDate(p.date) + '</span>' +
           (p.status ? '<span class="state">' + esc(p.status) + '</span>' : '') + '</span>' +
