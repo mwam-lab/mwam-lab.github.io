@@ -26,6 +26,7 @@
       ['공지', 'news.html?cat=공지'],
       ['프로그램', 'news.html?cat=프로그램'],
       ['특강', 'news.html?cat=특강'],
+      ['학술발표', 'news.html?cat=학술발표'],
       ['수련', 'news.html?cat=수련']
     ]},
     { id: 'contact', label: 'CONTACT', href: 'contact.html' }

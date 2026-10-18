@@ -8,7 +8,7 @@ var Mwam = (function () {
   // 목록 정보 줄의 ' · ' 를 연한 세로선으로
   function sep(t) { return esc(t).split(' · ').join('<span class="vbar" aria-hidden="true"></span><span class="skip"> · </span>'); }
   // NEWS 분류 → 사진 위 영문 라벨
-  var CAT_EN = { '공지': 'NOTICE', '프로그램': 'PROGRAM', '특강': 'LECTURE', '수련': 'TRAINING' };
+  var CAT_EN = { '공지': 'NOTICE', '프로그램': 'PROGRAM', '특강': 'LECTURE', '학술발표': 'CONFERENCE', '수련': 'TRAINING' };
   function catEn(c) { return CAT_EN[c] || c || ''; }
   function fmtDate(d) { return d ? d.replace(/-/g, '.') : ''; }
   function byDateDesc(a, b) { return (b.date || '').localeCompare(a.date || ''); }

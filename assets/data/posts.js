@@ -1,5 +1,5 @@
 /* 알림마당 게시물
-   category: '공지' | '프로그램' | '특강' | '수련'  (NEWS 탭과 카드의 작은 표시)
+   category: '공지' | '프로그램' | '특강' | '학술발표' | '수련'  (NEWS 탭과 카드의 작은 표시)
    date: 'YYYY-MM-DD'  (최신 글이 자동으로 위에 옴)
    thumb: 목록 카드에 보일 대표 이미지 (없으면 images 첫 장, 그것도 없으면 로고)
    images: ['assets/images/posts/파일명.jpg']  - 본문 사진. assets/images/posts 폴더에 넣기
@@ -77,19 +77,36 @@ window.MWAM_POSTS = [
     category: '프로그램',
     date: '2026-08-10',
     title: 'JBNU 글로벌 PBL 「간호·사회복지, 함께 배우는 IPE 일본 현장학습」',
-    thumb: 'assets/images/posts/2026-08-10-japan-ipe-thumb.jpg',
+    thumb: 'assets/images/posts/2026-08-10-japan-ipe-v2-thumb.jpg',
     images: ['assets/images/posts/2026-08-10-japan-ipe.jpg'],
     body:
-      '<p>간호학과와 사회복지학과 학생들이 고립·은둔 청년의 회복을 주제로 한 IPE 기반 Co-production PBL 프로그램에 참여하고, 일본 홋카이도에서 현장학습을 진행했습니다. 국내 사전학습에는 고립·은둔 경험 당사자가 함께했으며, 현지에서는 한일 학생 공동 토론 수업과 당사자 중심 회복 현장을 경험했습니다.</p>' +
+      '<p>정재원 교수가 책임교수를 맡아 이끈 IPE 기반 Co-production PBL 프로그램을 운영했습니다. 간호학과와 사회복지학과 학생들이 고립·은둔 청년의 회복을 주제로 함께 배우며, 고립·은둔 경험 당사자가 참여한 국내 사전학습에 이어 일본 홋카이도에서 한일 학생 공동 토론 수업과 당사자 중심 회복 현장을 경험했습니다.</p>' +
       '<ul>' +
         '<li>일시: 2026년 8월 10일(월) - 8월 14일(금)</li>' +
         '<li>장소: 일본 홋카이도 (베델의 집, 홋카이도의료대학, 삿포로 청년지원센터)</li>' +
         '<li>주관: 전북대학교 간호대학, 사회복지학과 (글로컬대학30)</li>' +
         '<li>대상: 간호학과·사회복지학과 학생 20명</li>' +
         '<li>책임교수: 정재원 교수</li>' +
-        '<li>참여: 김준혁 연구원</li>' +
+        '<li>운영 참여: 김준혁 연구원</li>' +
       '</ul>' +
       '<p><a href="https://top.jbnu.ac.kr/bbs/glocal/5294/399323/artclView.do" target="_blank" rel="noopener">전북대학교 기사 보기</a></p>'
+  },
+  {
+    id: '2026-07-18-sigma-poster',
+    category: '학술발표',
+    date: '2026-07-18',
+    title: 'Sigma 37th International Nursing Research Congress 포스터 발표',
+    thumb: 'assets/images/posts/2026-07-18-sigma-poster-thumb.jpg',
+    images: ['assets/images/posts/2026-07-18-sigma-poster.jpg'],
+    body:
+      '<p>캐나다 토론토에서 열린 Sigma 37th International Nursing Research Congress에서 조현병 청년과 간호대학생의 수평적 만남 경험을 다룬 질적 연구를 포스터로 발표했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 7월 18일(토)</li>' +
+        '<li>장소: Sheraton Centre Toronto Hotel, 캐나다 토론토</li>' +
+        '<li>주최: Sigma Theta Tau International Honor Society of Nursing</li>' +
+        '<li>발표: Qualitative Study of Horizontal Encounter Experiences of Schizophrenia Youth and Nursing Students</li>' +
+        '<li>발표자: 김준혁 연구원, 정재원 교수</li>' +
+      '</ul>'
   },
   {
     id: '2026-07-17-camh',
