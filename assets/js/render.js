@@ -188,7 +188,7 @@ var Mwam = (function () {
     var el = $(id);
     var small = group !== '연구책임자';
     el.innerHTML = list.map(function (p) {
-      var photo = p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(p.name) + ' 사진">' : '사진';
+      var photo = p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(p.name) + ' 사진">' : '';
       var info = (p.info || []).map(function (kv) { return '<dt>' + esc(kv[0]) + '</dt><dd>' + esc(kv[1]) + '</dd>'; }).join('');
       var hist = (p.history || []).map(function (h) { return '<li>' + esc(h) + '</li>'; }).join('');
       var secs = (p.sections || []).map(function (sec) {
