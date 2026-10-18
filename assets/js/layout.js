@@ -28,7 +28,8 @@
       ['강연', 'news.html?cat=강연'],
       ['프로그램', 'news.html?cat=프로그램'],
       ['교류·연수', 'news.html?cat=교류·연수'],
-      ['소식', 'news.html?cat=소식']
+      ['소식', 'news.html?cat=소식'],
+      ['발자취', 'story.html']
     ]},
     { id: 'contact', label: 'CONTACT', href: 'contact.html' }
   ];

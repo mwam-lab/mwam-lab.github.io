@@ -601,3 +601,52 @@ a.pub.plink:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(36
 .lock-row .btn-line:hover { background: var(--navy); color: var(--white); }
 /* 소식 탭 7개: 휴대폰에서는 간격을 줄여 두 줄로 */
 @media (max-width: 720px) { .tabs.line { gap: 6px 18px; } .tabs.line a { font-size: 0.95rem; } }
+
+/* 발자취(TIMELINE): 연도별 12개월 달력 */
+.story { --c0: #243548; --c1: #4F6B8A; --c2: #4A7374; --c3: #729596; --c4: #8EA9C1; --c5: #A3ADB7; }
+.story .c0 { --c: var(--c0); } .story .c1 { --c: var(--c1); } .story .c2 { --c: var(--c2); }
+.story .c3 { --c: var(--c3); } .story .c4 { --c: var(--c4); } .story .c5 { --c: var(--c5); }
+.story .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); flex: none; }
+.story-stats { display: grid; grid-template-columns: repeat(6, 1fr); border-top: 1px solid var(--navy); border-bottom: 1px solid var(--line); }
+.story-stats .ss { padding: 26px 8px 22px; text-align: center; }
+.story-stats .ss + .ss { border-left: 1px solid var(--line); }
+.story-stats strong { display: block; font-family: var(--font-head); font-weight: 400; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1; color: var(--c); }
+.story-stats span { display: block; margin-top: 10px; font-size: 0.86rem; color: var(--muted); letter-spacing: 0.02em; }
+.story-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 22px; margin: 34px 0 10px; }
+.story-legend button { display: inline-flex; align-items: center; gap: 8px; background: none; border: 0; border-bottom: 1px solid transparent; padding: 4px 1px; font: inherit; font-size: 0.9rem; color: var(--muted); cursor: pointer; }
+.story-legend button:hover { color: var(--navy); }
+.story-legend button.on { color: var(--navy); border-bottom-color: var(--navy); }
+.sy { margin-top: 56px; }
+.sy-h { display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--navy); }
+.sy-h h2 { font-family: var(--font-head); font-weight: 900; font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1; letter-spacing: -0.02em; color: var(--navy); }
+.sy-h span { font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.sy-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.sm { padding: 16px 16px 26px; min-height: 150px; min-width: 0; }
+.sm:not(:nth-child(6n+1)) { border-left: 1px solid var(--line); }
+.sm:nth-child(n+7) { border-top: 1px solid var(--line); }
+.sm-h { font-family: var(--font-head); font-size: 1.05rem; letter-spacing: 0.04em; color: var(--navy); margin-bottom: 14px; }
+.sm.empty .sm-h { color: #B9C2CA; }
+.sm ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.sm a { display: block; text-decoration: none; color: var(--text-2); padding-left: 0; transition: opacity 0.2s; }
+.sm .sd { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; color: var(--muted); letter-spacing: 0.02em; }
+.sm .st { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-top: 4px; font-size: 0.9rem; line-height: 1.5; color: var(--navy); word-break: keep-all; overflow-wrap: anywhere; }
+.sm .sc { display: none; }
+.sm a:hover .st { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+#story-years[data-focus="c0"] li:not(.c0), #story-years[data-focus="c1"] li:not(.c1), #story-years[data-focus="c2"] li:not(.c2),
+#story-years[data-focus="c3"] li:not(.c3), #story-years[data-focus="c4"] li:not(.c4), #story-years[data-focus="c5"] li:not(.c5) { opacity: 0.18; }
+@media (max-width: 900px) {
+  .story-stats { grid-template-columns: repeat(3, 1fr); }
+  .story-stats .ss:nth-child(4) { border-left: 0; }
+  .story-stats .ss:nth-child(n+4) { border-top: 1px solid var(--line); }
+  .sy-grid { grid-template-columns: 1fr; }
+  .sm { display: grid; grid-template-columns: 48px 1fr; gap: 10px; min-height: 0; padding: 14px 0; border-left: 0 !important; border-top: 1px solid var(--line) !important; }
+  .sm:first-child { border-top: 0; }
+  .sm.empty { display: none; }
+  .sm-h { margin: 2px 0 0; font-size: 0.95rem; color: var(--navy); }
+  .sm .st { -webkit-line-clamp: 2; font-size: 0.92rem; }
+  .sm .sd { font-size: 0.8rem; }
+}
+
+.story-link { text-align: center; margin-top: 48px; }
+.story-link a { color: var(--blue); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; }
+.story-link a:hover { text-decoration: underline; text-underline-offset: 4px; }

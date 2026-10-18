@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>발자취 | 뫔건강연구소</title>
+<meta name="description" content="뫔건강연구소가 걸어온 길을 한눈에">
+<link rel="icon" href="assets/images/favicon-v4.png">
+<link rel="preload" href="assets/fonts/KakaoSmallSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap&text=%EB%AB%94%EA%B1%B4%EA%B0%95%EC%97%B0%EA%B5%AC%EC%86%8C">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="news">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero only-eyebrow news-top"><div class="wrap">
+<p class="eyebrow">TIMELINE</p>
+<h1 class="ko-title">발자취</h1>
+</div></section>
+
+<section class="section white story"><div class="wrap">
+  <div class="story-stats" id="story-stats"></div>
+  <div class="story-legend" id="story-legend" role="group" aria-label="분류별로 보기"></div>
+  <div id="story-years"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data/site.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/data/posts.js"></script>
+<script>
+(function () {
+  var CATS = ['연구', '발표·수상', '강연', '프로그램', '교류·연수', '소식'];
+  var EN = { '연구': 'Research', '발표·수상': 'Presentation', '강연': 'Lecture', '프로그램': 'Program', '교류·연수': 'Learning', '소식': 'News' };
+  var posts = (window.MWAM_POSTS || []).filter(function (p) { return p.date && CATS.indexOf(p.category) >= 0; });
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  // 달력 칸에 맞게 제목을 짧게: 「」 안 부제와 굵게 표시를 뺀다
+  function short(t) {
+    var s = String(t).replace(/\*\*/g, '').replace(/「[^」]*」/g, '').replace(/\s{2,}/g, ' ').trim();
+    return s || String(t).replace(/\*\*/g, '');
+  }
+  function slug(c) { return 'c' + CATS.indexOf(c); }
+
+  // 숫자 요약
+  var count = {};
+  posts.forEach(function (p) { count[p.category] = (count[p.category] || 0) + 1; });
+  document.getElementById('story-stats').innerHTML = CATS.map(function (c) {
+    return '<div class="ss ' + slug(c) + '"><strong>' + (count[c] || 0) + '</strong><span>' + esc(c) + '</span></div>';
+  }).join('');
+
+  // 범례 = 분류별 강조 버튼
+  var legend = document.getElementById('story-legend');
+  legend.innerHTML = '<button type="button" class="on" data-c="">전체</button>' + CATS.map(function (c) {
+    return '<button type="button" data-c="' + slug(c) + '"><i class="dot ' + slug(c) + '"></i>' + esc(c) + '</button>';
+  }).join('');
+  legend.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    legend.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
+    document.getElementById('story-years').setAttribute('data-focus', b.getAttribute('data-c'));
+  });
+
+  // 연도 → 월 → 글
+  var byYear = {};
+  posts.forEach(function (p) {
+    var y = p.date.slice(0, 4), m = +p.date.slice(5, 7);
+    (byYear[y] = byYear[y] || {})[m] = (byYear[y][m] || []).concat([p]);
+  });
+  var years = Object.keys(byYear).sort().reverse();
+  document.getElementById('story-years').innerHTML = years.map(function (y) {
+    var total = 0;
+    var months = '';
+    for (var m = 1; m <= 12; m++) {
+      var list = (byYear[y][m] || []).sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+      total += list.length;
+      months += '<div class="sm' + (list.length ? '' : ' empty') + '"><div class="sm-h">' + (m < 10 ? '0' : '') + m + '</div><ul>' +
+        list.map(function (p) {
+          return '<li class="' + slug(p.category) + '"><a href="post.html?id=' + encodeURIComponent(p.id) + '" title="' + esc(p.title.replace(/\*\*/g, '')) + '">' +
+            '<span class="sd"><i class="dot ' + slug(p.category) + '"></i>' + p.date.slice(5).replace('-', '.') + '</span>' +
+            '<span class="st">' + esc(short(p.title)) + '</span>' +
+            '<span class="sc">' + EN[p.category] + '</span></a></li>';
+        }).join('') + '</ul></div>';
+    }
+    return '<section class="sy"><header class="sy-h"><h2>' + y + '</h2><span>' + total + ' stories</span></header><div class="sy-grid">' + months + '</div></section>';
+  }).join('');
+})();
+</script>
+</body>
+</html>
