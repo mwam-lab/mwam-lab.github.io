@@ -161,6 +161,23 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-03-11-snu-scholar',
+    category: '수련',
+    date: '2026-03-11',
+    title: '서울대학교 간호대학 외국인 저명학자 초청 워크숍 참석',
+    thumb: 'assets/images/posts/2026-03-11-snu-scholar-thumb.jpg',
+    images: ['assets/images/posts/2026-03-11-snu-scholar-main.jpg', 'assets/images/posts/2026-03-11-snu-scholar-group.jpg'],
+    body:
+      '<p>서울대학교 간호과학연구소와 한국정신간호학회가 함께 연 외국인 저명학자 초청 워크숍에 참석했습니다. 다트머스 대학의 Glyn Elwyn 교수에게서 공유의사결정(Shared Decision Making, SDM)의 Three-talk Model과 측정 도구, 실무에서의 SDM과 간호사의 역할을 배웠습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 3월 11일(수) 13:30-17:00</li>' +
+        '<li>장소: 서울대학교 간호대학 (대면·Zoom 병행)</li>' +
+        '<li>주최: 서울대학교 간호과학연구소, 한국정신간호학회</li>' +
+        '<li>연자: Glyn Elwyn 교수 (The Dartmouth Institute for Health Policy and Clinical Practice)</li>' +
+        '<li>참석: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-02-26-eafons',
     category: '학술발표',
     date: '2026-02-26',
