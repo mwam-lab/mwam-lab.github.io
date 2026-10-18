@@ -94,6 +94,22 @@ window.MWAM_POSTS = [
       '<p><a href="https://top.jbnu.ac.kr/bbs/glocal/5294/399323/artclView.do" target="_blank" rel="noopener">전북대학교 기사 보기</a></p>'
   },
   {
+    id: '2026-07-25-atb',
+    category: '교류·연수',
+    date: '2026-07-25',
+    title: 'Awareness Through the Body(ATB) 1 워크숍 수료',
+    thumb: 'assets/images/posts/2026-07-25-atb-thumb.jpg',
+    images: ['assets/images/posts/2026-07-25-atb-1.jpg', 'assets/images/posts/2026-07-25-atb-2.jpg', 'assets/images/posts/2026-07-25-atb-3.jpg', 'assets/images/posts/2026-07-25-atb-4.jpg', 'assets/images/posts/2026-07-25-atb-5.jpg'],
+    body:
+      '<p>정재원 교수, 서교일 연구원, 김준혁 연구원이 몸을 통한 알아차림 교육인 Awareness Through the Body(ATB) 1 과정을 수료했습니다. ATB는 인도 오로빌의 학교에서 시작된 교육으로, 몸과 감각, 움직임, 호흡, 주의집중을 통해 자신의 내적 상태를 탐구하는 체험형 과정입니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 7월 25일(토) - 26일(일), 12시간</li>' +
+        '<li>장소: 가톨릭대학교 성의교정</li>' +
+        '<li>강사: 문지원 (Vega Moon, ATB 트레이너)</li>' +
+        '<li>참여: 정재원 교수, 서교일 연구원, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-07-18-sigma-poster',
     category: '발표·수상',
     date: '2026-07-18',
