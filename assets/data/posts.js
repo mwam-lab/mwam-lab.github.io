@@ -279,6 +279,16 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-05-13-teachers-day',
+    category: '소식',
+    date: '2026-05-13',
+    title: '2026 스승의 날',
+    thumb: 'assets/images/posts/2026-05-13-teachers-day-thumb.jpg',
+    images: ['assets/images/posts/2026-05-13-teachers-day-photo.jpg'],
+    body:
+      '<p>스승의 날을 맞아 연구실 구성원들이 정재원 교수님께 감사의 마음을 담아 꽃을 전했습니다. 늘 곁에서 연구와 성장을 이끌어 주시는 교수님께 진심으로 감사드립니다.</p>'
+  },
+  {
     id: '2026-04-23-kpmhn-spring',
     category: '강연',
     date: '2026-04-23',
