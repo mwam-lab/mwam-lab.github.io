@@ -74,5 +74,5 @@ window.MWAM_PEOPLE = [
     ]
   },
   { group: '연구원', name: '서교일', role: 'Kyoil Seo', photo: '' },
-  { group: '연구원', name: '김준혁', role: 'Junhyeok Kim', photo: '' }
+  { group: '연구원', name: '김준혁', role: 'Junhyeok Kim', photo: 'assets/images/people/kim-junhyeok.jpg' }
 ];
