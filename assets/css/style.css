@@ -530,3 +530,7 @@ details.psec li { margin-bottom: 10px; }
   .mboxes > div { grid-template-columns: 1fr; gap: 6px; padding: 16px 2px; }
   .mboxes dd { font-size: 0.9rem; }
 }
+
+/* 배경 없는 로고 */
+.mprog-logo { border-radius: 0; box-shadow: none; filter: drop-shadow(0 10px 22px rgba(36, 53, 72, 0.14)); }
+.brand img { object-fit: contain; border-radius: 0; }
