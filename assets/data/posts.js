@@ -349,16 +349,32 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2025-05-17-somatics-feldenkrais',
+    category: '수련',
+    date: '2025-05-17',
+    title: '소마앤바디 소마틱스 펠든크라이스 워크숍 참여',
+    body:
+      '<p>정재원 교수, 서교일 연구원, 김준혁 연구원이 서울 신촌 힘의집에서 열린 소마앤바디 제168회 소마틱스 펠든크라이스 워크숍에 참여했습니다. 펠든크라이스 메소드를 바탕으로 작은 움직임을 섬세하게 알아차리는 방법을 익혔습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 5월 17일(토) - 18일(일), 13:00-18:00</li>' +
+        '<li>장소: 서울 신촌 힘의집</li>' +
+        '<li>주관: 소마앤바디</li>' +
+        '<li>참여: 정재원 교수, 서교일 연구원, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2025-03-23-ancient-training',
     category: '수련',
     date: '2025-03-23',
-    title: 'Ancient Training Workshop 수료',
+    title: '소마앤바디 고대운동 워크숍(Ancient Training Workshop) 수료',
     thumb: 'assets/images/posts/2025-03-23-ancient-training-thumb.jpg',
     images: ['assets/images/posts/2025-03-23-ancient-training-cert.jpg', 'assets/images/posts/2025-03-23-ancient-training-lecture.jpg', 'assets/images/posts/2025-03-23-ancient-training-group.jpg', 'assets/images/posts/2025-03-23-ancient-training-clubs.jpg'],
     body:
-      '<p>정재원 교수, 서교일 연구원, 김준혁 연구원이 페르시안 밀, 인디언 클럽, 메이스벨, 클럽벨 등 고대 전통 도구로 몸을 단련하는 Ancient Training Workshop을 수료했습니다.</p>' +
+      '<p>정재원 교수, 서교일 연구원, 김준혁 연구원이 서울 신촌 힘의집에서 열린 소마앤바디 제166회 고대운동 워크숍을 수료했습니다. 페르시안 밀, 인디언 클럽, 메이스벨, 클럽벨 등 고대 전통 도구를 다루며 리듬과 호흡 속에서 몸을 알아차리는 움직임을 익혔습니다.</p>' +
       '<ul>' +
-        '<li>일시: 2025년 3월 (4일 과정, 3월 23일 수료)</li>' +
+        '<li>일시: 2025년 3월 15일, 16일, 22일, 23일 (4일 과정)</li>' +
+        '<li>장소: 서울 신촌 힘의집</li>' +
+        '<li>주관: 소마앤바디</li>' +
         '<li>내용: Persian Meels, Indian Clubs, Macebell, Clubbell</li>' +
         '<li>참여: 정재원 교수, 서교일 연구원, 김준혁 연구원</li>' +
       '</ul>'
