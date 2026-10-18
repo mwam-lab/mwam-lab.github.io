@@ -2,6 +2,7 @@
    메뉴를 바꾸려면 MENU만 고치면 됨. */
 (function () {
   var S = window.MWAM_SITE || {};
+  var VBAR = '<span class="vbar" aria-hidden="true"></span><span class="skip"> : </span>';
 
   var MENU = [
     { id: 'about', label: 'ABOUT', href: 'about.html', sub: [
@@ -58,9 +59,9 @@
   var footer =
     '<footer class="site-footer"><div class="wrap">' +
       '<div><strong>뫔건강연구소</strong>' +
-        '<p>주소 · ' + (S.address || '[주소]') + '</p>' +
-        '<p>전화 · ' + (S.tel || '[전화번호]') + '</p>' +
-        '<p>이메일 · ' + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</p>' +
+        '<p>주소' + VBAR + (S.address || '[주소]') + '</p>' +
+        '<p>전화' + VBAR + (S.tel || '[전화번호]') + '</p>' +
+        '<p>이메일' + VBAR + (S.email ? '<a href="mailto:' + S.email + '">' + S.email + '</a>' : '[이메일 주소]') + '</p>' +
       '</div>' +
       '<div class="foot-links">' + MENU.map(function (m) { return '<a href="' + m.href + '">' + m.label + '</a>'; }).join('') +
         (S.instagram ? '<a href="' + S.instagram + '" target="_blank" rel="noopener">인스타그램</a>' : '') +

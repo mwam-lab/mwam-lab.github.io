@@ -437,3 +437,4 @@ details.psec li { margin-bottom: 10px; }
 .map-link { position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: flex-end; padding: 14px; text-decoration: none; }
 .map-link span { background: rgba(255, 255, 255, 0.92); color: var(--navy); font-size: 0.85rem; padding: 6px 14px; border-radius: 999px; box-shadow: 0 2px 10px rgba(36, 53, 72, 0.15); }
 .map-link:hover span { background: var(--navy); color: var(--white); }
+.site-footer .vbar { background: rgba(232, 238, 242, 0.35); }
