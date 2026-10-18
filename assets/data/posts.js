@@ -178,6 +178,23 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-01-09-okuda-mou',
+    category: '공지',
+    date: '2026-01-09',
+    title: '홋카이도의료대학 오쿠다 가오리 교수와 국제공동연구 MOU 체결',
+    thumb: 'assets/images/posts/2026-01-09-okuda-mou-thumb.jpg',
+    images: ['assets/images/posts/2026-01-09-okuda-mou-hold.jpg', 'assets/images/posts/2026-01-09-okuda-mou-sign.jpg', 'assets/images/posts/2026-01-09-okuda-mou-selfie.jpg', 'assets/images/posts/2026-01-09-okuda-mou-wide.jpg'],
+    body:
+      '<p>정재원 교수 연구실이 일본 홋카이도의료대학 오쿠다 가오리 교수 연구실과 국제공동연구를 위한 연구실 간 MOU를 체결했습니다. 두 연구실은 고립·은둔 청년의 삶과 사회적 포용을 주제로 한 국제공동연구를 함께 수행하며, 한일 양국의 경험과 실천을 나누어 갈 예정입니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 1월 9일(금)</li>' +
+        '<li>장소: 일본 삿포로</li>' +
+        '<li>협약: 전북대학교 간호대학 정재원 교수 연구실, 홋카이도의료대학 간호복지학부 오쿠다 가오리 교수 연구실</li>' +
+        '<li>연구: From Isolation to Connection (전북대학교 국립대학육성사업 국제공동협력연구)</li>' +
+        '<li>참여: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2025-12-05-bongsarang',
     category: '프로그램',
     date: '2025-12-05',
