@@ -13,10 +13,8 @@
       ['연구책임자', 'people.html#pi'],
       ['연구원', 'people.html#members']
     ]},
-    { id: 'research', label: 'RESEARCH', href: 'research.html', sub: [
-      ['프로그램', 'research.html#program'],
-      ['연구과제', 'research.html#projects']
-    ]},
+    { id: 'research', label: 'RESEARCH', href: 'research.html' },
+    { id: 'program', label: 'PROGRAM', href: 'program.html' },
     { id: 'outcomes', label: 'PUBLICATIONS', href: 'outcomes.html', sub: [
       ['논문', 'outcomes.html#papers'],
       ['학술발표', 'outcomes.html#presentations'],
