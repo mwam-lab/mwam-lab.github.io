@@ -3,6 +3,7 @@
    status: '진행' | '완료'  (진행 중인 것이 먼저 보임)
    subtitle: 카드의 한 줄 소개 (색 글씨)
    rows: [항목 이름, 내용] — 알약 모양 이름표와 함께 표시
+   연구과제(RESEARCH)는 영문, 논문 목록 모양: year / title / lines(지원기관 · 사업 · 역할, 기간). 금액은 쓰지 않음
    프로그램은 '일시, 장소, 대상'만 씀 (기간도 '일시', 요일·시간·회차는 쓰지 않음) */
 window.MWAM_PROJECTS = [
   {
@@ -34,10 +35,52 @@ window.MWAM_PROJECTS = [
     ]
   },
   {
-    kind: '연구과제',   // RESEARCH 페이지: 영문, 논문 목록과 같은 모양 (year / title / lines)
-    status: '완료',
+    kind: '연구과제',
+    status: '진행',
     year: 2025,
     title: 'Development and Evaluation of a Hybrid Somatics-Based Health Promotion Program (SOMA-VIVE Program) for Young Adults with Early Schizophrenia',
-    lines: ['National Research Foundation of Korea (NRF) · Domestic', 'Mar 1, 2025 – Feb 28, 2026']
+    lines: ['National Research Foundation of Korea (NRF) · Outstanding Early Career Research Program · Principal Investigator', 'Mar 2025 – Feb 2029']
+  },
+  {
+    kind: '연구과제',
+    status: '완료',
+    year: 2024,
+    title: 'Educational Needs for Nursing Competency in Substance Use Disorder Care: A Mixed-Methods Study',
+    lines: ['Korean Academy of Psychiatric and Mental Health Nursing', 'Dec 2024 – Dec 2025']
+  },
+  {
+    kind: '연구과제',
+    status: '완료',
+    year: 2024,
+    title: 'Life and Caregiving Experiences of Young Carers in Korea: A Grounded Theory Study',
+    lines: ['Korean Society of Nursing Science', 'Sep 2024 – Aug 2025']
+  },
+  {
+    kind: '연구과제',
+    status: '완료',
+    year: 2022,
+    title: 'Life Trajectories of Bereaved Families after the Sewol Ferry Disaster: A Qualitative Meta-Synthesis',
+    lines: ['4.16 Foundation · Academic Grant', 'Jul 2022 – Jul 2023']
+  },
+  {
+    kind: '연구과제',
+    status: '완료',
+    year: 2021,
+    title: 'Development of a Service-User–Involved Mental Health Nursing Education Program',
+    lines: ['National Research Foundation of Korea (NRF) · Early Career Research Program · Principal Investigator', 'Mar 2021 – Aug 2024']
+  },
+  {
+    kind: '연구과제',
+    status: '완료',
+    year: 2021,
+    title: 'Lives of People with Schizophrenia During Disasters: A Qualitative Study (COVID-19 Focus)',
+    lines: ['National Research Foundation of Korea (NRF) · Early Career Research Program (Humanities & Social Sciences) · Principal Investigator', 'May 2021 – Apr 2023']
+  },
+  {
+    kind: '연구과제',
+    status: '완료',
+    year: 2019,
+    title: 'Capacity for Truth-Seeking Activities among Sewol Ferry Disaster Victim Activists',
+    lines: ['4.16 Foundation · Co-Investigator', 'Aug 2019 – Dec 2019']
   }
 ];
