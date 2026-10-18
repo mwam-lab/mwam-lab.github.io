@@ -182,7 +182,7 @@ window.MWAM_POSTS = [
     category: '공지',
     date: '2026-06-10',
     title: '정재원 교수 연구실 1학기 종강 모임',
-    thumb: 'assets/images/posts/2026-06-10-lab-thumb.jpg',
+    thumb: 'assets/images/posts/2026-06-10-lab-thumb-v2.jpg',
     images: ['assets/images/posts/2026-06-10-lab-dinner.jpg'],
     body:
       '<p>정재원 교수 연구실 구성원들이 한 학기를 마무리하며 종강 모임을 가졌습니다. 함께한 연구와 활동을 돌아보고 서로를 격려하는 시간이었습니다.</p>' +
@@ -543,8 +543,8 @@ window.MWAM_POSTS = [
     category: '공지',
     date: '2025-05-28',
     title: '영마인드 링크 2기 발대식 모의투자대회 TOP 10 어워드 수상',
-    thumb: 'assets/images/posts/2025-05-28-youngmind-pitch-thumb.jpg',
-    images: ['assets/images/posts/2025-05-28-youngmind-pitch-award.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-talk.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-all.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-cert.jpg'],
+    thumb: 'assets/images/posts/2025-05-28-youngmind-pitch-thumb-v2.jpg',
+    images: ['assets/images/posts/2025-05-28-youngmind-pitch-award-v2.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-talk.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-all.jpg', 'assets/images/posts/2025-05-28-youngmind-pitch-cert.jpg'],
     body:
       '<p>김준혁 연구원이 팀장을 맡은 영마인드 링크 2기 전북대학교 팀(JB MIND FC)이 발대식 아이디어 피칭 대회에서 전국 51개 팀 가운데 <strong>모의투자대회 5위</strong>로 TOP 10 어워드를 받았습니다.</p>' +
       '<ul>' +
