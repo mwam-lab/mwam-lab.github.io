@@ -34,13 +34,10 @@ window.MWAM_PROJECTS = [
     ]
   },
   {
-    kind: '연구과제',
+    kind: '연구과제',   // RESEARCH 페이지: 영문, 논문 목록과 같은 모양 (year / title / lines)
     status: '완료',
-    title: '초기 조현병 청년을 위한 소매틱스 기반 하이브리드 건강 증진 프로그램(SOMA-VIVE) 개발 및 효과 검증',
-    rows: [
-      ['구분', '국내'],
-      ['기간', '2025.03.01 – 2026.02.28'],
-      ['지원기관', '한국연구재단']
-    ]
+    year: 2025,
+    title: 'Development and Evaluation of a Hybrid Somatics-Based Health Promotion Program (SOMA-VIVE Program) for Young Adults with Early Schizophrenia',
+    lines: ['National Research Foundation of Korea (NRF) · Domestic', 'Mar 1, 2025 – Feb 28, 2026']
   }
 ];

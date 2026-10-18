@@ -148,6 +148,16 @@ var Mwam = (function () {
       return (a.status === '진행' ? 0 : 1) - (b.status === '진행' ? 0 : 1);
     });
     var el = $(id);
+    if (kind === '연구과제') {  // 논문 목록과 같은 모양, 영문
+      if (!list.length) { el.innerHTML = '<p class="empty">Coming soon.</p>'; return; }
+      el.innerHTML = list.slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); }).map(function (p) {
+        return '<div class="pub"><span class="year">' + esc(p.year) + '</span><div>' +
+          '<div class="title">' + esc(p.title) + '</div>' +
+          (p.lines || []).map(function (l) { return '<div class="meta">' + esc(l) + '</div>'; }).join('') +
+        '</div></div>';
+      }).join('');
+      return;
+    }
     if (!list.length) {
       el.innerHTML = '<div class="rgrid"><div class="rcard rempty"><p>새로운 ' + esc(kind) + '가 곧 소개됩니다.</p></div></div>';
       return;
