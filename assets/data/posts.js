@@ -215,7 +215,7 @@ window.MWAM_POSTS = [
     id: '2025-12-16-scholarship',
     category: '공지',
     date: '2025-12-16',
-    title: '김준혁 연구원, **국가우수장학생(이공계)** 선발',
+    title: '김준혁 연구원, 국가우수장학생(이공계) 선발',
     thumb: 'assets/images/posts/2025-12-16-scholarship-thumb.jpg',
     images: ['assets/images/posts/2025-12-16-scholarship-main.jpg', 'assets/images/posts/2025-12-16-scholarship-cert.jpg'],
     body:
