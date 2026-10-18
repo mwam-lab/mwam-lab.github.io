@@ -66,9 +66,7 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
 /* ---------- 헤더 ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--line);
+  background: var(--white);
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 76px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); }
@@ -109,7 +107,7 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
   .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
   .gnb {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
-    background: var(--white); border-bottom: 1px solid var(--line);
+    background: var(--white); box-shadow: 0 12px 20px rgba(36, 53, 72, 0.08);
     flex-direction: column; align-items: stretch; padding: 8px 16px 20px;
     max-height: calc(100vh - 76px); overflow-y: auto;
   }
@@ -120,7 +118,7 @@ strong, b, th { font-weight: 400; }  /* 이름 외에는 볼드 쓰지 않음 */
 }
 
 /* ---------- 페이지 상단 (가운데 정렬, 가는 제목) ---------- */
-.page-hero { background: var(--white); padding: 72px 0 56px; text-align: center; border-bottom: 1px solid var(--line); }
+.page-hero { background: var(--white); padding: 72px 0 56px; text-align: center; }
 .page-hero .eyebrow { margin-bottom: 10px; font-size: 0.9rem; letter-spacing: 0.08em; color: var(--teal); }
 .page-hero h1 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); font-weight: 300; letter-spacing: -0.02em; }
 .page-hero p { margin: 14px auto 0; color: var(--text-3); max-width: 620px; font-weight: 300; }
@@ -271,7 +269,7 @@ details.psec li { margin-bottom: 10px; }
 
 /* 글 보기 */
 .post { background: var(--white); border-top: 2px solid var(--navy); }
-.post-band { background: var(--cream); display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 28px; border-bottom: 1px solid var(--line); }
+.post-band { background: var(--cream); display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 28px; }
 .post-band h2 { font-size: clamp(1.1rem, 2.4vw, 1.35rem); font-weight: 400; }
 .post-band .date { color: var(--muted); font-size: 0.92rem; flex: none; }
 .post-body { padding: clamp(24px, 4vw, 44px) 28px; }
