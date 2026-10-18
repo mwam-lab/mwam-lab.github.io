@@ -5,6 +5,8 @@ var Mwam = (function () {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
+  // 목록 정보 줄의 ' · ' 를 연한 세로선으로
+  function sep(t) { return esc(t).split(' · ').join('<span class="vbar" aria-hidden="true"></span><span class="skip"> · </span>'); }
   function fmtDate(d) { return d ? d.replace(/-/g, '.') : ''; }
   function byDateDesc(a, b) { return (b.date || '').localeCompare(a.date || ''); }
   function $(id) { return document.getElementById(id); }
@@ -137,7 +139,7 @@ var Mwam = (function () {
       return '<div class="pub"><span class="year">' + esc(o.year) + '</span><div>' +
         '<div class="title">' + esc(o.title) + '</div>' +
         (o.authors ? '<div class="meta">' + esc(o.authors) + '</div>' : '') +
-        (o.venue ? '<div class="meta">' + esc(o.venue) + '</div>' : '') +
+        (o.venue ? '<div class="meta">' + sep(o.venue) + '</div>' : '') +
         (o.link ? '<a href="' + esc(o.link) + '" target="_blank" rel="noopener">원문 보기</a>' : '') +
       '</div></div>';
     }).join('');
@@ -154,7 +156,7 @@ var Mwam = (function () {
       el.innerHTML = list.slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); }).map(function (p) {
         return '<div class="pub"><span class="year">' + esc(p.year) + '</span><div>' +
           '<div class="title">' + esc(p.title) + '</div>' +
-          (p.lines || []).map(function (l) { return '<div class="meta">' + esc(l) + '</div>'; }).join('') +
+          (p.lines || []).map(function (l) { return '<div class="meta">' + sep(l) + '</div>'; }).join('') +
         '</div></div>';
       }).join('');
       return;

@@ -421,3 +421,6 @@ details.psec li { margin-bottom: 10px; }
 .ncat { display: inline-block; margin-left: 8px; padding: 1px 10px; border-radius: 999px; background: var(--sky); color: var(--blue-dark); font-size: 0.78rem; vertical-align: 1px; }
 .post-band .ncat { margin: 0 10px 0 0; vertical-align: 3px; }
 .news-list .tabs.line { margin-bottom: 40px; }
+
+/* 목록 정보 줄 구분: 연한 세로선 */
+.vbar { display: inline-block; width: 1px; height: 0.85em; background: #B7C3CF; margin: 0 10px; vertical-align: -0.05em; }
