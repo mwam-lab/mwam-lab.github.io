@@ -71,6 +71,6 @@ window.MWAM_PEOPLE = [
       ]}
     ]
   },
-  { group: '연구원', name: '[이름]', role: '[역할: 예) 박사과정 연구원]', photo: '', info: [['소속', '[소속]']] },
-  { group: '연구원', name: '[이름]', role: '[역할]', photo: '', info: [['소속', '[소속]']] }
+  { group: '연구원', name: '서교일', photo: '' },
+  { group: '연구원', name: '김준혁', photo: '' }
 ];

@@ -69,6 +69,38 @@ var Mwam = (function () {
       '<tbody>' + (rows || '<tr><td colspan="3" class="empty">등록된 글이 없습니다.</td></tr>') + '</tbody></table>' + paging;
   }
 
+  // 소식 카드형 목록 (대표 이미지 미리보기, 9개씩 쪽 나눔)
+  function cards(id, cat) {
+    var PER = 9;
+    var list = boardOrder(posts(cat));
+    var pages = Math.max(1, Math.ceil(list.length / PER));
+    var page = Math.min(pages, Math.max(1, parseInt(param('page'), 10) || 1));
+    var el = $(id);
+    var items = list.slice((page - 1) * PER, page * PER).map(function (p) {
+      var src = p.thumb || (p.images && p.images[0]);
+      var thumb = src
+        ? '<img src="' + esc(src) + '" alt="" loading="lazy">'
+        : '<span class="noimg"><img src="assets/images/logo.png" alt=""></span>';
+      var label = p.category === '공지' ? '공지사항' : '연구 소식';
+      return '<li><a class="ncard" href="' + href(p) + '">' +
+        '<span class="chip-s' + (p.category === '공지' ? '' : ' teal') + '">' + label + '</span>' +
+        (p.status ? '<span class="state">' + esc(p.status) + '</span>' : '') +
+        '<strong class="ntitle">' + esc(p.title) + '</strong>' +
+        '<span class="date">' + fmtDate(p.date) + '</span>' +
+        '<span class="nthumb">' + thumb + '</span>' +
+      '</a></li>';
+    }).join('');
+    var q = function (n) { return 'news.html?' + (cat ? 'cat=' + encodeURIComponent(cat) + '&' : '') + 'page=' + n; };
+    var paging = '';
+    if (pages > 1) {
+      for (var n = 1; n <= pages; n++) {
+        paging += n === page ? '<strong aria-current="page">' + n + '</strong>' : '<a href="' + q(n) + '">' + n + '</a>';
+      }
+      paging = '<nav class="paging" aria-label="쪽 이동">' + paging + '</nav>';
+    }
+    el.innerHTML = items ? '<ul class="news-grid">' + items + '</ul>' + paging : '<p class="empty">등록된 글이 없습니다.</p>';
+  }
+
   // 게시물 상세
   function postDetail(id) {
     var el = $(id);
@@ -144,11 +176,11 @@ var Mwam = (function () {
         return '<div class="psec"><h4>' + esc(sec.title) + '</h4>' + inner + '</div>';
       }).join('');
       return '<div class="person' + (small ? ' small' : '') + '"><div class="photo">' + photo + '</div><div>' +
-        '<span class="role">' + esc(p.role) + '</span><h3>' + esc(p.name) + '</h3>' +
+        (p.role ? '<span class="role">' + esc(p.role) + '</span>' : '') + '<h3>' + esc(p.name) + '</h3>' +
         (info ? '<dl>' + info + '</dl>' : '') + (hist ? '<ul>' + hist + '</ul>' : '') + secs +
       '</div></div>';
     }).join('');
   }
 
-  return { postList: postList, board: board, postDetail: postDetail, outcomes: outcomes, projects: projects, people: people, param: param };
+  return { postList: postList, board: board, cards: cards, postDetail: postDetail, outcomes: outcomes, projects: projects, people: people, param: param };
 })();
