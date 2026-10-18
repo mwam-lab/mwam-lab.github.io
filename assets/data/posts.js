@@ -194,6 +194,23 @@ window.MWAM_POSTS = [
       '<p><a href="http://www.mindpost.or.kr/bbs/board.php?bo_table=news&amp;wr_id=9333" target="_blank" rel="noopener">마인드포스트 기사 보기</a></p>'
   },
   {
+    id: '2025-11-21-kpmhn-poster',
+    category: '학술발표',
+    date: '2025-11-21',
+    title: '2025 한국정신간호학회 동계학술대회 포스터 발표',
+    thumb: 'assets/images/posts/2025-11-21-kpmhn-poster-thumb.jpg',
+    images: ['assets/images/posts/2025-11-21-kpmhn-poster.jpg'],
+    body:
+      '<p>2025 한국정신간호학회 동계학술대회에서 일본 베델의 집 현장학습에 참여한 간호대학생의 회복지향 학습 경험을 다룬 질적 연구를 포스터로 발표했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 11월 21일(금)</li>' +
+        '<li>장소: 고려대학교 백주년기념관</li>' +
+        '<li>주제: 생성형AI를 활용한 정신건강 간호교육, 연구, 실무</li>' +
+        '<li>발표: “교과서 속 전인 간호가 현실에서 구현되다”: 일본 베델의 집에서의 한국 간호대학생의 회복지향 학습 경험</li>' +
+        '<li>발표자: 김준혁 연구원, 신소영, 안수연, 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: 'sample-recruit',
     category: '공지',
     pinned: true,
