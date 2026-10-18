@@ -514,7 +514,7 @@ details.psec li { margin-bottom: 10px; }
 .mprog-body { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: clamp(14px, 4vw, 48px); max-width: 920px; margin: 0 auto; }
 .mprog-logo { width: clamp(84px, 22vw, 230px); border-radius: 10px; box-shadow: 0 14px 36px rgba(36, 53, 72, 0.14); }
 .mprog-eq { font-family: var(--font); font-weight: 300; font-size: clamp(1.4rem, 4vw, 2.4rem); color: var(--muted); opacity: 0.6; }
-.mprog-body .mvenn { width: auto; flex: 0 1 500px; min-width: 0; }
+.mprog-body .mvenn { width: auto; flex: 0 1 438px; min-width: 0; }
 .mvenn .v-h { font-family: var(--font); font-weight: 400; font-size: 17px; letter-spacing: 0.34em; }
 .mboxes { max-width: 920px; margin: 48px auto 0; display: block; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
 .mboxes > div { display: grid; grid-template-columns: 180px 1fr; gap: 24px; align-items: baseline; padding: 20px 4px; border-top: 1px solid var(--line); background: none; }
@@ -534,3 +534,7 @@ details.psec li { margin-bottom: 10px; }
 /* 배경 없는 로고 */
 .mprog-logo { border-radius: 0; box-shadow: none; filter: drop-shadow(0 10px 22px rgba(36, 53, 72, 0.14)); }
 .brand img { object-fit: contain; border-radius: 0; }
+
+/* 도식 로고: 투명한 틈 덕분에 세 사각형마다 각각 그림자 / 머리글 로고는 그림자 없음 */
+.mprog-logo { filter: drop-shadow(0 2px 2px rgba(36, 53, 72, 0.16)) drop-shadow(0 8px 14px rgba(36, 53, 72, 0.14)); }
+.brand img { filter: none; box-shadow: none; }
