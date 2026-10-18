@@ -298,6 +298,22 @@ window.MWAM_POSTS = [
       '<p><a href="http://ju.ac.kr/b195835" target="_blank" rel="noopener">전북대학교 기사 보기</a></p>'
   },
   {
+    id: '2025-06-19-maeumsarang',
+    category: '수련',
+    date: '2025-06-19',
+    title: '제27회 마음사랑 정신건강세미나 「조현병의 단계별 접근 방안에 대한 최신 지견」 참석',
+    thumb: 'assets/images/posts/2025-06-19-maeumsarang-thumb.jpg',
+    images: ['assets/images/posts/2025-06-19-maeumsarang-talk.jpg', 'assets/images/posts/2025-06-19-maeumsarang-book.jpg'],
+    body:
+      '<p>전북특별자치도마음사랑병원이 주최한 제27회 마음사랑 정신건강세미나에 참석해 조현병의 단계별 접근 방안에 대한 최신 지견을 배웠습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2025년 6월 19일(목) 13:00</li>' +
+        '<li>장소: 전북특별자치도마음사랑병원 문화센터</li>' +
+        '<li>주최: 전북특별자치도마음사랑병원</li>' +
+        '<li>참석: 정재원 교수, 김준혁 연구원</li>' +
+      '</ul>'
+  },
+  {
     id: '2025-06-23-bethel-pbl',
     category: '프로그램',
     date: '2025-06-23',
