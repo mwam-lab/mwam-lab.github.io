@@ -24,6 +24,23 @@ window.MWAM_POSTS = [
       '</ul>'
   },
   {
+    id: '2026-10-15-jeonju-forum',
+    category: '특강',
+    date: '2026-10-15',
+    title: '제2회 전주시복지재단 복지정책포럼 「청년이 특별해지는, 일상마중」 지정토론',
+    thumb: 'assets/images/posts/2026-10-15-jeonju-forum-thumb.jpg',
+    images: ['assets/images/posts/2026-10-15-jeonju-forum-talk.jpg', 'assets/images/posts/2026-10-15-jeonju-forum-panel.jpg'],
+    body:
+      '<p>제2회 전주시복지재단 복지정책포럼에서 「위기청년의 마음건강 이해와 안전한 지원연계」를 주제로 지정토론에 참여했습니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 10월 15일(목) 14:00-16:00</li>' +
+        '<li>장소: 전주 중부비전센터 2층 글로리아홀</li>' +
+        '<li>주제: 전주시 위기청년 지원체계 구축과 지역협력 방안 모색</li>' +
+        '<li>주최: 전주시복지재단 전주사람</li>' +
+        '<li>지정토론: 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-10-10-inje-lecture',
     category: '특강',
     date: '2026-10-10',
