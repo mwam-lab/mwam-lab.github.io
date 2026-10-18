@@ -142,14 +142,18 @@ var Mwam = (function () {
     }).join('');
   }
 
-  // 연구과제 (status: 진행 | 완료)
-  function projects(id, status) {
-    var list = (window.MWAM_PROJECTS || []).filter(function (p) { return p.status === status; });
+  // 연구과제 (진행 중 먼저)
+  function projects(id) {
+    var list = (window.MWAM_PROJECTS || []).slice().sort(function (a, b) {
+      return (a.status === '진행' ? 0 : 1) - (b.status === '진행' ? 0 : 1);
+    });
     var el = $(id);
     if (!list.length) { el.innerHTML = '<p class="empty">준비 중입니다.</p>'; return; }
     el.innerHTML = list.map(function (p) {
-      return '<div class="project' + (status === '완료' ? ' done' : '') + '">' +
-        '<span class="period">' + esc(p.period) + (p.funder ? ' · ' + esc(p.funder) : '') + '</span>' +
+      var done = p.status === '완료';
+      return '<div class="project' + (done ? ' done' : '') + '">' +
+        '<span class="period"><span class="state' + (done ? ' closed' : '') + '">' + (done ? '완료' : '진행 중') + '</span> · ' +
+          esc(p.period) + (p.funder ? ' · ' + esc(p.funder) : '') + '</span>' +
         '<h3>' + esc(p.title) + '</h3>' + (p.summary ? '<p>' + esc(p.summary) + '</p>' : '') + '</div>';
     }).join('');
   }

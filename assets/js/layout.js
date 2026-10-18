@@ -14,9 +14,8 @@
       ['연구원', 'people.html#members']
     ]},
     { id: 'research', label: 'RESEARCH', href: 'research.html', sub: [
-      ['움직임 명상 프로그램', 'research.html#program'],
-      ['진행 중인 연구', 'research.html#ongoing'],
-      ['완료된 연구', 'research.html#completed']
+      ['프로그램', 'research.html#program'],
+      ['연구과제', 'research.html#projects']
     ]},
     { id: 'outcomes', label: 'PUBLICATIONS', href: 'outcomes.html', sub: [
       ['논문', 'outcomes.html#papers'],
