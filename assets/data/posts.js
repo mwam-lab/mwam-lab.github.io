@@ -9,6 +9,24 @@
    status: '모집 중' 또는 '마감' (번호 자리에 표시, 없으면 '') */
 window.MWAM_POSTS = [
   {
+    id: '2026-10-19-inc-poster',
+    category: '발표·수상',
+    date: '2026-10-19',
+    title: '2026 한국간호과학회 국제간호학술대회(INC) 포스터 발표',
+    thumb: 'assets/images/posts/2026-10-19-inc-poster-thumb.jpg',
+    images: ['assets/images/posts/2026-10-19-inc-poster-duo.jpg', 'assets/images/posts/2026-10-19-inc-poster.jpg', 'assets/images/posts/2026-10-19-inc-hall.jpg'],
+    body:
+      '<p>서울 스위스 그랜드 호텔에서 열린 2026 한국간호과학회 국제간호학술대회(INC 2026)에서 사회적 고립·은둔 청년의 그룹홈 경험을 다룬 내러티브 탐구를 포스터로 발표했습니다. 성신여자대학교 신소영 교수님과 함께한 공동연구입니다.</p>' +
+      '<ul>' +
+        '<li>일시: 2026년 10월 19일(월) - 20일(화)</li>' +
+        '<li>장소: 스위스 그랜드 호텔, 서울</li>' +
+        '<li>주최: 한국간호과학회</li>' +
+        '<li>주제: Nursing Intelligence in the AI Era: Strategic Empowerment of Research, Education, and Practice</li>' +
+        '<li>발표: Group Home Experiences among Socially Withdrawn and Isolated Young Adults: A Narrative Inquiry</li>' +
+        '<li>발표자: 신소영 교수(성신여자대학교), 김준혁 연구원, 정재원 교수</li>' +
+      '</ul>'
+  },
+  {
     id: '2026-10-17-feldenkrais',
     category: '교류·연수',
     date: '2026-10-17',
